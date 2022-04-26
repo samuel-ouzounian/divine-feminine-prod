@@ -1,0 +1,13 @@
+.carousel-picture{
+    border-radius: 15px;
+}
+
+.learn-more-team-text {
+    font-size: 35px;
+}
+
+@media screen and (max-width: 1220px) {
+    .learn-more-team-text {
+        font-size:30px;
+    }
+}

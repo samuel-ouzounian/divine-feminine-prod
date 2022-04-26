@@ -1,0 +1,9 @@
+.Parentdiv {
+    height: height;
+    width: calc(100% - 20px);
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+    border-radius: 39px;
+    margin: 50
+  }

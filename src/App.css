@@ -1,0 +1,17 @@
+@import url('https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css');
+@import url('https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css');
+
+
+html,body{
+  background-color: #161617;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+@font-face {
+  font-family: 'Hensa';
+  src: local('Hensa'), url(./components/fonts/Monotype\ Corsiva.ttf) format('truetype');
+
+}
