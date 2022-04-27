@@ -128,23 +128,23 @@ function PreMint() {
 
 
 
-   /* if (isTransacting) {
-
-        return (
-            <>
-                <Content style={{ display: 'flex', flexDirection: 'column' }}>
-                    <h1 style={{ fontSize: '50px', color: 'white', fontFamily: 'Cinzel', textAlign: 'center' }}>Connect Wallet To Access Pre-Mint Reserve</h1>
-                    <img
-                        src={Celestial6}
-                        alt="cronos-nft"
-                        style={{ borderRadius: "15px", width: "350px", height: "auto" }}
-                    />
-                </Content>
-            </>
-        );
-
-
-    }*/
+    /* if (isTransacting) {
+ 
+         return (
+             <>
+                 <Content style={{ display: 'flex', flexDirection: 'column' }}>
+                     <h1 style={{ fontSize: '50px', color: 'white', fontFamily: 'Cinzel', textAlign: 'center' }}>Connect Wallet To Access Pre-Mint Reserve</h1>
+                     <img
+                         src={Celestial6}
+                         alt="cronos-nft"
+                         style={{ borderRadius: "15px", width: "350px", height: "auto" }}
+                     />
+                 </Content>
+             </>
+         );
+ 
+ 
+     }*/
 
 
     if (state.wallet.connected) {
@@ -185,7 +185,7 @@ function PreMint() {
                         }}
                     >
                         <Row>
-                            <TextWrapper style={{ width: "800px", height: '600px', backgroundColor: "rgba(0,0,0,.15)" }}>
+                            <TextWrapper style={{ backgroundColor: "rgba(0,0,0,.15)" }}>
                                 <PreMintHeader className="wow fadeInUp" style={{ marginTop: '25px' }}>
                                     <div><h1 style={{ fontSize: '28px', color: 'white', fontFamily: 'Cinzel' }}>Current Tier:</h1><br /><h1 style={{ textAlign: 'center', color: 'white', fontFamily: "Josefin Sans", fontSize: '28px' }}>{walletTier}</h1></div>
                                     <div><h1 style={{ fontSize: '28px', color: 'white', fontFamily: 'Cinzel' }}>Total Reserved:</h1><br /><h1 style={{ textAlign: 'center', color: 'white', fontFamily: "Josefin Sans", fontSize: '28px' }}>{walletBallance}</h1></div>
@@ -290,8 +290,14 @@ const ImageWrapper = styled.div`
 `;
 
 const TextWrapper = styled.div`
-  max-width: 620px;
+  height: '600px',
+  width: 620px;
   @media screen and (max-width: 1220px) {
+    height:auto;
+    order: 2;
+  }
+  @media screen and (max-width: 850px) {
+    width: calc(100% - 10px);
     order: 2;
   }
 `;
@@ -301,5 +307,10 @@ const PreMintHeader = styled.div`
   flex-direction:row;
   justify-content:space-evenly;
   line-height:5px;
+  @media screen and (max-width: 1220px) {
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+  }
 
 `;

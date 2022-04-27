@@ -13,3 +13,10 @@
     background-color: black;
     height: auto;
 }
+
+@media screen and (max-width:1220px) {
+    .wallet-selector-container{
+        margin-left: 0px;
+    }
+
+}
