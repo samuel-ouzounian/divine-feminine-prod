@@ -16,7 +16,7 @@ export default function Hero() {
 
                 </HeadingSupper>
             </Container>
-            <div className="wow zoomInUp">
+            <div className="wow zoomInUp" style={{marginLeft:'auto', marginRight:'auto'}}>
                 <a href="/PreMint">
                     <button className="pre-mint-button"><h1>Pre-Mint Reserve</h1></button>
                 </a>

@@ -46,7 +46,11 @@ export const connect = async (): Promise<IWallet> => {
     }
     let chainId = await window.ethereum.request({ method: "eth_chainId" });
     if (!(chainId === config.configVars.rpcNetwork.chainIdHex)) {
-      await switchNetwork();
+      window.alert(
+        "Switch your Wallet to blockchain network " +
+          config.configVars.rpcNetwork.chainName
+      );
+      throw new Error('Wrong Chain')
     }
     const accounts = await window.ethereum.request({
       method: "eth_requestAccounts",

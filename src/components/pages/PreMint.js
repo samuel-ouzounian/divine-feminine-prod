@@ -25,6 +25,7 @@ function PreMint() {
     const [walletTier, setWalletTier] = useState('');
     const [tierLengths, setTierLengths] = useState([]);
     const [cost, setCost] = useState(0);
+    const [isTransacting, setIsTransacting] = useState(false);
 
     async function reserve(quantity) {
         let _cost = cost.toString();
@@ -32,13 +33,15 @@ function PreMint() {
             state.wallet.browserWeb3Provider
         );
         try {
+            setIsTransacting(true);
             const tx = await goddessReserveInstance["preMint"](quantity.toString(), { 'value': Web3.utils.toWei(_cost) });
+            setIsTransacting(false);
         } catch (e) {
             if (state.wallet.walletProviderName === 'defiwallet') {
                 window.alert(e.message)
             }
             if (state.wallet.walletProviderName === 'metamask') {
-                window.alert(e.data)
+                window.alert(e.message)
             }
         }
     }
@@ -115,8 +118,6 @@ function PreMint() {
             }
         }
     }
-
-
     useEffect(() => {
         if (state.wallet.connected) {
             getInfo();
@@ -124,6 +125,27 @@ function PreMint() {
 
         }
     }, [state.wallet.connected])
+
+
+
+   /* if (isTransacting) {
+
+        return (
+            <>
+                <Content style={{ display: 'flex', flexDirection: 'column' }}>
+                    <h1 style={{ fontSize: '50px', color: 'white', fontFamily: 'Cinzel', textAlign: 'center' }}>Connect Wallet To Access Pre-Mint Reserve</h1>
+                    <img
+                        src={Celestial6}
+                        alt="cronos-nft"
+                        style={{ borderRadius: "15px", width: "350px", height: "auto" }}
+                    />
+                </Content>
+            </>
+        );
+
+
+    }*/
+
 
     if (state.wallet.connected) {
         return (
@@ -164,7 +186,7 @@ function PreMint() {
                     >
                         <Row>
                             <TextWrapper style={{ width: "800px", height: '600px', backgroundColor: "rgba(0,0,0,.15)" }}>
-                                <PreMintHeader className="wow fadeInUp" style={{ marginTop: '40px' }}>
+                                <PreMintHeader className="wow fadeInUp" style={{ marginTop: '25px' }}>
                                     <div><h1 style={{ fontSize: '28px', color: 'white', fontFamily: 'Cinzel' }}>Current Tier:</h1><br /><h1 style={{ textAlign: 'center', color: 'white', fontFamily: "Josefin Sans", fontSize: '28px' }}>{walletTier}</h1></div>
                                     <div><h1 style={{ fontSize: '28px', color: 'white', fontFamily: 'Cinzel' }}>Total Reserved:</h1><br /><h1 style={{ textAlign: 'center', color: 'white', fontFamily: "Josefin Sans", fontSize: '28px' }}>{walletBallance}</h1></div>
                                 </PreMintHeader>
@@ -212,14 +234,15 @@ function PreMint() {
     }
     return (
         <>
-            <Content style={{display: 'flex', flexDirection: 'column'}}>
-                <h1 style={{ fontSize: '50px', color: 'white', fontFamily: 'Cinzel', textAlign:'center' }}>Connect Wallet To Access Pre-Mint Reserve</h1>
+            <Content style={{ display: 'flex', flexDirection: 'column' }}>
+                <h1 style={{ fontSize: '50px', color: 'white', fontFamily: 'Cinzel', textAlign: 'center' }}>Connect Wallet To Access Pre-Mint Reserve</h1>
                 <img
                     src={Celestial6}
                     alt="cronos-nft"
-                    style={{ borderRadius: "15px", width: "350px", height: "auto" }}
+                    style={{ borderRadius: "15px", width: "350px", height: "auto", marginBottom: '50px' }}
                 />
             </Content>
+            <Footer />
         </>
     );
 

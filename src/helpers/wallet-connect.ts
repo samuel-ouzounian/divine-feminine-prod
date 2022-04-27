@@ -8,9 +8,7 @@ import * as config from "../config/config";
 import * as utils from "./utils";
 import { IWallet, defaultWallet } from "../store/interfaces";
 
-// Main login flow for Crypto.com DeFi Wallet with Wallet Extension
-// The connector must be activated, then it exposes a provider
-// that is used by the ethers Web3Provider constructor.
+
 export const connect = async (): Promise<IWallet> => {
   try {
     // Reset cache
@@ -33,7 +31,7 @@ export const connect = async (): Promise<IWallet> => {
         "Switch your Wallet to blockchain network " +
           config.configVars.rpcNetwork.chainName
       );
-      return defaultWallet;
+      //throw new Error('Wrong Chain')
     }
     // Subscribe to events that reload the app
     provider.on("accountsChanged", utils.reloadApp);
@@ -52,7 +50,7 @@ export const connect = async (): Promise<IWallet> => {
       chainId: provider.chainId,
     };
   } catch (e) {
-    window.alert(e);
+    console.log(e);
     return defaultWallet;
   }
 };

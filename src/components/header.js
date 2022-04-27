@@ -7,6 +7,7 @@ import { LogoWrapperHeader } from './Logo';
 import './header.css'
 import WalletSelector from './walletSelector';
 import './walletSelector.css'
+import ConnectWallet from './connectWallet';
 const { DiscordIco, TwitterIco, InstagramIco, Logo } = SharedImage;
 
 
@@ -54,7 +55,7 @@ export default function Header() {
                         </a>
                     </HeaderMenuWrapper>
                     <div className='wallet-selector-container'>
-                        <WalletSelector />
+                        <ConnectWallet />
                         </div>
                 </Row>
             </Container>
