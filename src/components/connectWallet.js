@@ -20,7 +20,7 @@ const connector = new WalletConnect({
 });
 const {
     metamask,
-    walletconnect
+    walletConnectImage
 } = NftImage;
 
 
@@ -154,7 +154,7 @@ function ConnectWallet() {
                                 <h3 style={{ fontFamily: "Josefin Sans" }}>Connect With Metamask In Your Browser</h3>
                             </div>
                             <div className='card' onClick={(option) => ConnectWallet('wallet-connect')}>
-                                <img style={{ borderRadius: "10px", width: "75px", height: "auto" }} src={walletconnect}></img>
+                                <img style={{ borderRadius: "10px", width: "75px", height: "auto" }} src={walletConnectImage}></img>
                                 <h1 style={{ fontFamily: 'Cinzel', marginTop: '30px' }}>Wallet Connect</h1>
                                 <h3 style={{ fontFamily: "Josefin Sans" }}>Scan With Wallet Connect</h3>
                             </div>

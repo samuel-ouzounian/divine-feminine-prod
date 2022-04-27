@@ -309,9 +309,10 @@ const ImageWrapper = styled.div`
 `;
 
 const TextWrapper = styled.div`
-  height: '600px',
   width: 620px;
   @media screen and (max-width: 1220px) {
+    margin-top:50px;
+    400px;
     height:auto;
     order: 2;
   }
@@ -325,8 +326,9 @@ const PreMintHeader = styled.div`
   display:flex;
   flex-direction:row;
   justify-content:space-evenly;
+  flex-wrap:wrap;
   line-height:5px;
-  @media screen and (max-width: 1220px) {
+  @media screen and (max-width: 850px) {
     flex-direction:column;
     justify-content:center;
     align-items:center;
