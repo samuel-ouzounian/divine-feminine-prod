@@ -25,6 +25,7 @@ function PreMint() {
     const [walletTier, setWalletTier] = useState('');
     const [tierLengths, setTierLengths] = useState([]);
     const [cost, setCost] = useState(0);
+    const [priceStatic, setPriceStatic] = useState([]);
     const [isTransacting, setIsTransacting] = useState(false);
 
     async function reserve(quantity) {
@@ -49,6 +50,7 @@ function PreMint() {
     async function getInfo() {
         let tier = 0;
         let lengths = []
+        let price = []
         if (state.wallet.connected) {
             const goddessReserveInstance = await utils.goddessMint(
                 state.wallet.browserWeb3Provider
@@ -76,6 +78,23 @@ function PreMint() {
                 lengths.push(parseInt(await goddessReserveInstance["bronzeListLength"](), 16))
                 lengths.push(parseInt(await goddessReserveInstance["goldListLength"](), 16))
                 lengths.push(parseInt(await goddessReserveInstance["platinumListLength"](), 16))
+                let amount = await goddessReserveInstance["whiteCost"]()
+                amount = amount.toString();
+                amount = amount / 10 ** 18;
+                price.push(amount);
+                amount = await goddessReserveInstance["bronzeCost"]()
+                amount = amount.toString();
+                amount = amount / 10 ** 18;
+                price.push(amount);
+                amount = await goddessReserveInstance["goldCost"]()
+                amount = amount.toString();
+                amount = amount / 10 ** 18;
+                price.push(amount);
+                amount = await goddessReserveInstance["platinumCost"]()
+                amount = amount.toString();
+                amount = amount / 10 ** 18;
+                price.push(amount);
+                setPriceStatic(price)
                 setTierLengths(lengths);
 
             } catch (e) {
@@ -172,10 +191,10 @@ function PreMint() {
                         }}
                     >
                         <PreMintHeader className="wow fadeInUp">
-                            <div><h1 style={{ fontSize: '30px', color: 'white', fontFamily: 'Cinzel' }}>White List</h1><br /><h1 style={{ textAlign: 'center', color: 'white', fontFamily: "Josefin Sans", fontSize: '28px' }}>{tierLengths[0]} / 350</h1></div>
-                            <div><h1 style={{ fontSize: '30px', color: 'white', fontFamily: 'Cinzel' }}>Bronze Tier</h1><br /><h1 style={{ textAlign: 'center', color: 'white', fontFamily: "Josefin Sans", fontSize: '28px' }}>{tierLengths[1]} / 240</h1></div>
-                            <div><h1 style={{ fontSize: '30px', color: 'white', fontFamily: 'Cinzel' }}>Gold Tier</h1><br /><h1 style={{ textAlign: 'center', color: 'white', fontFamily: "Josefin Sans", fontSize: '28px' }}>{tierLengths[2]} / 80</h1></div>
-                            <div><h1 style={{ fontSize: '30px', color: 'white', fontFamily: 'Cinzel' }}>Platinum Tier</h1><br /><h1 style={{ textAlign: 'center', color: 'white', fontFamily: "Josefin Sans", fontSize: '28px' }}>{tierLengths[3]} / 40</h1></div>
+                            <div><h1 style={{ fontSize: '30px', color: 'white', fontFamily: 'Cinzel' }}>White List</h1><br /><h1 style={{ textAlign: 'center', color: 'white', fontFamily: "Josefin Sans", fontSize: '28px' }}>{tierLengths[0]} / 350</h1><br /><h1 style={{ textAlign: 'center', color: 'white', fontFamily: "Josefin Sans", fontSize: '24px' }}>{priceStatic[0]} ETH</h1></div>
+                            <div><h1 style={{ fontSize: '30px', color: 'white', fontFamily: 'Cinzel' }}>Bronze Tier</h1><br /><h1 style={{ textAlign: 'center', color: 'white', fontFamily: "Josefin Sans", fontSize: '28px' }}>{tierLengths[1]} / 240</h1><br /><h1 style={{ textAlign: 'center', color: 'white', fontFamily: "Josefin Sans", fontSize: '24px' }}>{priceStatic[1]} ETH</h1></div>
+                            <div><h1 style={{ fontSize: '30px', color: 'white', fontFamily: 'Cinzel' }}>Gold Tier</h1><br /><h1 style={{ textAlign: 'center', color: 'white', fontFamily: "Josefin Sans", fontSize: '28px' }}>{tierLengths[2]} / 80</h1><br /><h1 style={{ textAlign: 'center', color: 'white', fontFamily: "Josefin Sans", fontSize: '24px' }}>{priceStatic[2]} ETH</h1></div>
+                            <div><h1 style={{ fontSize: '30px', color: 'white', fontFamily: 'Cinzel' }}>Platinum Tier</h1><br /><h1 style={{ textAlign: 'center', color: 'white', fontFamily: "Josefin Sans", fontSize: '28px' }}>{tierLengths[3]} / 40</h1><br /><h1 style={{ textAlign: 'center', color: 'white', fontFamily: "Josefin Sans", fontSize: '24px' }}>{priceStatic[3]} ETH</h1></div>
                         </PreMintHeader>
                     </Container>
                     <Container
@@ -207,7 +226,7 @@ function PreMint() {
 
                                         </div>
                                     </div>
-                                    <h2 style={{ color: 'white', fontFamily: 'Cinzel', textAlign: 'center' }}>Total Cost: {cost} TCRO</h2>
+                                    <h2 style={{ color: 'white', fontFamily: 'Cinzel', textAlign: 'center' }}>Total Cost: {cost} ETH</h2>
                                     <div className="wow fadeInUp" style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
                                         <button className='mint-btn' onClick={(e) => reserve(mintAmount)}>RESERVE</button>
                                     </div>
