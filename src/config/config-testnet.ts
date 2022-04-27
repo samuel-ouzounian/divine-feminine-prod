@@ -9,7 +9,7 @@ export const configVars = {
   rpcNetwork: {
     rpcUrl: "https://cronos-testnet-3.crypto.org:8545/",
     chainId: 338,
-    chainIdHex: "0x14A",
+    chainIdHex: "0x152",
     chainName: "Cronos Testnet",
     chainType: "testnet",
     nativeCurrency: {

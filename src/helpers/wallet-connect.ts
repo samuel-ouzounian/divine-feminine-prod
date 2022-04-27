@@ -7,24 +7,29 @@ import WalletConnectProvider from "@walletconnect/web3-provider";
 import * as config from "../config/config";
 import * as utils from "./utils";
 import { IWallet, defaultWallet } from "../store/interfaces";
+import {
+  updateWalletAction
+} from "../store/actions";
+import WCQrMordal from "@walletconnect/qrcode-modal";
+import WalletConnect from "@walletconnect/client";
 
+const connector = new WalletConnect({
+  bridge: "https://bridge.walletconnect.org", // Required
+  qrcodeModal: WCQrMordal,
+});
 
 export const connect = async (): Promise<IWallet> => {
   try {
-    // Reset cache
-    localStorage.clear();
     const provider = new WalletConnectProvider({
       rpc: {
         [config.configVars.rpcNetwork.chainId]:
           config.configVars.rpcNetwork.rpcUrl,
       },
-      // This chainId parameter is not mentioned
-      // in the WalletConnect documentation,
-      // But is necessary otherwise
-      // WalletConnect will connect to Ethereum mainnet
       chainId: config.configVars.rpcNetwork.chainId,
+      bridge: "https://bridge.walletconnect.org",
     });
     await provider.enable();
+    console.log(provider);
     const ethersProvider = new ethers.providers.Web3Provider(provider);
     if (!(provider.chainId === config.configVars.rpcNetwork.chainId)) {
       window.alert(
@@ -37,6 +42,17 @@ export const connect = async (): Promise<IWallet> => {
     provider.on("accountsChanged", utils.reloadApp);
     provider.on("chainChanged", utils.reloadApp);
     provider.on("disconnect", utils.reloadApp);
+    provider.on("connect", (error: any, payload: any) => {
+      if (error) {
+          console.log("connect error", error);
+          throw error;
+      }
+      //walletConnect.connect(connector);
+
+      // Get provided accounts and chainId
+      console.log("DEEEEEZNUTS");
+  });
+
     return {
       ...defaultWallet,
       walletProviderName: "walletconnect",

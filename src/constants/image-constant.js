@@ -15,7 +15,7 @@ import Celestial5 from '../assets/image/5.png'
 import Celestial6 from '../assets/image/6.png'
 import LinkedIN from '../assets/image/linkedIn.png'
 import metamask from '../assets/image/metamask-fox.svg'
-import WalletConnect from '../assets/image/WalletConnect.svg'
+import walletconnect from '../assets/image/WalletConnect.svg'
 
 export const SharedImage = {
     Logo:Logo,
@@ -26,7 +26,7 @@ export const SharedImage = {
 
 export const NftImage = {
     metamask:metamask,
-    WalletConnect:WalletConnect,
+    walletwonnect:walletconnect,
     LinkedIN:LinkedIN,
     Celestial1:Celestial1,
     Celestial2:Celestial2,
