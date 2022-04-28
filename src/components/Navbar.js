@@ -39,7 +39,7 @@ function Navbar() {
                         <img className={click ? 'navbar-logo active' : 'navbar-logo'} src={Logo}></img>
                     </Link>
                     <div className='menu-icon' onClick={handleClick}>
-                        <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+                        <i className={click ? 'fas fa-bars' : 'fas fa-bars'} />
                     </div>
                     <div className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>

@@ -103,10 +103,11 @@
         position: absolute;
         top: 0;
         right: 0;
-        transform: translate(-70%, 60%);
+        transform: translate(-70%, 70%);
     }
 
     .wallet-selector-container.active {
+        display: none;
         position: static;
         top: 0;
         right: 0;
@@ -154,14 +155,24 @@
         position: absolute;
         top: 0;
         right: 0;
-        transform: translate(-100%, 70%);
+        transform: translate(-100%, 80%);
         font-size: 3rem;
         cursor: pointer;
     }
 
-    .fa-times {
-        color: #fff;
-        font-size: 3rem;
+
+
+    @media screen and (max-width: 500px) {
+        .navbar-logo{
+        transform: translate(0%, 1%);
+        }
+        .wallet-selector-container {
+            transform: translate(-25%, 130%);
+
+        }
+        .menu-icon{
+            transform: translate(-100%, 30%);
+        }
     }
 
 }
