@@ -48,7 +48,6 @@ function PreMint() {
     }
 
     async function getInfo() {
-        let tier = 0;
         let lengths = []
         let price = []
         if (state.wallet.connected) {
@@ -56,30 +55,41 @@ function PreMint() {
                 state.wallet.browserWeb3Provider
             );
             try {
-                setTotal(parseInt(await goddessReserveInstance["totalPreList"](), 16));
+                let total = await goddessReserveInstance["totalPreList"]();
+                total = total.toString()
+                setTotal(total);
                 let balance = await goddessReserveInstance["addressPreMintedBalance"](state.wallet.address)
                 balance = balance.toString()
                 setWalletBalance(balance)
-                tier = parseInt(await goddessReserveInstance["addressTier"](state.wallet.address), 16);
-                if (tier === 0) {
+                let tier = await goddessReserveInstance["addressTier"](state.wallet.address);
+                tier = tier.toString()
+                if (tier === '0') {
                     setWalletTier('None')
                 }
-                if (tier === 1) {
+                if (tier === '1') {
                     setWalletTier('None')
                 }
-                if (tier === 2) {
+                if (tier === '2') {
                     setWalletTier('Bronze')
                 }
-                if (tier === 3) {
+                if (tier === '3') {
                     setWalletTier('Gold')
                 }
-                if (tier === 4) {
+                if (tier === '4') {
                     setWalletTier('Platinum')
                 }
-                lengths.push(parseInt(await goddessReserveInstance["whiteListLength"](), 16))
-                lengths.push(parseInt(await goddessReserveInstance["bronzeListLength"](), 16))
-                lengths.push(parseInt(await goddessReserveInstance["goldListLength"](), 16))
-                lengths.push(parseInt(await goddessReserveInstance["platinumListLength"](), 16))
+                let length = await goddessReserveInstance["whiteListLength"]()
+                length = length.toString()
+                lengths.push(length)
+                length = await goddessReserveInstance["bronzeListLength"]()
+                length = length.toString()
+                lengths.push(length)
+                length = await goddessReserveInstance["goldListLength"]()
+                length = length.toString()
+                lengths.push(length)
+                length = await goddessReserveInstance["platinumListLength"]()
+                length = length.toString()
+                lengths.push(length)
                 let amount = await goddessReserveInstance["whiteCost"]()
                 amount = amount.toString();
                 amount = amount / 10 ** 18;
@@ -176,7 +186,7 @@ function PreMint() {
                         style={{
                             borderRadius: "20px",
                             marginTop: "10px",
-                            marginBottom:'40px',
+                            marginBottom: '40px',
                             height: '20px'
 
                         }}
