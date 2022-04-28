@@ -19,20 +19,21 @@ flex-direction:row;
 list-style:none;
 gap:30px;
 padding:0px;
-margin-left:20px;
+margin-top:25px;
+margin-left:40px;
 @media screen and (max-width:1200px){
     gap: 15px;
     position:absolute;
     top: 0;
     left: 0;
-    transform: translate(650%, 15%);
+    transform: translate(610%, 15%);
     margin-top:10px;
     flex-direction: column;
 
     }
 }
 @media screen and (max-width: 600px) {
-    transform: translate(400%, 15%);
+    transform: translate(360%, 15%);
 }
 `
 export const HeaderMenuWrapper2 = styled.ul`
