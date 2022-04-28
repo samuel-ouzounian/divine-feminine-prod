@@ -6,7 +6,6 @@ import WOW from "wowjs";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './App.css';
-import Header from './components/header';
 import Team from './components/pages/Team';
 import PreMint from './components/pages/PreMint';
 import Navbar from './components/Navbar';
