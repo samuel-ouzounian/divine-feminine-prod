@@ -17,6 +17,7 @@ function Team() {
             backgroundColor: "rgba(0,0,0,.15)",
             borderRadius: "20px",
             margin: "20px",
+            width: '800px'
           }}
         >
           <Heading1 className="wow fadeInUp">{Uppercase("The Team")}</Heading1>
