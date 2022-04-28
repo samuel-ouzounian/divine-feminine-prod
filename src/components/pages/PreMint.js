@@ -3,7 +3,7 @@ import React from "react";
 import Footer from "../footer";
 import { NftImage } from "../../constants/image-constant";
 import { Container } from "../container";
-import { Between, Heading1, Row } from "../layout";
+import { Heading1, Row } from "../layout";
 import { Uppercase } from "../../utillities/uppercase";
 import "./Home.css";
 import { useState, useEffect } from 'react'
@@ -232,7 +232,7 @@ function PreMint() {
                                     </div>
                                 </div>
                             </TextWrapper>
-                            <Between style={{ flex: '0', marginLeft: '200px' }}></Between>
+                            <Between></Between>
                             <ImageWrapper
                                 className="wow fadeInUp"
                                 style={{ marginTop: "auto", marginBottom: "auto" }}
@@ -267,6 +267,18 @@ function PreMint() {
 
 }
 export default PreMint;
+
+const Between = styled.div`
+  flex: 0;
+  margin-left:200px;
+  @media screen and (max-width: 1320px) {
+    margin-left:100px;
+  }
+  @media screen and (max-width: 1220px) {
+    order: 1;
+  }
+
+`;
 
 const Content = styled.section`
   display: flex;
@@ -309,6 +321,7 @@ const ImageWrapper = styled.div`
 `;
 
 const TextWrapper = styled.div`
+border-radius:10px;
   width: 620px;
   @media screen and (max-width: 1220px) {
     margin-top:50px;

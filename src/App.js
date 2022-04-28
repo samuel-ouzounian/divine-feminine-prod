@@ -9,6 +9,7 @@ import './App.css';
 import Header from './components/header';
 import Team from './components/pages/Team';
 import PreMint from './components/pages/PreMint';
+import Navbar from './components/Navbar';
 
 function App() {
   useEffect(() => {
@@ -17,7 +18,7 @@ function App() {
   }, []);
   return (
     <div>
-      <Header/>
+      <Navbar/>
       <Routes>
         <Route path="/" element={<Views />} />
         <Route path="/team" element={<Team />} />

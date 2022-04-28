@@ -6,12 +6,23 @@ export const LogoWrapper = styled.img`
     height:auto;
 `
 export const LogoWrapperHeader = styled.img`
+    position:sticky;
     max-width:150px;
     border-radius: 10px;
     height:auto;
-    @media screen and (max-width: 1220px) {
-        max-width:120px;
+    margin-top:80px;
+    @media screen and (max-width: 1200px) {
+        margin-right:50%
     }
+    @media screen and (max-width: 1000px) {
+        position:relative;
+        right:85px;
+    }
+    @media screen and (max-width: 600px) {
+        position:relative;
+        right 85px
+    }
+    
 `
 
 
