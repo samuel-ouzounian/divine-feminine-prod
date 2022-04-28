@@ -87,12 +87,24 @@
     font-size: 20px;
 }
 
+.pre-mint-logo{
+    border-radius: 15px;
+    width: 400px;
+    height:auto;
+}
+
 .mint-btn:hover {
     transition: all 0.3s ease-out;
     background: var(--primary);
     border: 3px solid var(--primary);
     color: #f7ce4a;
     transition: 250ms;
+}
+
+@media screen and (max-width:1220px) {
+    .pre-mint-logo{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 850px){

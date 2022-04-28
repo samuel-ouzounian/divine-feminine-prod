@@ -174,7 +174,7 @@ function PreMint() {
                         style={{
                             borderRadius: "20px",
                             marginTop: "10px",
-                            marginBottom: "40px",
+                            marginBottom:'40px',
                             height: '20px'
 
                         }}
@@ -190,17 +190,16 @@ function PreMint() {
                             marginTop: "60px",
                         }}
                     >
-                        <PreMintHeader className="wow fadeInUp">
+                        <PreMintHeader2 className="wow fadeInUp">
                             <div><h1 style={{ fontSize: '30px', color: 'white', fontFamily: 'Cinzel' }}>White List</h1><br /><h1 style={{ textAlign: 'center', color: 'white', fontFamily: "Josefin Sans", fontSize: '28px' }}>{tierLengths[0]} / 350</h1><br /><h1 style={{ textAlign: 'center', color: 'white', fontFamily: "Josefin Sans", fontSize: '24px' }}>{priceStatic[0]} ETH</h1></div>
                             <div><h1 style={{ fontSize: '30px', color: 'white', fontFamily: 'Cinzel' }}>Bronze Tier</h1><br /><h1 style={{ textAlign: 'center', color: 'white', fontFamily: "Josefin Sans", fontSize: '28px' }}>{tierLengths[1]} / 240</h1><br /><h1 style={{ textAlign: 'center', color: 'white', fontFamily: "Josefin Sans", fontSize: '24px' }}>{priceStatic[1]} ETH</h1></div>
                             <div><h1 style={{ fontSize: '30px', color: 'white', fontFamily: 'Cinzel' }}>Gold Tier</h1><br /><h1 style={{ textAlign: 'center', color: 'white', fontFamily: "Josefin Sans", fontSize: '28px' }}>{tierLengths[2]} / 80</h1><br /><h1 style={{ textAlign: 'center', color: 'white', fontFamily: "Josefin Sans", fontSize: '24px' }}>{priceStatic[2]} ETH</h1></div>
                             <div><h1 style={{ fontSize: '30px', color: 'white', fontFamily: 'Cinzel' }}>Platinum Tier</h1><br /><h1 style={{ textAlign: 'center', color: 'white', fontFamily: "Josefin Sans", fontSize: '28px' }}>{tierLengths[3]} / 40</h1><br /><h1 style={{ textAlign: 'center', color: 'white', fontFamily: "Josefin Sans", fontSize: '24px' }}>{priceStatic[3]} ETH</h1></div>
-                        </PreMintHeader>
+                        </PreMintHeader2>
                     </Container>
                     <Container
                         style={{
-                            borderRadius: "20px",
-                            padding: '50px'
+                            borderRadius: "20px"
                         }}
                     >
                         <Row>
@@ -240,7 +239,7 @@ function PreMint() {
                                 <img
                                     src={Celestial6}
                                     alt="cronos-nft"
-                                    style={{ borderRadius: "15px", width: "400px", height: "auto" }}
+                                    className="pre-mint-logo"
                                 />
                             </ImageWrapper>
                         </Row>
@@ -324,8 +323,7 @@ const TextWrapper = styled.div`
 border-radius:10px;
   width: 620px;
   @media screen and (max-width: 1220px) {
-    margin-top:50px;
-    400px;
+    margin-top:20px;
     height:auto;
     order: 2;
   }
@@ -341,10 +339,30 @@ const PreMintHeader = styled.div`
   justify-content:space-evenly;
   flex-wrap:wrap;
   line-height:5px;
-  @media screen and (max-width: 850px) {
+  @media screen and (max-width: 500px) {
     flex-direction:column;
+    flex-wrap:wrap;
     justify-content:center;
     align-items:center;
+  }
+
+`;
+
+const PreMintHeader2 = styled.div`
+  display:flex;
+  flex-direction:row;
+  justify-content:space-evenly;
+  flex-wrap:wrap;
+  line-height:5px;
+  @media screen and (max-width: 850px) {
+    height:400px;
+    flex-direction:column;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+  }
+  @media screen and (max-width: 500px) {
+    height:800px;
   }
 
 `;
