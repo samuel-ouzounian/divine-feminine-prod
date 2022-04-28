@@ -38,6 +38,19 @@ function Navbar() {
                     <Link to='/'>
                         <img className={click ? 'navbar-logo active' : 'navbar-logo'} src={Logo}></img>
                     </Link>
+                    <HeaderMenuWrapper id="social-menu">
+                        <a href='https://discord.gg/QY9k3mEt' target='_blank' rel="noreferrer">
+                            <img src={DiscordIco} alt="cronos-social" />
+                        </a>
+                        <a href='https://twitter.com/NFT_DivineFemme' target='_blank' rel="noreferrer">
+                            <img src={TwitterIco} alt="cronos-social" />
+
+                        </a>
+                        <a href='' target='_blank' rel="noreferrer">
+                            <img src={InstagramIco} alt="cronos-social" />
+
+                        </a>
+                    </HeaderMenuWrapper>
                     <div className='menu-icon' onClick={handleClick}>
                         <i className={click ? 'fas fa-bars' : 'fas fa-bars'} />
                     </div>
