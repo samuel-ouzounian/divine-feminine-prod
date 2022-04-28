@@ -57,7 +57,9 @@ function PreMint() {
             );
             try {
                 setTotal(parseInt(await goddessReserveInstance["totalPreList"](), 16));
-                setWalletBalance(parseInt(await goddessReserveInstance["addressPreMintedBalance"](state.wallet.address), 16))
+                let balance = await goddessReserveInstance["addressPreMintedBalance"](state.wallet.address)
+                balance = balance.toString()
+                setWalletBalance(balance)
                 tier = parseInt(await goddessReserveInstance["addressTier"](state.wallet.address), 16);
                 if (tier === 0) {
                     setWalletTier('None')
