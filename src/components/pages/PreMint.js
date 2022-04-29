@@ -12,6 +12,9 @@ import './PreMint.css'
 import Web3 from 'web3';
 import { Store } from '../../store/store-reducer';
 import * as utils from "../../helpers/utils";
+import Backdrop from '@mui/material/Backdrop';
+import CircularProgress from '@mui/material/CircularProgress';
+
 
 
 function PreMint() {
@@ -34,10 +37,13 @@ function PreMint() {
             state.wallet.browserWeb3Provider
         );
         try {
-            setIsTransacting(true);
             const tx = await goddessReserveInstance["preMint"](quantity.toString(), { 'value': Web3.utils.toWei(_cost) });
+            setIsTransacting(true);
+            await tx.wait();
             setIsTransacting(false);
+
         } catch (e) {
+            setIsTransacting(false);
             if (state.wallet.walletProviderName === 'defiwallet') {
                 window.alert(e.message)
             }
@@ -159,23 +165,6 @@ function PreMint() {
 
 
 
-    /* if (isTransacting) {
- 
-         return (
-             <>
-                 <Content style={{ display: 'flex', flexDirection: 'column' }}>
-                     <h1 style={{ fontSize: '50px', color: 'white', fontFamily: 'Cinzel', textAlign: 'center' }}>Connect Wallet To Access Pre-Mint Reserve</h1>
-                     <img
-                         src={Celestial6}
-                         alt="cronos-nft"
-                         style={{ borderRadius: "15px", width: "350px", height: "auto" }}
-                     />
-                 </Content>
-             </>
-         );
- 
- 
-     }*/
 
 
     if (state.wallet.connected) {
@@ -193,7 +182,15 @@ function PreMint() {
                     >
                         <Heading1 className="wow fadeInUp">
                             {Uppercase("Pre-Mint Reserve")}
+                            {isTransacting ? (<Backdrop
+                                sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
+                                open={isTransacting}
+                                onClick={!isTransacting}
+                            >
+                                <h1 style={{fontSize:'40px', marginRight:'20px'}}>Reserving...</h1><CircularProgress color="inherit" />
+                            </Backdrop>) : <></>}
                         </Heading1>
+
                     </Container>
                     <Container
                         style={{

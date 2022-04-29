@@ -62,11 +62,11 @@ function Navbar() {
                         </li>
                         <li className='nav-item'>
                             <Link
-                                to='/MyCelestials'
+                                to='/MyDivineNFTs'
                                 className='nav-links'
                                 onClick={closeMobileMenu}
                             >
-                                My Celestials
+                                My Divine
                             </Link>
                         </li>
                         <li className='nav-item'>
