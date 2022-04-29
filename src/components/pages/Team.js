@@ -35,26 +35,16 @@ function Team() {
                 {Uppercase("Thais Helena - Artist and Visionary")}
               </Heading2>
               <BodyText className="wow fadeInUp" style={{ marginTop: "30px" }}>
-                Thais Helena Guidolin Miguel is a Brazilian mixed media artist,
-                wife, and mother of two boys. She has lived between the San
-                Francisco Bay Area and Brazil for the last 18 years. She is
-                passionate about her family, art, nature, music, books,
-                traveling, human rights advocacy and simplicity. “If my art can
-                stir your soul, if I foment reflection or if I can put a smile
-                on your heart, then my creativity succeeds.” Thais is grateful
-                that the motivation for her work is the symbiosis between what
-                she is and how her art can touch others. “The magic around being
-                us, is also between us, on this golden bridge between you and
-                I.”
+                Thais Helena Guidolin Oz is a Brazilian mixed media artist, married and mother of two boys who has lived in the San Francisco Bay Area for the last 20 years. Exhibiting her art in several galleries in the Bay Area and owning two charming ones in the South of Brazil she has touched people with the vibrance of her art and message.
+
+                A former lawyer by degree and self-taught artist by passion Thais loves to portray the feminine universe and all the exuberance and strengh that inhabit the spirit of each person.
+
+                A firm belevier in love, passion for life, compassion and service Thais’ wishes that through her art she can bring out these values that reflect the power and dignity of thoughtful living.
+
+                Her biggest honor would be to bring you joy and to remind you of your unique and beautiful light.
                 <br />
-                Thais' explorations in painting, including mixed media, produce
-                insightful works that reflects the strength and dignity of
-                thoughtful living. Using paint, canvas and the decorative
-                properties of mixed media, she creates visual delights and
-                incorporating timeless words of wisdom. There is an explosive
-                energy to these works that capture the inspirational, sometimes
-                fleeting, moments of life”, says Randy Dutra, artist and Academy
-                Award Nominee for “Star Wars” and “Jurassic Park”.
+                <br />
+                Namaste
               </BodyText>
             </TextWrapper>
             <Between />
