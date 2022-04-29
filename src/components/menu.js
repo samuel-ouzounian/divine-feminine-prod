@@ -35,6 +35,13 @@ margin-left:40px;
 @media screen and (max-width: 600px) {
     transform: translate(360%, 15%);
 }
+@media screen and (max-width: 450px) {
+    transform: translate(290%, 15%);
+}
+@media screen and (max-width: 390px) {
+    flex-direction:row;
+    transform: translate(100%, 50%);
+}
 `
 export const HeaderMenuWrapper2 = styled.ul`
 display:flex;
