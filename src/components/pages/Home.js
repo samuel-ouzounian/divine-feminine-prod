@@ -482,7 +482,7 @@ export default function Views() {
                     more!
                   </li>
                   <li>
-                    5 Platinum Tier Limited Edition Goddess of Light NFT
+                    6 Platinum Tier Limited Edition Goddess of Light NFT
                     air-dropped after collection sells out
                   </li>
                   <li>
