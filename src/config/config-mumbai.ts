@@ -20,8 +20,8 @@ declare global {
       blockExplorerUrl: "https://polygonscan.com/",
     },
     goddess: {
-      address: "0x1eC8FB8d6085c44393626DFa72f6a63461B590b9", // on Cronos Testnet
-      address_mainnet: "0x1eC8FB8d6085c44393626DFa72f6a63461B590b9", // on Cronos Mainnet
+      address: "0x3c24541c233C248379c61ce0Da8582b1230B6147", // on Cronos Testnet
+      address_mainnet: "0x3c24541c233C248379c61ce0Da8582b1230B6147", // on Cronos Mainnet
     },
   };
   
