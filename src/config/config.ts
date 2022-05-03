@@ -7,20 +7,20 @@ declare global {
 export const configVars = {
   mode: "regular",
   rpcNetwork: {
-    rpcUrl: "https://cronos-testnet-3.crypto.org:8545/",
-    chainId: 338,
+    rpcUrl: "https://rpc-mumbai.maticvigil.com",
+    chainId: 0x13881,
     chainIdHex: "0x152",
-    chainName: "Cronos Testnet",
+    chainName: "Mumbai Testnet",
     chainType: "testnet",
     nativeCurrency: {
-      name: "TCRO",
-      symbol: "TCRO",
+      name: "MATIC",
+      symbol: "MATIC",
       decimals: 18,
     },
-    blockExplorerUrl: "https://cronoscan.com/",
+    blockExplorerUrl: "https://polygonscan.com/",
   },
   goddess: {
-    address: "0x1C7433C232E27b07595b8a5114fB572d6230ac23", // on Cronos Testnet
-    address_mainnet: "0x1C7433C232E27b07595b8a5114fB572d6230ac23", // on Cronos Mainnet
+    address: "0x0e8f883124c1c234d64Ec566adC5966f1832d207", // on Cronos Testnet
+    address_mainnet: "0x0e8f883124c1c234d64Ec566adC5966f1832d207", // on Cronos Mainnet
   },
 };
