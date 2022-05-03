@@ -8,8 +8,8 @@ declare global {
     mode: "regular",
     rpcNetwork: {
       rpcUrl: "https://rpc-mumbai.maticvigil.com",
-      chainId: 0x13881,
-      chainIdHex: "0x152",
+      chainId: 80001,
+      chainIdHex: "0x13881",
       chainName: "Mumbai Testnet",
       chainType: "testnet",
       nativeCurrency: {
