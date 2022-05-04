@@ -3,6 +3,7 @@ import { ethers } from "ethers"; // npm install ethers
 
 import * as config from "../config/config";
 import * as GoddessJson from "../config/contracts/goddessMint.json";
+import * as discordJson from "../config/contracts/discordLink.json";
 
 export const delay = (ms: number) => new Promise((res) => setTimeout(res, ms));
 
@@ -26,6 +27,23 @@ export const goddessMint = async (
   // Create ethers.Contract object using the smart contract's ABI
   const readContractInstance = new ethers.Contract(
     config.configVars.goddess.address,
+    contractAbi,
+    ethersProvider
+  );
+  // Add a signer to make the ethers.Contract object able
+  // to craft transactions
+  const fromSigner = ethersProvider.getSigner();
+  return readContractInstance.connect(fromSigner);
+};
+
+export const Discord = async (
+  browserWeb3Provider: any
+): Promise<ethers.Contract> => {
+  const ethersProvider = browserWeb3Provider;
+  const contractAbi = discordJson.abi;
+  // Create ethers.Contract object using the smart contract's ABI
+  const readContractInstance = new ethers.Contract(
+    config.configVars.discordLink.address,
     contractAbi,
     ethersProvider
   );

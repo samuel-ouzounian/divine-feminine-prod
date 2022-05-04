@@ -46,12 +46,7 @@ function PreMint() {
 
         } catch (e) {
             setIsTransacting(false);
-            if (state.wallet.walletProviderName === 'defiwallet') {
-                window.alert(e.message)
-            }
-            if (state.wallet.walletProviderName === 'metamask') {
-                window.alert(e.message)
-            }
+            window.alert(e.data.message)
         }
     }
 

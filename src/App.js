@@ -9,6 +9,7 @@ import './App.css';
 import Team from './components/pages/Team';
 import PreMint from './components/pages/PreMint';
 import Navbar from './components/Navbar';
+import DAO from './components/pages/DAO';
 
 function App() {
   useEffect(() => {
@@ -22,6 +23,7 @@ function App() {
         <Route path="/" element={<Views />} />
         <Route path="/team" element={<Team />} />
         <Route path="/PreMint" element={<PreMint />} />
+        <Route path="/DAO" element={<DAO />} />
       </Routes>
     </div>
   );

@@ -35,6 +35,7 @@ export default function Footer() {
 
 
 const FooterWrapper = styled.footer`
+width:100%;
     color:white;
     background-color:rgba(0,0,0,.15);
     display:flex;
