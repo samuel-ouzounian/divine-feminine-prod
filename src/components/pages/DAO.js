@@ -2,10 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import Footer from "../footer";
 import { Container } from "../container";
-import { BodyText, Heading1, Row } from "../layout";
+import { Heading1, Row } from "../layout";
 import { Uppercase } from "../../utillities/uppercase";
-import "./Home.css";
-import Web3 from 'web3';
+import "./DAO.css";
 import { Store } from '../../store/store-reducer';
 import * as utils from "../../helpers/utils";
 import { useState, useEffect } from 'react'
@@ -38,15 +37,23 @@ function DAO() {
 
     return (
         <>
-            <div style={{ position: 'relative', minHeight: '87vH' }}>
+            <div style={{ minHeight: '87vH' }}>
                 <Content>
                     <Container
                         style={{
                             borderRadius: "20px",
-                            margin: "20px"
+                            margin: "20px",
+                            width:'auto'
                         }}
                     >
                         <Heading1 className="wow fadeInUp">{Uppercase("Divine Dao")}</Heading1>
+                        {isTransacting ? (<Backdrop
+                                sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
+                                open={isTransacting}
+                                onClick={!isTransacting}
+                            >
+                                <h1 style={{fontSize:'40px', marginRight:'20px'}}>Processing...</h1><CircularProgress color="inherit" />
+                            </Backdrop>) : <></>}
                     </Container>
                     <Container
                         style={{
@@ -56,31 +63,20 @@ function DAO() {
                         }}
                     >
                         <Row>
-                            <TextWrapper style={{ marginRight: 'auto', marginLeft: 'auto' }}>
+                            <TextWrapper>
                                 <BodyText className="wow fadeInUp">
                                     Enter your 18 digit Discord ID (Ex: 029381527365287364) below to connect your Discord to the Divine Feminine Web3 Ecosystem
                                 </BodyText>
                             </TextWrapper>
                         </Row>
                     </Container>
-                    <Container
-                        style={{
-                            marginTop: '50px',
-                            borderRadius: "20px",
-                        }}
-                    >
-                        <Row>
-                            <TextWrapper style={{ marginRight: 'auto', marginLeft: 'auto', padding: '10px 30px 10px 30px', borderRadius: '10px', backgroundColor: 'white' }}>
-                                <BodyText style={{ lineHeight: '0px' }}>
-                                    <form onSubmit={linkDiscord}>
+                            <div className='submitDiv'>
+                                <form className="submitForm" onSubmit={linkDiscord}>
 
-                                        <input type='text' style={{ width: '300px', marginRight: '30px', height: '75px', borderRadius: '10px', borderColor: 'black', fontSize: '25px', textAlign: 'center', color: 'black' }} onChange={(e) => setDiscordID(e.target.value)}></input>
-                                        <button type='submit' className="wow fadeInUp" style={{ color: 'white', backgroundColor: '#450000', border: '#450000', padding: '10px 40px 10px 40px', borderRadius: '10px' }}><h2 style={{ fontFamily: 'Cinzel' }}>CONNECT</h2></button>
-                                    </form>
-                                </BodyText>
-                            </TextWrapper>
-                        </Row>
-                    </Container>
+                                    <input className="inputBox" type='text' onChange={(e) => setDiscordID(e.target.value)}></input>
+                                    <button type='submit' className="inputButton" style={{ color: 'white', backgroundColor: '#450000', border: '#450000', padding: '10px 40px 10px 40px', borderRadius: '10px', cursor:'pointer' }}><h2 style={{ fontFamily: 'Cinzel' }}>CONNECT</h2></button>
+                                </form>
+                            </div>
                 </Content>
             </div>
             <Footer />
@@ -90,13 +86,22 @@ function DAO() {
 
 const Content = styled.section`
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 `;
 
+const BodyText = styled.p`
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  /* or 160% */
 
+  /* Strong grey */
+
+  color: #7e7f81;
+`;
 
 const TextWrapper = styled.div`
   @media screen and (max-width: 1220px) {
