@@ -20,8 +20,8 @@ export const configVars = {
     blockExplorerUrl: "https://polygonscan.com/",
   },
   goddess: {
-    address: "0xa15B594177Dd5C957e9FBd35a1e15b2039B8C187", // on Cronos Testnet
-    address_mainnet: "0xa15B594177Dd5C957e9FBd35a1e15b2039B8C187", // on Cronos Mainnet
+    address: "0xb49032cAe3379acCa86Eda9E09148301Df1Bf2de", // on Cronos Testnet
+    address_mainnet: "0xb49032cAe3379acCa86Eda9E09148301Df1Bf2de", // on Cronos Mainnet
   },
   discordLink: {
     address: "0x8F14cFecc6B51100F1D482FADE23442DEc414Dec", // on Cronos Testnet
