@@ -28,6 +28,9 @@ const {
   Celestial5,
   Celestial6,
   LinkedIN,
+  bronzeCelestial,
+  goldCelestial,
+  platinumCelestial,
 } = NftImage;
 
 export default function Views() {
@@ -502,7 +505,7 @@ export default function Views() {
               style={{ marginTop: "auto", marginBottom: "auto" }}
             >
               <img
-                src={Celestial6}
+                src={platinumCelestial}
                 alt="cronos-nft"
                 style={{ borderRadius: "15px", width: "400px", height: "auto" }}
               />
@@ -553,7 +556,7 @@ export default function Views() {
               style={{ marginTop: "auto", marginBottom: "auto" }}
             >
               <img
-                src={Celestial5}
+                src={goldCelestial}
                 alt="cronos-nft"
                 style={{ borderRadius: "15px", width: "400px", height: "auto" }}
               />
@@ -609,7 +612,7 @@ export default function Views() {
               style={{ marginTop: "auto", marginBottom: "auto" }}
             >
               <img
-                src={Celestial4}
+                src={bronzeCelestial}
                 alt="cronos-nft"
                 style={{ borderRadius: "15px", width: "400px", height: "auto" }}
               />
