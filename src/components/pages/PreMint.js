@@ -21,9 +21,9 @@ import * as config from "../../config/config";
 function PreMint() {
     const { state } = React.useContext(Store);
     const {
-        bronzeCelestial,
-        goldCelestial,
-        platinumCelestial,
+        bronzeCelestial2,
+        goldCelestial2,
+        platinumCelestial2,
         Celestial6
     } = NftImage;
     const [mintAmount, setMintAmount] = useState(1);
@@ -249,19 +249,19 @@ function PreMint() {
                                 {
                                     walletTier === 'Bronze' ? (
                                         <img
-                                            src={bronzeCelestial}
+                                            src={bronzeCelestial2}
                                             alt="cronos-nft"
                                             className="pre-mint-logo"
                                         />
                                     ) : walletTier === 'Gold' ? (
                                         <img
-                                            src={goldCelestial}
+                                            src={goldCelestial2}
                                             alt="cronos-nft"
                                             className="pre-mint-logo"
                                         />
                                     ) : walletTier === 'Platinum' ? (
                                         <img
-                                            src={platinumCelestial}
+                                            src={platinumCelestial2}
                                             alt="cronos-nft"
                                             className="pre-mint-logo"
                                         />

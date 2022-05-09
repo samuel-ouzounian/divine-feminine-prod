@@ -19,6 +19,9 @@ import walletConnectImage from '../assets/image/WalletConnect.svg'
 import bronzeCelestial from '../assets/image/Bronze.png'
 import goldCelestial from '../assets/image/Gold.png'
 import platinumCelestial from '../assets/image/Platinum.png'
+import bronzeCelestial2 from '../assets/image/Bronze2.png'
+import goldCelestial2 from '../assets/image/Gold2.png'
+import platinumCelestial2 from '../assets/image/Platinum2.png'
 
 export const SharedImage = {
     Logo:Logo,
@@ -31,6 +34,9 @@ export const NftImage = {
     bronzeCelestial:bronzeCelestial,
     goldCelestial:goldCelestial,
     platinumCelestial:platinumCelestial,
+    bronzeCelestial2:bronzeCelestial2,
+    goldCelestial2:goldCelestial2,
+    platinumCelestial2:platinumCelestial2,
     metamask:metamask,
     walletConnectImage:walletConnectImage,
     LinkedIN:LinkedIN,

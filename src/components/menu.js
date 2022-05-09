@@ -21,7 +21,7 @@ gap:30px;
 padding:0px;
 margin-top:25px;
 margin-left:40px;
-@media screen and (max-width:1200px){
+@media screen and (max-width:800px){
     gap: 15px;
     position:absolute;
     top: 0;
