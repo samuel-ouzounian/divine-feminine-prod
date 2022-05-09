@@ -21,7 +21,10 @@ import * as config from "../../config/config";
 function PreMint() {
     const { state } = React.useContext(Store);
     const {
-        Celestial6,
+        bronzeCelestial,
+        goldCelestial,
+        platinumCelestial,
+        Celestial6
     } = NftImage;
     const [mintAmount, setMintAmount] = useState(1);
     const [total, setTotal] = useState(0);
@@ -66,6 +69,7 @@ function PreMint() {
                 setWalletBalance(balance)
                 let tier = await goddessReserveInstance["addressTier"](state.wallet.address);
                 tier = tier.toString()
+                console.log(tier)
                 if (tier === '0') {
                     setWalletTier('None')
                 }
@@ -184,7 +188,7 @@ function PreMint() {
                                 open={isTransacting}
                                 onClick={!isTransacting}
                             >
-                                <h1 style={{fontSize:'40px', marginRight:'20px'}}>Reserving...</h1><CircularProgress color="inherit" />
+                                <h1 style={{ fontSize: '40px', marginRight: '20px' }}>Reserving...</h1><CircularProgress color="inherit" />
                             </Backdrop>) : <></>}
                         </Heading1>
 
@@ -242,11 +246,35 @@ function PreMint() {
                                 className="wow fadeInUp"
                                 style={{ marginTop: "auto", marginBottom: "auto" }}
                             >
-                                <img
-                                    src={Celestial6}
-                                    alt="cronos-nft"
-                                    className="pre-mint-logo"
-                                />
+                                {
+                                    walletTier === 'Bronze' ? (
+                                        <img
+                                            src={bronzeCelestial}
+                                            alt="cronos-nft"
+                                            className="pre-mint-logo"
+                                        />
+                                    ) : walletTier === 'Gold' ? (
+                                        <img
+                                            src={goldCelestial}
+                                            alt="cronos-nft"
+                                            className="pre-mint-logo"
+                                        />
+                                    ) : walletTier === 'Platinum' ? (
+                                        <img
+                                            src={platinumCelestial}
+                                            alt="cronos-nft"
+                                            className="pre-mint-logo"
+                                        />
+                                    )
+                                        : (
+                                            <img
+                                                src={Celestial6}
+                                                alt="cronos-nft"
+                                                className="pre-mint-logo"
+                                            />
+                                        )
+                                }
+
                             </ImageWrapper>
                         </Row>
                     </Container>
