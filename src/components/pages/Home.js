@@ -101,7 +101,7 @@ export default function Views() {
           <Row style={{ justifyContent: "center", paddingTop: "50px", paddingBottom: '50px' }}>
             <ImageWrapper className="wow fadeInLeft">
               <img
-                src={Celestial1}
+                src={Celestial6}
                 alt="cronos-nft"
                 style={{ borderRadius: "10px", width: "500px", height: "auto" }}
               />
