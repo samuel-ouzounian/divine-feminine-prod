@@ -82,7 +82,7 @@ export default function Views() {
           <Row style={{ justifyContent: "center", paddingTop: "50px" }}>
             <TextWrapper>
               <Heading1 className="wow fadeInUp">
-                {Uppercase("Community and Advocacy")}
+                {Uppercase("Community & Advocacy")}
               </Heading1>
               <BodyText className="wow fadeInUp">
                 Our Decentralized Autonomous Organization (DAO) drives decisions across the art they'd like to see, the location for our Celestial Gala events, the charities and causes they'll advocate, and decisions effecting their NFT investment.  We believe the collective strength of our DAO will drive better outcomes than a centralized project management alone.  Celestial Galas allows in person events to discuss and decide issues relevant to our community in a fun and casual environment.  Actionable financial trading education and analysis across both Cryptocurrency and Wall Street financial markets is available directly from our discord.  Trillions of dollars are flowing into the Web3 market, and our community will directly help in democratizing this opportunity.
