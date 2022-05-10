@@ -70,11 +70,11 @@ function Navbar() {
                                     Home
                                 </Link>
                                 <ul>
-                                    <li><a style={{ textDecoration: 'none', color: 'white', fontFamily: "Josefin Sans" }} href="#about">Intro</a></li>
-                                    <li><a style={{ textDecoration: 'none', color: 'white', fontFamily: "Josefin Sans" }} href="#roadmap">Roadmap</a></li>
-                                    <li><a style={{ textDecoration: 'none', color: 'white', fontFamily: "Josefin Sans" }} href="#tiers">Celestial Tiers</a></li>
-                                    <li><a style={{ textDecoration: 'none', color: 'white', fontFamily: "Josefin Sans" }} href="#utility">Utility</a></li>
-                                    <li><a style={{ textDecoration: 'none', color: 'white', fontFamily: "Josefin Sans" }} href="#teams">Team</a></li>
+                                    <li><a style={{ textDecoration: 'none', color: 'white', fontFamily: "Josefin Sans" }} href="/#about">Intro</a></li>
+                                    <li><a style={{ textDecoration: 'none', color: 'white', fontFamily: "Josefin Sans" }} href="/#roadmap">Roadmap</a></li>
+                                    <li><a style={{ textDecoration: 'none', color: 'white', fontFamily: "Josefin Sans" }} href="/#tiers">Celestial Tiers</a></li>
+                                    <li><a style={{ textDecoration: 'none', color: 'white', fontFamily: "Josefin Sans" }} href="/#utility">Utility</a></li>
+                                    <li><a style={{ textDecoration: 'none', color: 'white', fontFamily: "Josefin Sans" }} href="/#teams">Team</a></li>
                                 </ul>
                             </div>
                         </li>
