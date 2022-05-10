@@ -29,7 +29,6 @@ function DAO() {
             state.wallet.browserWeb3Provider
         );
         try {
-            console.log('test')
             const tx = await discordLinkInstance.linkDiscord(discordID);
             setIsTransacting(true);
             await tx.wait();

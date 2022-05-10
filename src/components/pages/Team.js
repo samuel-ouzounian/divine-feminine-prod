@@ -113,7 +113,10 @@ function Team() {
                 {Uppercase("Sam Ouzounian - Lead Blockchain Developer")}
               </Heading2>
               <BodyText className="wow fadeInUp" style={{ marginTop: "30px" }}>
-                test
+              Sam Ouzounian is an experienced Full-Stack Blockchain Developer and Sophomore at DePaul University living in Chicago, IL. Before Blockchain Development, Sam worked as an Ethical Hacker on the HackerOne platform. For a while, Sam was one of the top hackers in the nation. However, he changed career paths and got into Blockchain Development and the NFT space when he saw its potential to change the world. He couldn’t pass up the opportunity to be a part of something so groundbreaking and revolutionary. Sam has been coding since middle school and hacking since his Senior year of High School. Both give him an edge in the field, helping him produce quality, secure code. As lead developer, Sam spends his time developing smart contracts, discord bots, and our website. 
+              <br />
+              <br />
+              Outside of blockchain development, Sam spends his time outside rock climbing, surfing, or mountain biking. He believes in maintaining a healthy work-life balance, especially in Web3, where emotions are high and things move rapidly. 
               </BodyText>
             </TextWrapper>
             <Between />
