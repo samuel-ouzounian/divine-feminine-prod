@@ -7,7 +7,7 @@ declare global {
 export const configVars = {
   mode: "regular",
   rpcNetwork: {
-    rpcUrl: "https://rpc-mumbai.maticvigil.com/",
+    rpcUrl: "https://matic-mumbai.chainstacklabs.com/",
     chainId: 80001,
     chainIdHex: "0x13881",
     chainName: "Mumbai Testnet",
