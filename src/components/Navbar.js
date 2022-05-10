@@ -24,6 +24,11 @@ function Navbar() {
             setButton(true);
         }
     };
+    const [value, setValue] = React.useState('fruit');
+
+    const handleChange = (event) => {
+        setValue(event.target.value);
+    };
 
     useEffect(() => {
         showButton();
@@ -56,9 +61,22 @@ function Navbar() {
                     </div>
                     <div className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>
-                            <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                                Home
-                            </Link>
+                            <div className='nav-dropdown'>
+                                <Link
+                                    to='/'
+                                    className='nav-links'
+                                    onClick={closeMobileMenu}
+                                >
+                                    Home
+                                </Link>
+                                <ul>
+                                    <li><a style={{ textDecoration: 'none', color: 'white', fontFamily: "Josefin Sans" }} href="#about">Intro</a></li>
+                                    <li><a style={{ textDecoration: 'none', color: 'white', fontFamily: "Josefin Sans" }} href="#roadmap">Roadmap</a></li>
+                                    <li><a style={{ textDecoration: 'none', color: 'white', fontFamily: "Josefin Sans" }} href="#tiers">Celestial Tiers</a></li>
+                                    <li><a style={{ textDecoration: 'none', color: 'white', fontFamily: "Josefin Sans" }} href="#utility">Utility</a></li>
+                                    <li><a style={{ textDecoration: 'none', color: 'white', fontFamily: "Josefin Sans" }} href="#teams">Team</a></li>
+                                </ul>
+                            </div>
                         </li>
                         <li className='nav-item'>
                             <Link

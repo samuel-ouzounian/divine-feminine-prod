@@ -38,7 +38,7 @@ export default function Views() {
     <>
       <Content>
         <Hero />
-        <Container id="about-cronos">
+        <Container id="about">
           <Row style={{ justifyContent: "center" }}>
             <ImageWrapper className="wow fadeInLeft">
               <img
@@ -341,7 +341,7 @@ export default function Views() {
             </Slider>
           </CarouselWrapper>
         </Row>
-        <Container id="roadmap-cronos">
+        <Container id="roadmap">
           <Heading1 className="wow fadeInUp">{Uppercase("Roadmap")}</Heading1>
           <RoadmapTimeline>
             <RoadmapTimelineLeft className="wow bounceInLeft">
@@ -449,6 +449,7 @@ export default function Views() {
             borderRadius: "20px",
             margin: "20px",
           }}
+          id='tiers'
         >
           <Heading1 className="wow fadeInUp">
             {Uppercase("Celestial Tiers")}
@@ -634,7 +635,7 @@ export default function Views() {
           </BodyText>
         </Container>
         <Row
-          id="utility-cronos"
+          id="utility"
           style={{
             backgroundColor: "rgba(0,0,0,.15)",
             padding: "80px 20px",
@@ -785,7 +786,7 @@ export default function Views() {
           </UtilityCard>
         </Row>
         <Row
-          id="teams-cronos"
+          id="teams"
           style={{
             justifyContent: "center",
           }}
