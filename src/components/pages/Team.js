@@ -113,10 +113,14 @@ function Team() {
                 {Uppercase("Sam Ouzounian - Lead Blockchain Developer")}
               </Heading2>
               <BodyText className="wow fadeInUp" style={{ marginTop: "30px" }}>
-              Sam Ouzounian is an experienced Full-Stack Blockchain Developer and Sophomore at DePaul University living in Chicago, IL. Before Blockchain Development, Sam worked as an Ethical Hacker on the HackerOne platform. For a while, Sam was one of the top hackers in the nation. However, he changed career paths and got into Blockchain Development and the NFT space when he saw its potential to change the world. He couldn’t pass up the opportunity to be a part of something so groundbreaking and revolutionary. Sam has been coding since middle school and hacking since his Senior year of High School. Both give him an edge in the field, helping him produce quality, secure code. As lead developer, Sam spends his time developing smart contracts, discord bots, and our website. 
-              <br />
-              <br />
-              Outside of blockchain development, Sam spends his time outside rock climbing, surfing, or mountain biking. He believes in maintaining a healthy work-life balance, especially in Web3, where emotions are high and things move rapidly. 
+                Sam Ouzounian is an experienced Full-Stack Blockchain Developer. He’s the lead blockchain developer at The Divine Feminine NFT project’s Divine Labs. He is responsible for all the technical components on our roadmap, including smart contracts, discord bots, NFT and Merch marketplaces, NFT Staking Utility, Tokenomics, component integrations, etc. He’s also the lead blockchain developer at Cronos Fighters which successfully minted and sold out in 8 minutes. He’s leading the tokenomics analysis and development for the subsequent project phases.
+                <br />
+                <br />
+                Sam also works as an Ethical Hacker via the HackerOne platform. Before his emphasis on Blockchain and Web3 development, Sam was one of the top hackers in the nation. This experience gives him an edge in producing quality, secure code.
+                <br />
+                <br />
+                Sam lives in Chicago, IL, and works towards a degree from DePaul University in Computer Science. He’s currently on the Dean’s list with a cumulative 4.0 GPA. Sam is excited to be part of the groundbreaking and revolutionary crypto and NFT space, helping change the world for the better. Aside from professional and educational endeavors, Sam spends his time outside rock climbing, surfing, or mountain biking. He believes in maintaining a healthy work-life balance, especially in Web3, where emotions are high and things move rapidly.
+
               </BodyText>
             </TextWrapper>
             <Between />
