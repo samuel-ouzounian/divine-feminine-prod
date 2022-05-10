@@ -49,8 +49,7 @@ export default function Views() {
           >
             <Heading1 className="wow fadeInUp">{Uppercase("What is the divine feminine?")}</Heading1>
             <BodyText className="wow fadeInUp" style={{color:'white'}}>
-              We are an NFT project blending the benefits of (a) strong community and advocacy, (b) inspiration and expression, and (c) innovation and investment into a project beyond the ordinary.
-            </BodyText>
+            We are an NFT project blending the benefits of (a) inspiration and expression, (b) strong community and advocacy, and (c) innovation and investment into a project beyond the ordinary.             </BodyText>
           </Container>
           <Row style={{ justifyContent: "center", marginTop:'50px' }}>
             <ImageWrapper className="wow fadeInLeft">
@@ -63,7 +62,7 @@ export default function Views() {
             <Between />
             <TextWrapper>
               <Heading1 className="wow fadeInUp">
-                {Uppercase("Expression & Inspiration")}
+                {Uppercase("Inspiration & Expression")}
               </Heading1>
               <BodyText className="wow fadeInUp">
 
@@ -109,7 +108,7 @@ export default function Views() {
             <Between />
             <TextWrapper>
               <Heading1 className="wow fadeInUp">
-                {Uppercase("Project Innovation & Investment Utility")}
+                {Uppercase("Innovation & Investment")}
               </Heading1>
               <BodyText className="wow fadeInUp">
                 We're pretty excited about the future prospects of our project and our NFTs as an investment vehicle across the many dimensions that make NFTs attractive to buy.  We’re excited to make this journey with you, and we're always happy to receive feedback on how and what we could be doing better.
