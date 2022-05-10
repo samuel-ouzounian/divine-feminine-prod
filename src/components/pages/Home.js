@@ -53,24 +53,11 @@ export default function Views() {
                 {Uppercase("What Is The Divine Feminine?")}
               </Heading1>
               <BodyText className="wow fadeInUp">
-                The Divine Feminine is an NFT project devoted to bringing
-                beautiful art that brings light and hope into this world. The
-                Divine Feminine is the creative, life giving energy within us
-                that we bring into this world. We commit to developing a
-                community of Celestials whose ethos is to bring this positive
-                energy to each other. And we will create technical advancements
-                to contribute towards a better NFT and Metaverse experience for
-                all. We call this portion of our project Divine Labs. Given the
-                disproportionately low participation rate of women of all
-                nations in the Web3 experience, whether investors, artists, or
-                technicians, we will seek to prioritize education and
-                partnerships that build on this participation rate.
+                We are an NFT project blending the benefits of (a) strong community and advocacy, (b) inspiration and expression, and (c) innovation and investment into a project beyond the ordinary.
                 <br />
                 <br />
-                To begin, we are proud to introduce the Goddess of Light
-                collection comprising of 10,870 unique NFTs generated from over
-                NNN hand drawn and painted elements by celebrated artist and
-                Celestial,{" "}
+
+                Expression & Inspiration: The artistic expression of our NFTs is to bring beautiful art that brings light and hope into this world.   To begin, we present the Goddess of Light collection comprising of 10,870 unique NFTs generated from hand drawn and painted elements by celebrated artist,{" "}
                 <a
                   href="https://thaishelenastudio.com/about/"
                   target="_blank"
@@ -79,13 +66,7 @@ export default function Views() {
                 >
                   Thais Helena
                 </a>
-                . As each of us are created from the same base spark from The
-                Divine, so, too do our collections. And just like humanity, our
-                NFTs represent a vast diversity with each bringing light, hope,
-                faith and positive energy to share with the world. And when you
-                invest in an NFT from The Divine Feminine project across any
-                collection, you will own the art… unlike many other NFT projects
-                out there.[link to agreement]
+                , who has multiple galleries spread across 2 continents.  Each of us are created from the same base spark gifted by The Divine. And just like humanity, our collections are created from the same base. Each NFT in our collections represent a vast diversity with each bringing light, hope, faith and positive energy to share with the world.  And when you invest in an NFT from The Divine Feminine project, you will own the art-- unlike many other NFT projects out there.[link to agreement]
               </BodyText>
             </TextWrapper>
           </Row>
@@ -95,14 +76,7 @@ export default function Views() {
                 {Uppercase("Join The Divine Feminine and become a Celestial")}
               </Heading1>
               <BodyText className="wow fadeInUp">
-                Join us, and bring your positive energy into this world.
-                Acquiring a single NFT from any of our collections provides
-                membership into our community of Celestials. All Celestials
-                participating in the Goddess of Light collection will continue
-                to receive benefits as our collections grow. Our Celestials form
-                the backbone of our DAO to provide feedback and direction to the
-                project. And Celestials attaining multiple NFTs may earn the
-                right to rise. (See Celestial Tiers)
+                Community and Advocacy.  Our Decentralized Autonomous Organization (DAO) drives decisions across the art they'd like to see, the location for our Celestial Gala events, the charities and causes they'll advocate, and decisions effecting their NFT investment.  We believe the collective strength of our DAO will drive better outcomes than a centralized project management alone.  Celestial Galas allows in person events to discuss and decide issues relevant to our community in a fun and casual environment.  Actionable financial trading education and analysis across both Cryptocurrency and Wall Street financial markets is available directly from our discord.  Trillions of dollars are flowing into the Web3 market, and our community will directly help in democratizing this opportunity.
               </BodyText>
             </TextWrapper>
             <Between />
@@ -646,7 +620,7 @@ export default function Views() {
             className="wow fadeInUp"
             style={{ marginLeft: "auto", marginRight: "auto" }}
           >
-            {Uppercase("Project Utility")}
+            {Uppercase("Project Innovation & Investment Utility")}
           </Heading1>
 
           <Row>
@@ -769,7 +743,7 @@ export default function Views() {
           </Row>
           <UtilityCard
             className="wow bounceInLeft"
-            style={{ marginLeft: "auto", marginRight: "auto"}}
+            style={{ marginLeft: "auto", marginRight: "auto" }}
           >
             <Heading2 style={{ textAlign: "center" }}>
               {Uppercase("NFT Buyback")}
