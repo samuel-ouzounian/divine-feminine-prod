@@ -39,7 +39,20 @@ export default function Views() {
       <Content>
         <Hero />
         <Container id="about">
-          <Row style={{ justifyContent: "center" }}>
+          <Container
+            style={{
+              borderRadius: "20px",
+              margin: "20px",
+              backgroundColor: "rgba(0,0,0,.15)",
+              width: 'auto'
+            }}
+          >
+            <Heading1 className="wow fadeInUp">{Uppercase("What is the divine feminine?")}</Heading1>
+            <BodyText className="wow fadeInUp" style={{color:'white'}}>
+              We are an NFT project blending the benefits of (a) strong community and advocacy, (b) inspiration and expression, and (c) innovation and investment into a project beyond the ordinary.
+            </BodyText>
+          </Container>
+          <Row style={{ justifyContent: "center", marginTop:'50px' }}>
             <ImageWrapper className="wow fadeInLeft">
               <img
                 src={Celestial1}
@@ -50,14 +63,11 @@ export default function Views() {
             <Between />
             <TextWrapper>
               <Heading1 className="wow fadeInUp">
-                {Uppercase("What Is The Divine Feminine?")}
+                {Uppercase("Expression & Inspiration")}
               </Heading1>
               <BodyText className="wow fadeInUp">
-                We are an NFT project blending the benefits of (a) strong community and advocacy, (b) inspiration and expression, and (c) innovation and investment into a project beyond the ordinary.
-                <br />
-                <br />
 
-                Expression & Inspiration: The artistic expression of our NFTs is to bring beautiful art that brings light and hope into this world.   To begin, we present the Goddess of Light collection comprising of 10,870 unique NFTs generated from hand drawn and painted elements by celebrated artist,{" "}
+                The artistic expression of our NFTs is to bring beautiful art that brings light and hope into this world.   To begin, we present the Goddess of Light collection comprising of 10,870 unique NFTs generated from hand drawn and painted elements by celebrated artist,{" "}
                 <a
                   href="https://thaishelenastudio.com/about/"
                   target="_blank"
@@ -73,10 +83,10 @@ export default function Views() {
           <Row style={{ justifyContent: "center", paddingTop: "50px" }}>
             <TextWrapper>
               <Heading1 className="wow fadeInUp">
-                {Uppercase("Join The Divine Feminine and become a Celestial")}
+                {Uppercase("Community and Advocacy")}
               </Heading1>
               <BodyText className="wow fadeInUp">
-                Community and Advocacy.  Our Decentralized Autonomous Organization (DAO) drives decisions across the art they'd like to see, the location for our Celestial Gala events, the charities and causes they'll advocate, and decisions effecting their NFT investment.  We believe the collective strength of our DAO will drive better outcomes than a centralized project management alone.  Celestial Galas allows in person events to discuss and decide issues relevant to our community in a fun and casual environment.  Actionable financial trading education and analysis across both Cryptocurrency and Wall Street financial markets is available directly from our discord.  Trillions of dollars are flowing into the Web3 market, and our community will directly help in democratizing this opportunity.
+                Our Decentralized Autonomous Organization (DAO) drives decisions across the art they'd like to see, the location for our Celestial Gala events, the charities and causes they'll advocate, and decisions effecting their NFT investment.  We believe the collective strength of our DAO will drive better outcomes than a centralized project management alone.  Celestial Galas allows in person events to discuss and decide issues relevant to our community in a fun and casual environment.  Actionable financial trading education and analysis across both Cryptocurrency and Wall Street financial markets is available directly from our discord.  Trillions of dollars are flowing into the Web3 market, and our community will directly help in democratizing this opportunity.
               </BodyText>
             </TextWrapper>
             <Between />
@@ -87,6 +97,24 @@ export default function Views() {
                 style={{ borderRadius: "10px", width: "500px", height: "auto" }}
               />
             </ImageWrapper>
+          </Row>
+          <Row style={{ justifyContent: "center", paddingTop: "50px", paddingBottom: '50px' }}>
+            <ImageWrapper className="wow fadeInLeft">
+              <img
+                src={Celestial1}
+                alt="cronos-nft"
+                style={{ borderRadius: "10px", width: "500px", height: "auto" }}
+              />
+            </ImageWrapper>
+            <Between />
+            <TextWrapper>
+              <Heading1 className="wow fadeInUp">
+                {Uppercase("Project Innovation & Investment Utility")}
+              </Heading1>
+              <BodyText className="wow fadeInUp">
+                We're pretty excited about the future prospects of our project and our NFTs as an investment vehicle across the many dimensions that make NFTs attractive to buy.  We’re excited to make this journey with you, and we're always happy to receive feedback on how and what we could be doing better.
+              </BodyText>
+            </TextWrapper>
           </Row>
         </Container>
         <Row>
