@@ -6,6 +6,10 @@
     font-size: 35px;
 }
 
+.team-description {
+    text-align: center;
+}
+
 @media screen and (max-width: 1220px) {
     .learn-more-team-text {
         font-size:30px;
