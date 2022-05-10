@@ -375,8 +375,7 @@ export default function Views() {
                   <br />
                   NFT Marketplace Utility Launch
                   <br />
-                  Pre-Mint Reserve Utility Launch [link to Pre-Mint Reserve
-                  description]
+                  Pre-Mint Reserve Utility Launch
                   <br />
                   Goddess of Light Collection Mint
                   <br />
@@ -586,8 +585,7 @@ export default function Views() {
                 <li>20% off collection purchases</li>
                 <li>3% boost in NFT Staking</li>
                 <li>
-                  DAO Voting rights on art for future collections [is it in our
-                  best interest to limit this vote?]
+                  DAO Voting rights on art for future collections
                 </li>
                 <li>
                   Bronze tier benefits for each Celestial Gala including Guests,
@@ -692,10 +690,7 @@ export default function Views() {
                   <BodyText>
                     Our Marketplace will allow users to buy and sell NFTs from
                     our various collections. Eventually, NFT's will be able to
-                    be bought with our $FEMME token. [what about special display
-                    formats for tiered celestials and secondary sales of the
-                    nft/art/etc? Or permission to print the NFT that would give
-                    the owner a royalty? Maybe both the owner and the artist?]
+                    be bought with our $FEMME token.
                   </BodyText>
                 </UtilityCard>
               </li>
