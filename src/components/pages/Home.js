@@ -97,29 +97,10 @@ export default function Views() {
               />
             </ImageWrapper>
           </Row>
-          <Row style={{ justifyContent: "center", paddingTop: "50px", paddingBottom: '50px' }}>
-            <ImageWrapper className="wow fadeInLeft">
-              <img
-                src={Celestial6}
-                alt="cronos-nft"
-                style={{ borderRadius: "10px", width: "500px", height: "auto" }}
-              />
-            </ImageWrapper>
-            <Between />
-            <TextWrapper>
-              <Heading1 className="wow fadeInUp">
-                {Uppercase("Innovation & Investment")}
-              </Heading1>
-              <BodyText className="wow fadeInUp">
-                Here at The Divine Feminine we are committed to providing our community with real life utility and investment opportunities. We want to build a community that will leave a long lasting impact on the NFT and Crypto spaces. We're excited about the future prospects of our project and the various ways we'll bring lasting value to you and our community.  We look forward to making this journey with you, and we're always happy to receive feedback on how and what we could be doing better.
-              </BodyText>
-            </TextWrapper>
-          </Row>
         </Container>
         <Row
           id="utility"
           style={{
-            backgroundColor: "rgba(0,0,0,.15)",
             padding: "80px 20px",
             position: "relative",
             justifyContent: "center",
@@ -130,7 +111,12 @@ export default function Views() {
             className="wow fadeInUp"
             style={{ marginLeft: "auto", marginRight: "auto" }}
           >
-            {Uppercase("Project Innovation & Investment Utility")}
+            {Uppercase("Innovation & Investment")}
+            <TextWrapper style={{ maxWidth: '800px', marginLeft: 'auto', marginRight: 'auto' }}>
+              <BodyText>   
+                Here at The Divine Feminine we are committed to providing our community with real life utility and investment opportunities. We want to build a community that will leave a long lasting impact on the NFT and Crypto spaces. We're excited about the future prospects of our project and the various ways we'll bring lasting value to you and our community.  We look forward to making this journey with you, and we're always happy to receive feedback on how and what we could be doing better.
+              </BodyText>
+            </TextWrapper>
           </Heading1>
 
           <Row>
