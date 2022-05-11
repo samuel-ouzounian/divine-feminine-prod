@@ -75,7 +75,7 @@ export default function Views() {
                 >
                   Thais Helena
                 </a>
-                , who has multiple galleries spread across 2 continents.  Each of us are created from the same base spark gifted by The Divine. And just like humanity, our collections are created from the same base. Each NFT in our collections represent a vast diversity with each bringing light, hope, faith and positive energy to share with the world.  And when you invest in an NFT from The Divine Feminine project, you will own the art-- unlike many other NFT projects out there.[link to agreement]
+                , who has multiple galleries spread across 2 continents.  Each of us are created from the same base spark gifted by The Divine. And just like humanity, our collections are created from the same base. Each NFT in our collections represent a vast diversity with each bringing light, hope, faith and positive energy to share with the world.  And when you invest in an NFT from The Divine Feminine project, you will own the art-- unlike many other NFT projects out there.
               </BodyText>
             </TextWrapper>
           </Row>
