@@ -30,7 +30,7 @@ const HeroWrapper = styled.section`
     flex-direction:column;
     align-items:center;
     color:white;
-    height:910px;
+    height:100vH;
     background-image:url(./image/hero.jpg);
     background-size:cover;
     background-position:center;

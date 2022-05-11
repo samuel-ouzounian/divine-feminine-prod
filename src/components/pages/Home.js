@@ -111,7 +111,8 @@ export default function Views() {
                 {Uppercase("Innovation & Investment")}
               </Heading1>
               <BodyText className="wow fadeInUp">
-              We're excited about the future prospects of our project and the various ways we'll bring lasting value to you and our community.  We look forward to making this journey with you, and we're always happy to receive feedback on how and what we could be doing better.              </BodyText>
+              Here at The Divine Feminine we are committed to providing our community with real life utility and investment opportunities. We want to build a community that will leave a long lasting impact on the NFT and Crypto spaces. We're excited about the future prospects of our project and the various ways we'll bring lasting value to you and our community.  We look forward to making this journey with you, and we're always happy to receive feedback on how and what we could be doing better.
+              </BodyText>
             </TextWrapper>
           </Row>
         </Container>
