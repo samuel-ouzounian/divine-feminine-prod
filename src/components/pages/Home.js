@@ -179,7 +179,7 @@ export default function Views() {
               <li>
                 <UtilityCard className="wow bounceInLeft">
                   <Heading2 style={{ textAlign: "center" }}>
-                    {Uppercase("Token")}
+                    {Uppercase("$FEMME Token")}
                   </Heading2>
                   <BodyText>
                     After our Goddess of Light collection sells out, we plan to
@@ -705,7 +705,7 @@ export default function Views() {
                   <br />
                   Goddess of Light Collection Mint
                   <br />
-                  Investigate Crypto Investment Analysis and Education within
+                  Initiate Crypto Investment Analysis and Education within
                   the Discord
                   <br />
                 </BodyText>
