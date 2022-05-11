@@ -111,11 +111,159 @@ export default function Views() {
                 {Uppercase("Innovation & Investment")}
               </Heading1>
               <BodyText className="wow fadeInUp">
-                Here at The Divine Feminine we are committed to providing our community with real life utility and investment opportunities. We want to build a community that will leave a long lasting impact on the NFT and Crypto spaces. We're excited about the future prospects of our project and the various ways we'll bring lasting value to you and our community.  We look forward to making this journey with you, and we're always happy to receive feedback on how and what we could be doing better. <a style={{ color: 'white' }} href='/#utility'>Project Utility</a>
+                Here at The Divine Feminine we are committed to providing our community with real life utility and investment opportunities. We want to build a community that will leave a long lasting impact on the NFT and Crypto spaces. We're excited about the future prospects of our project and the various ways we'll bring lasting value to you and our community.  We look forward to making this journey with you, and we're always happy to receive feedback on how and what we could be doing better.
               </BodyText>
             </TextWrapper>
           </Row>
         </Container>
+        <Row
+          id="utility"
+          style={{
+            backgroundColor: "rgba(0,0,0,.15)",
+            padding: "80px 20px",
+            position: "relative",
+            justifyContent: "center",
+            flexDirection: "column",
+          }}
+        >
+          <Heading1
+            className="wow fadeInUp"
+            style={{ marginLeft: "auto", marginRight: "auto" }}
+          >
+            {Uppercase("Project Innovation & Investment Utility")}
+          </Heading1>
+
+          <Row>
+            <UtilityWrapper>
+              <li>
+                <UtilityCard className="wow bounceInLeft">
+                  <Heading2 style={{ textAlign: "center" }}>
+                    {Uppercase("Celestial Gala")}
+                  </Heading2>
+                  <BodyText>
+                    We envision conducting Celestial Galas in various locations
+                    determined by our DAO and beginning once the Goddess of
+                    Light collection sells out. We'd like to coincide these
+                    events with the introduction of a new collection. Celestials
+                    on our VIP lists (Bronze, Gold, and Platinum) will gain free
+                    access in addition to a stipend. (See tier benefit list)
+                  </BodyText>
+                </UtilityCard>
+              </li>
+              <li>
+                <UtilityCard className="wow bounceInLeft">
+                  <Heading2 style={{ textAlign: "center" }}>
+                    {Uppercase("The Divine Feminine DAO")}
+                  </Heading2>
+                  <BodyText>
+                    All our Celestials will participate in the direction and
+                    governance of our project via the DAO. These will primarily
+                    comprise of suggestions, feedback, directional votes, and
+                    binding votes. Eventually we'd like to see the DAO governed
+                    by Celestials voted into positions by the DAO to work
+                    alongside our project team for the betterment of the entire
+                    community.
+                  </BodyText>
+                </UtilityCard>
+              </li>
+              <li>
+                <UtilityCard className="wow bounceInLeft">
+                  <Heading2 style={{ textAlign: "center" }}>
+                    {Uppercase("NFT Marketplace")}
+                  </Heading2>
+                  <BodyText>
+                    Our Marketplace will allow users to buy and sell NFTs from
+                    our various collections. Eventually, NFT's will be able to
+                    be bought with our $FEMME token.
+                  </BodyText>
+                </UtilityCard>
+              </li>
+              <li>
+                <UtilityCard className="wow bounceInLeft">
+                  <Heading2 style={{ textAlign: "center" }}>
+                    {Uppercase("NFT Staking")}
+                  </Heading2>
+                  <BodyText>
+                    Celestial's who stake their NFTs will receive rewards in
+                    $FEMME. Celestial tiers boost the rewards received (See
+                    Celestial Tier Benefits).
+                  </BodyText>
+                </UtilityCard>
+              </li>
+              <li>
+                <UtilityCard className="wow bounceInLeft">
+                  <Heading2 style={{ textAlign: "center" }}>
+                    {Uppercase("Token")}
+                  </Heading2>
+                  <BodyText>
+                    After our Goddess of Light collection sells out, we plan to
+                    introduce our $FEMME token. $FEMME is a deflationary token
+                    with an initial supply of 100,000,000 and a total supply of
+                    300,624,135 released over 20 years. The $FEMME token may be
+                    used for Celestial benefits like airdrops, Galas,
+                    Merchandise, etc. Eventually we'd like to see our NFT
+                    marketplace use $FEMME for the purchase and sale of our NFT
+                    art to help spur the demand and use of the token to magnify
+                    the benefits for all our Celestials.
+                  </BodyText>
+                </UtilityCard>
+              </li>
+              <li>
+                <UtilityCard className="wow bounceInLeft">
+                  <Heading2 style={{ textAlign: "center" }}>
+                    {Uppercase("Merch Marketplace")}
+                  </Heading2>
+                  <BodyText>
+                    Our merchandise marketplace will allow users to buy Divine
+                    Feminine merchandise and print hard copies of NFTs with our
+                    $FEMME token. The goal of this marketplace is to enable our
+                    community to enjoy The Divine Feminine art in various media.
+                  </BodyText>
+                </UtilityCard>
+              </li>
+              <li>
+                <UtilityCard className="wow bounceInLeft">
+                  <Heading2 style={{ textAlign: "center" }}>
+                    {Uppercase("Pre-Mint Reserve")}
+                  </Heading2>
+                  <BodyText>
+                    Our Pre-Mint Reserve is an innovation within the NFT
+                    community. This utility allows our community to reserve a
+                    NFT prior to public mint via a pre-purchase. Once the mint
+                    has started, the NFT is picked up at your convenience rather
+                    than setting your alarm clock and hoping you don't
+                    experience any technical issues or internet outages at the
+                    time of Mint.
+                  </BodyText>
+                </UtilityCard>
+              </li>
+              <li>
+                <UtilityCard className="wow bounceInLeft">
+                  <Heading2 style={{ textAlign: "center" }}>
+                    {Uppercase("Crypto Analysis and Education")}
+                  </Heading2>
+                  <BodyText>
+                    An experienced crypto trader and analyst will provide
+                    investment/trading education and analysis to help those new
+                    to these concepts become proficient.
+                  </BodyText>
+                </UtilityCard>
+              </li>
+            </UtilityWrapper>
+          </Row>
+          <UtilityCard
+            className="wow bounceInLeft"
+            style={{ marginLeft: "auto", marginRight: "auto" }}
+          >
+            <Heading2 style={{ textAlign: "center" }}>
+              {Uppercase("NFT Buyback")}
+            </Heading2>
+            <BodyText>
+              Our NFT Buyback utility is focused on supporting the growth and
+              stability of overall collection value.
+            </BodyText>
+          </UtilityCard>
+        </Row>
         <Row>
           <CarouselWrapper>
             <Slider {...settings}>
@@ -342,160 +490,12 @@ export default function Views() {
             </Slider>
           </CarouselWrapper>
         </Row>
-        <Row
-          id="utility"
-          style={{
-            backgroundColor: "rgba(0,0,0,.15)",
-            padding: "80px 20px",
-            position: "relative",
-            justifyContent: "center",
-            flexDirection: "column",
-          }}
-        >
-          <Heading1
-            className="wow fadeInUp"
-            style={{ marginLeft: "auto", marginRight: "auto" }}
-          >
-            {Uppercase("Project Innovation & Investment Utility")}
-          </Heading1>
-
-          <Row>
-            <UtilityWrapper>
-              <li>
-                <UtilityCard className="wow bounceInLeft">
-                  <Heading2 style={{ textAlign: "center" }}>
-                    {Uppercase("Celestial Gala")}
-                  </Heading2>
-                  <BodyText>
-                    We envision conducting Celestial Galas in various locations
-                    determined by our DAO and beginning once the Goddess of
-                    Light collection sells out. We'd like to coincide these
-                    events with the introduction of a new collection. Celestials
-                    on our VIP lists (Bronze, Gold, and Platinum) will gain free
-                    access in addition to a stipend. (See tier benefit list)
-                  </BodyText>
-                </UtilityCard>
-              </li>
-              <li>
-                <UtilityCard className="wow bounceInLeft">
-                  <Heading2 style={{ textAlign: "center" }}>
-                    {Uppercase("The Divine Feminine DAO")}
-                  </Heading2>
-                  <BodyText>
-                    All our Celestials will participate in the direction and
-                    governance of our project via the DAO. These will primarily
-                    comprise of suggestions, feedback, directional votes, and
-                    binding votes. Eventually we'd like to see the DAO governed
-                    by Celestials voted into positions by the DAO to work
-                    alongside our project team for the betterment of the entire
-                    community.
-                  </BodyText>
-                </UtilityCard>
-              </li>
-              <li>
-                <UtilityCard className="wow bounceInLeft">
-                  <Heading2 style={{ textAlign: "center" }}>
-                    {Uppercase("NFT Marketplace")}
-                  </Heading2>
-                  <BodyText>
-                    Our Marketplace will allow users to buy and sell NFTs from
-                    our various collections. Eventually, NFT's will be able to
-                    be bought with our $FEMME token.
-                  </BodyText>
-                </UtilityCard>
-              </li>
-              <li>
-                <UtilityCard className="wow bounceInLeft">
-                  <Heading2 style={{ textAlign: "center" }}>
-                    {Uppercase("NFT Staking")}
-                  </Heading2>
-                  <BodyText>
-                    Celestial's who stake their NFTs will receive rewards in
-                    $FEMME. Celestial tiers boost the rewards received (See
-                    Celestial Tier Benefits).
-                  </BodyText>
-                </UtilityCard>
-              </li>
-              <li>
-                <UtilityCard className="wow bounceInLeft">
-                  <Heading2 style={{ textAlign: "center" }}>
-                    {Uppercase("Token")}
-                  </Heading2>
-                  <BodyText>
-                    After our Goddess of Light collection sells out, we plan to
-                    introduce our $FEMME token. $FEMME is a deflationary token
-                    with an initial supply of 100,000,000 and a total supply of
-                    300,624,135 released over 20 years. The $FEMME token may be
-                    used for Celestial benefits like airdrops, Galas,
-                    Merchandise, etc. Eventually we'd like to see our NFT
-                    marketplace use $FEMME for the purchase and sale of our NFT
-                    art to help spur the demand and use of the token to magnify
-                    the benefits for all our Celestials.
-                  </BodyText>
-                </UtilityCard>
-              </li>
-              <li>
-                <UtilityCard className="wow bounceInLeft">
-                  <Heading2 style={{ textAlign: "center" }}>
-                    {Uppercase("Merch Marketplace")}
-                  </Heading2>
-                  <BodyText>
-                    Our merchandise marketplace will allow users to buy Divine
-                    Feminine merchandise and print hard copies of NFTs with our
-                    $FEMME token. The goal of this marketplace is to enable our
-                    community to enjoy The Divine Feminine art in various media.
-                  </BodyText>
-                </UtilityCard>
-              </li>
-              <li>
-                <UtilityCard className="wow bounceInLeft">
-                  <Heading2 style={{ textAlign: "center" }}>
-                    {Uppercase("Pre-Mint Reserve")}
-                  </Heading2>
-                  <BodyText>
-                    Our Pre-Mint Reserve is an innovation within the NFT
-                    community. This utility allows our community to reserve a
-                    NFT prior to public mint via a pre-purchase. Once the mint
-                    has started, the NFT is picked up at your convenience rather
-                    than setting your alarm clock and hoping you don't
-                    experience any technical issues or internet outages at the
-                    time of Mint.
-                  </BodyText>
-                </UtilityCard>
-              </li>
-              <li>
-                <UtilityCard className="wow bounceInLeft">
-                  <Heading2 style={{ textAlign: "center" }}>
-                    {Uppercase("Crypto Analysis and Education")}
-                  </Heading2>
-                  <BodyText>
-                    An experienced crypto trader and analyst will provide
-                    investment/trading education and analysis to help those new
-                    to these concepts become proficient.
-                  </BodyText>
-                </UtilityCard>
-              </li>
-            </UtilityWrapper>
-          </Row>
-          <UtilityCard
-            className="wow bounceInLeft"
-            style={{ marginLeft: "auto", marginRight: "auto" }}
-          >
-            <Heading2 style={{ textAlign: "center" }}>
-              {Uppercase("NFT Buyback")}
-            </Heading2>
-            <BodyText>
-              Our NFT Buyback utility is focused on supporting the growth and
-              stability of overall collection value.
-            </BodyText>
-          </UtilityCard>
-        </Row>
         <Container
           style={{
             backgroundColor: "rgba(0,0,0,.15)",
             borderRadius: "20px",
             margin: "20px",
-            marginTop:'80px'
+            marginTop: '80px'
           }}
           id='tiers'
         >
@@ -786,7 +786,7 @@ export default function Views() {
           id="teams"
           style={{
             justifyContent: "center",
-            marginTop:'80px'
+            marginTop: '80px'
           }}
         >
           <Row
