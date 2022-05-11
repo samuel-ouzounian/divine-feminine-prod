@@ -111,8 +111,7 @@ export default function Views() {
                 {Uppercase("Innovation & Investment")}
               </Heading1>
               <BodyText className="wow fadeInUp">
-                We're pretty excited about the future prospects of our project and our NFTs as an investment vehicle across the many dimensions that make NFTs attractive to buy.  We’re excited to make this journey with you, and we're always happy to receive feedback on how and what we could be doing better.
-              </BodyText>
+              We're excited about the future prospects of our project and the various ways we'll bring lasting value to you and our community.  We look forward to making this journey with you, and we're always happy to receive feedback on how and what we could be doing better.              </BodyText>
             </TextWrapper>
           </Row>
         </Container>
