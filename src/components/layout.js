@@ -19,26 +19,9 @@ export const Between = styled.div`
 
 export const HeadingSupper = styled.h1`
   font-family: "Cinzel", serif;
-  font-size: 8rem;
-  line-height: 10rem;
+  font-size: 10vh;
   color: #ffffff;
   text-align: center;
-  @media screen and (max-width: 1024px) {
-    font-size: 5.5rem;
-    line-height: 8rem;
-  }
-  @media screen and (max-width: 600px) {
-    font-size: 6rem;
-    line-height: 6rem;
-  }
-  @media screen and (max-width: 480px) {
-    font-size: 4rem;
-    line-height: 5rem;
-  }
-  @media screen and (max-width: 380px) {
-    font-size: 3rem;
-    line-height: 5rem;
-  }
 `;
 
 export const Heading1 = styled.h1`
