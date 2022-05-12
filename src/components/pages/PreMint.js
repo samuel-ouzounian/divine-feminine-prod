@@ -250,26 +250,26 @@ function PreMint() {
                                     walletTier === 'Bronze' ? (
                                         <img
                                             src={bronzeCelestial2}
-                                            alt="cronos-nft"
+                                            alt=""
                                             className="pre-mint-logo"
                                         />
                                     ) : walletTier === 'Gold' ? (
                                         <img
                                             src={goldCelestial2}
-                                            alt="cronos-nft"
+                                            alt=""
                                             className="pre-mint-logo"
                                         />
                                     ) : walletTier === 'Platinum' ? (
                                         <img
                                             src={platinumCelestial2}
-                                            alt="cronos-nft"
+                                            alt=""
                                             className="pre-mint-logo"
                                         />
                                     )
                                         : (
                                             <img
                                                 src={Celestial6}
-                                                alt="cronos-nft"
+                                                alt=""
                                                 className="pre-mint-logo"
                                             />
                                         )
@@ -290,7 +290,7 @@ function PreMint() {
                 <h1 style={{ fontSize: '50px', color: 'white', fontFamily: 'Cinzel', textAlign: 'center' }}>Connect Wallet To Access Pre-Mint Reserve</h1>
                 <img
                     src={Celestial6}
-                    alt="cronos-nft"
+                    alt=""
                     style={{ borderRadius: "15px", width: "350px", height: "auto", marginBottom: '50px' }}
                 />
             </Content>
@@ -319,20 +319,20 @@ const Content = styled.section`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  #about-cronos {
+  #about- {
     padding-top: 180px;
     padding-bottom: 180px;
   }
-  #roadmap-cronos {
+  #roadmap- {
     padding-top: 180px;
     padding-bottom: 180px;
   }
 
-  #utility-cronos {
+  #utility- {
     margin-top: 180px;
   }
 
-  #teams-cronos {
+  #teams- {
     padding-bottom: 60px;
     padding-top: 50px;
     z-index: 10;

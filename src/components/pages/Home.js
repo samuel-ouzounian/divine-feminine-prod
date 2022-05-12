@@ -55,7 +55,7 @@ export default function Views() {
             <ImageWrapper className="wow fadeInLeft">
               <img
                 src={Celestial1}
-                alt="cronos-nft"
+                alt=""
                 style={{ borderRadius: "10px", width: "500px", height: "auto" }}
               />
             </ImageWrapper>
@@ -92,7 +92,7 @@ export default function Views() {
             <ImageWrapper className="wow fadeInRight">
               <img
                 src={Celestial2}
-                alt="cronos-nft"
+                alt=""
                 style={{ borderRadius: "10px", width: "500px", height: "auto" }}
               />
             </ImageWrapper>
@@ -168,7 +168,7 @@ export default function Views() {
                     {Uppercase("NFT Staking")}
                   </Heading2>
                   <BodyText>
-                    Celestials who stake their NFTs will receive rewards in $FEMME tokens.  Early staking will get the highest $FEMME reward rate.  Celestial tiers boost the rewards received. {" "} 
+                    Celestials who stake their NFTs will receive rewards in $FEMME tokens.  Early staking will get the highest $FEMME reward rate.  Celestial tiers boost the rewards received. {" "}
                     <a target="_blank"
                       rel="noreferrer"
                       style={{ color: "white" }} href='/#tiers'>See Celestial Tier Benefits.</a>
@@ -255,7 +255,7 @@ export default function Views() {
               <div>
                 <img
                   src={Celestial3}
-                  alt="cronos-fighter"
+                  alt=""
                   style={{
                     borderRadius: "15px",
                     width: "315px",
@@ -267,7 +267,7 @@ export default function Views() {
               <div>
                 <img
                   src={Celestial4}
-                  alt="cronos-fighter"
+                  alt=""
                   style={{
                     borderRadius: "15px",
                     width: "315px",
@@ -279,7 +279,7 @@ export default function Views() {
               <div>
                 <img
                   src={Celestial5}
-                  alt="cronos-fighter"
+                  alt=""
                   style={{
                     borderRadius: "15px",
                     width: "315px",
@@ -291,7 +291,7 @@ export default function Views() {
               <div>
                 <img
                   src={Celestial3}
-                  alt="cronos-fighter"
+                  alt=""
                   style={{
                     borderRadius: "15px",
                     width: "315px",
@@ -303,7 +303,7 @@ export default function Views() {
               <div>
                 <img
                   src={Celestial4}
-                  alt="cronos-fighter"
+                  alt=""
                   style={{
                     borderRadius: "15px",
                     width: "315px",
@@ -315,7 +315,7 @@ export default function Views() {
               <div>
                 <img
                   src={Celestial5}
-                  alt="cronos-fighter"
+                  alt=""
                   style={{
                     borderRadius: "15px",
                     width: "315px",
@@ -327,7 +327,7 @@ export default function Views() {
               <div>
                 <img
                   src={Celestial3}
-                  alt="cronos-fighter"
+                  alt=""
                   style={{
                     borderRadius: "15px",
                     width: "315px",
@@ -339,7 +339,7 @@ export default function Views() {
               <div>
                 <img
                   src={Celestial4}
-                  alt="cronos-fighter"
+                  alt=""
                   style={{
                     borderRadius: "15px",
                     width: "315px",
@@ -351,7 +351,7 @@ export default function Views() {
               <div>
                 <img
                   src={Celestial5}
-                  alt="cronos-fighter"
+                  alt=""
                   style={{
                     borderRadius: "15px",
                     width: "315px",
@@ -367,7 +367,7 @@ export default function Views() {
               <div>
                 <img
                   src={Celestial3}
-                  alt="cronos-fighter"
+                  alt=""
                   style={{
                     borderRadius: "15px",
                     width: "315px",
@@ -379,7 +379,7 @@ export default function Views() {
               <div>
                 <img
                   src={Celestial4}
-                  alt="cronos-fighter"
+                  alt=""
                   style={{
                     borderRadius: "15px",
                     width: "315px",
@@ -391,7 +391,7 @@ export default function Views() {
               <div>
                 <img
                   src={Celestial5}
-                  alt="cronos-fighter"
+                  alt=""
                   style={{
                     borderRadius: "15px",
                     width: "315px",
@@ -403,7 +403,7 @@ export default function Views() {
               <div>
                 <img
                   src={Celestial3}
-                  alt="cronos-fighter"
+                  alt=""
                   style={{
                     borderRadius: "15px",
                     width: "315px",
@@ -415,7 +415,7 @@ export default function Views() {
               <div>
                 <img
                   src={Celestial4}
-                  alt="cronos-fighter"
+                  alt=""
                   style={{
                     borderRadius: "15px",
                     width: "315px",
@@ -427,7 +427,7 @@ export default function Views() {
               <div>
                 <img
                   src={Celestial5}
-                  alt="cronos-fighter"
+                  alt=""
                   style={{
                     borderRadius: "15px",
                     width: "315px",
@@ -439,7 +439,7 @@ export default function Views() {
               <div>
                 <img
                   src={Celestial3}
-                  alt="cronos-fighter"
+                  alt=""
                   style={{
                     borderRadius: "15px",
                     width: "315px",
@@ -451,7 +451,7 @@ export default function Views() {
               <div>
                 <img
                   src={Celestial4}
-                  alt="cronos-fighter"
+                  alt=""
                   style={{
                     borderRadius: "15px",
                     width: "315px",
@@ -463,7 +463,7 @@ export default function Views() {
               <div>
                 <img
                   src={Celestial5}
-                  alt="cronos-fighter"
+                  alt=""
                   style={{
                     borderRadius: "15px",
                     width: "315px",
@@ -502,7 +502,7 @@ export default function Views() {
               </Heading2>
               <BodyText className="wow fadeInUp" style={{ marginTop: "30px" }}>
                 <h3>
-                The Top 40 Celestials Obtaining More than 26 NFT's Will Rise to Platinum*
+                  The Top 40 Celestials Obtaining More than 26 NFT's Will Rise to Platinum*
                   <br />
                 </h3>
                 <ul>
@@ -539,7 +539,7 @@ export default function Views() {
             >
               <img
                 src={platinumCelestial}
-                alt="cronos-nft"
+                alt=""
                 style={{ borderRadius: "15px", width: "400px", height: "auto" }}
               />
             </ImageWrapper>
@@ -558,7 +558,7 @@ export default function Views() {
               <Heading2 className="wow fadeInUp">{Uppercase("Gold")}</Heading2>
               <BodyText className="wow fadeInUp" style={{ marginTop: "30px" }}>
                 <h3>
-                The 80 Celestials below Platinum Obtaining a Minimum of 11 NFT's Rise to Gold*
+                  The 80 Celestials below Platinum Obtaining a Minimum of 11 NFT's Rise to Gold*
                   <br />
                 </h3>
                 <li>30% off collection purchases</li>
@@ -589,7 +589,7 @@ export default function Views() {
             >
               <img
                 src={goldCelestial}
-                alt="cronos-nft"
+                alt=""
                 style={{ borderRadius: "15px", width: "400px", height: "auto" }}
               />
             </ImageWrapper>
@@ -610,7 +610,7 @@ export default function Views() {
               </Heading2>
               <BodyText className="wow fadeInUp" style={{ marginTop: "30px" }}>
                 <h3>
-                The 240 Celestials below Gold Obtaining a Minimum of 5 NFT's Rise to Bronze*
+                  The 240 Celestials below Gold Obtaining a Minimum of 5 NFT's Rise to Bronze*
                   <br />
                 </h3>
                 <li>20% off collection purchases</li>
@@ -643,7 +643,7 @@ export default function Views() {
             >
               <img
                 src={bronzeCelestial}
-                alt="cronos-nft"
+                alt=""
                 style={{ borderRadius: "15px", width: "400px", height: "auto" }}
               />
             </ImageWrapper>
@@ -791,7 +791,7 @@ export default function Views() {
               <img
                 src={Thais}
                 className="wow bounceInUp"
-                alt="cronos-fighter"
+                alt=""
               />
               <Heading2
                 style={{ textAlign: "center" }}
@@ -807,7 +807,7 @@ export default function Views() {
               <img
                 src={Colleen}
                 className="wow bounceInUp"
-                alt="cronos-fighter"
+                alt=""
               />
               <Heading2
                 style={{ textAlign: "center" }}
@@ -830,7 +830,7 @@ export default function Views() {
               </MenuWrapper>
             </Card>
             <Card>
-              <img src={Sam} className="wow bounceInUp" alt="cronos-fighter" />
+              <img src={Sam} className="wow bounceInUp" alt="" />
               <Heading2
                 style={{ textAlign: "center" }}
                 className="wow fadeInUp"
@@ -870,7 +870,7 @@ export default function Views() {
               <img
                 src={Steve}
                 className="wow bounceInUp"
-                alt="cronos-fighter"
+                alt=""
               />
               <Heading2
                 style={{ textAlign: "center" }}
@@ -923,25 +923,6 @@ const Content = styled.section`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  #about-cronos {
-    padding-top: 180px;
-    padding-bottom: 180px;
-  }
-  #roadmap-cronos {
-    padding-top: 180px;
-    padding-bottom: 180px;
-  }
-
-  #utility-cronos {
-    margin-top: 180px;
-  }
-
-  #teams-cronos {
-    padding-bottom: 60px;
-    padding-top: 50px;
-    z-index: 10;
-    background-color: #131313;
-  }
   #teams-wrapper {
     margin-top: 50px;
     gap: 30px;

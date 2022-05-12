@@ -109,7 +109,7 @@ function DAO() {
                     <Heading1 className="wow fadeInUp">{Uppercase("Connect Wallet to Access The Divine DAO")}</Heading1>
                     <img
                     src={Celestial5}
-                    alt="cronos-nft"
+                    alt=""
                     style={{ borderRadius: "15px", width: "350px", height: "auto", marginTop: '50px' }}
                 />
                 </Container>

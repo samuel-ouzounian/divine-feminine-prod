@@ -17,7 +17,7 @@ function Team() {
             backgroundColor: "rgba(0,0,0,.15)",
             borderRadius: "20px",
             margin: "20px",
-            width: '800px'
+            width: "800px",
           }}
         >
           <Heading1 className="wow fadeInUp">{Uppercase("The Team")}</Heading1>
@@ -35,13 +35,20 @@ function Team() {
                 {Uppercase("Thais Helena - Artist and Visionary")}
               </Heading2>
               <BodyText className="wow fadeInUp" style={{ marginTop: "30px" }}>
-                Thais Helena Guidolin Oz is a Brazilian mixed media artist, married and mother of two boys who has lived in the San Francisco Bay Area for the last 20 years. Exhibiting her art in several galleries in the Bay Area and owning two charming ones in the South of Brazil she has touched people with the vibrance of her art and message.
-
-                A former lawyer by degree and self-taught artist by passion Thais loves to portray the feminine universe and all the exuberance and strengh that inhabit the spirit of each person.
-
-                A firm belevier in love, passion for life, compassion and service Thais’ wishes that through her art she can bring out these values that reflect the power and dignity of thoughtful living.
-
-                Her biggest honor would be to bring you joy and to remind you of your unique and beautiful light.
+                Thais Helena Guidolin Oz is a Brazilian mixed media artist,
+                married and mother of two boys who has lived in the San
+                Francisco Bay Area for the last 20 years. Exhibiting her art in
+                several galleries in the Bay Area and owning two charming ones
+                in the South of Brazil she has touched people with the vibrance
+                of her art and message. A former lawyer by degree and
+                self-taught artist by passion Thais loves to portray the
+                feminine universe and all the exuberance and strengh that
+                inhabit the spirit of each person. A firm belevier in love,
+                passion for life, compassion and service Thais’ wishes that
+                through her art she can bring out these values that reflect the
+                power and dignity of thoughtful living. Her biggest honor would
+                be to bring you joy and to remind you of your unique and
+                beautiful light.
                 <br />
                 <br />
                 Namaste
@@ -113,14 +120,32 @@ function Team() {
                 {Uppercase("Sam Ouzounian - Lead Blockchain Developer")}
               </Heading2>
               <BodyText className="wow fadeInUp" style={{ marginTop: "30px" }}>
-                Sam Ouzounian is an experienced Full-Stack Blockchain Developer. He’s the lead blockchain developer at The Divine Feminine NFT project’s Divine Labs. He is responsible for all the technical components on our roadmap, including smart contracts, discord bots, NFT and Merch marketplaces, NFT Staking Utility, Tokenomics, component integrations, etc. He’s also the lead blockchain developer at Cronos Fighters which successfully minted and sold out in 8 minutes. He’s leading the tokenomics analysis and development for the subsequent project phases.
+                Sam Ouzounian is an experienced Full-Stack Blockchain Developer.
+                He’s the lead blockchain developer at The Divine Feminine NFT
+                project’s Divine Labs. He is responsible for all the technical
+                components on our roadmap, including smart contracts, discord
+                bots, NFT and Merch marketplaces, NFT Staking Utility,
+                Tokenomics, component integrations, etc. He’s also the lead
+                blockchain developer at Cronos Fighters which successfully
+                minted and sold out in 8 minutes. He’s leading the tokenomics
+                analysis and development for the subsequent project phases.
                 <br />
                 <br />
-                Sam also works as an Ethical Hacker via the HackerOne platform. Before his emphasis on Blockchain and Web3 development, Sam was one of the top hackers in the nation. This experience gives him an edge in producing quality, secure code.
+                Sam also works as an Ethical Hacker via the HackerOne platform.
+                Before his emphasis on Blockchain and Web3 development, Sam was
+                one of the top hackers in the nation. This experience gives him
+                an edge in producing quality, secure code.
                 <br />
                 <br />
-                Sam lives in Chicago, IL, and works towards a degree from DePaul University in Computer Science. He’s currently on the Dean’s list with a cumulative 4.0 GPA. Sam is excited to be part of the groundbreaking and revolutionary crypto and NFT space, helping change the world for the better. Aside from professional and educational endeavors, Sam spends his time outside rock climbing, surfing, or mountain biking. He believes in maintaining a healthy work-life balance, especially in Web3, where emotions are high and things move rapidly.
-
+                Sam lives in Chicago, IL, and works towards a degree from DePaul
+                University in Computer Science. He’s currently on the Dean’s
+                list with a cumulative 4.0 GPA. Sam is excited to be part of the
+                groundbreaking and revolutionary crypto and NFT space, helping
+                change the world for the better. Aside from professional and
+                educational endeavors, Sam spends his time outside rock
+                climbing, surfing, or mountain biking. He believes in
+                maintaining a healthy work-life balance, especially in Web3,
+                where emotions are high and things move rapidly.
               </BodyText>
             </TextWrapper>
             <Between />
@@ -147,9 +172,7 @@ function Team() {
           <Row>
             <TextWrapper style={{ maxWidth: "900px" }}>
               <Heading2 className="wow fadeInUp">
-                {Uppercase(
-                  "Steve Oz - Co-Founder and Executive Director"
-                )}
+                {Uppercase("Steve Oz - Co-Founder and Executive Director")}
               </Heading2>
               <BodyText className="wow fadeInUp" style={{ marginTop: "30px" }}>
                 Steve has been at the intersection of technology, business, and
@@ -170,7 +193,8 @@ function Team() {
                 youth clubs. He enthusiastically looks forward to applying his
                 professional and personal experience into The Divine Feminine –
                 a blend of advocacy, community, inspiration, expression and
-                investment. Steve will also provide crypto analysis and education for those interested in learning to invest.
+                investment. Steve will also provide crypto analysis and
+                education for those interested in learning to invest.
               </BodyText>
             </TextWrapper>
             <Between />

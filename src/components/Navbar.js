@@ -45,14 +45,14 @@ function Navbar() {
                     </Link>
                     <HeaderMenuWrapper id="social-menu">
                         <a href='https://discord.gg/QY9k3mEt' target='_blank' rel="noreferrer">
-                            <img src={DiscordIco} alt="cronos-social" />
+                            <img src={DiscordIco} alt="celestial-social" />
                         </a>
                         <a href='https://twitter.com/NFT_DivineFemme' target='_blank' rel="noreferrer">
-                            <img src={TwitterIco} alt="cronos-social" />
+                            <img src={TwitterIco} alt="celestial-social" />
 
                         </a>
                         <a href='' target='_blank' rel="noreferrer">
-                            <img src={InstagramIco} alt="cronos-social" />
+                            <img src={InstagramIco} alt="celestial-social" />
 
                         </a>
                     </HeaderMenuWrapper>
