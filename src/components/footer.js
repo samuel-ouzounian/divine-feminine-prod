@@ -14,7 +14,7 @@ export default function Footer() {
                 <Row style={{ alignItems: "center" }}>
                     <LogoWrapper src={Logo} alt="" />
                     <Between />
-                    <MenuWrapper id="social-menu">
+                    <MenuWrapper id="social-menu" style={{marginTop:'20px'}}>
                         <a href='https://discord.gg/QY9k3mEt' target='_blank' rel="noreferrer">
                             <img src={DiscordIco} alt="celestial-social" />
                         </a>
@@ -25,6 +25,12 @@ export default function Footer() {
                         <a href='' target='_blank' rel="noreferrer">
                             <img src={InstagramIco} alt="celestial-social" />
 
+                        </a>
+                    </MenuWrapper>
+                    <Between />
+                    <MenuWrapper id="social-menu">
+                        <a href='/agreement' target='_blank' rel="noreferrer" style={{color:'white'}}>
+                            Digital Ownership Agreement
                         </a>
                     </MenuWrapper>
                 </Row>
