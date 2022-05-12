@@ -29,12 +29,16 @@
 
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:720px){
     .pre-mint-button {
         padding-top: 5px;
         padding-bottom: 5px;
         padding-left: 40px;
         padding-right: 40px;
+        font-size: 5vw;
+    }
+    .header {
+        font-size: 15vw;
     }
 }
 
@@ -45,4 +49,15 @@
         padding-left: 30px;
         padding-right: 30px;
     }
+
+    
+}
+@media screen and (max-width:420px){
+    .pre-mint-button {
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
 }
