@@ -3,7 +3,7 @@ import React from "react";
 import Footer from "../footer";
 import { NftImage } from "../../constants/image-constant";
 import { Container } from "../container";
-import { Heading1, Row } from "../layout";
+import { Heading1, Row, BodyText } from "../layout";
 import { Uppercase } from "../../utillities/uppercase";
 import "./Home.css";
 import { useState, useEffect } from 'react'
@@ -286,117 +286,139 @@ function PreMint() {
     }
     return (
         <>
-            <Content style={{ display: 'flex', flexDirection: 'column' }}>
-                <h1 style={{ fontSize: '50px', color: 'white', fontFamily: 'Cinzel', textAlign: 'center' }}>Connect Wallet To Access Pre-Mint Reserve</h1>
-                <img
-                    src={Celestial6}
-                    alt=""
-                    style={{ borderRadius: "15px", width: "350px", height: "auto", marginBottom: '50px' }}
-                />
+        <div style={{ minHeight: '87vH' }}>
+            <Content>
+                <Container
+                    style={{
+                        borderRadius: "20px",
+                        marginTop: "50px",
+                        width: 'auto',
+                        display:'flex',
+                        flexDirection:'column',
+                        justifyContent:'center',
+                        alignItems:'center'
+                    }}
+                >
+                    <Heading1 className="wow fadeInUp">{Uppercase("Connect Wallet to Access The Pre-Mint Reserve")}</Heading1>
+                    <Container style={{backgroundColor:'rgba(0,0,0,.15)', textAlign:'center', width:'auto', marginTop:'50px'}}>
+                    <TextWrapper>
+                        <BodyText>
+                            <h3 style={{color:'white'}}>How to Install Metamask:</h3>
+                            Download Metamask Wallet: <a href="https://metamask.io/download/" target='_blank' rel="noreferrer" style={{color:'white'}} >https://metamask.io/download/</a> <br />
+                            Video for installing Metamask on Chrome: <a href="https://www.youtube.com/watch?v=OJqaZRpRqXM" target='_blank' rel="noreferrer" style={{color:'white'}} >https://www.youtube.com/watch?v=OJqaZRpRqXM </a><br />
+                            Using Metamask to pay with Polygon/Matic: <a href="https://gravityfinance.medium.com/using-metamask-with-polygon-923f061054db" target='_blank' rel="noreferrer" style={{color:'white'}} >https://gravityfinance.medium.com/using-metamask-with-polygon-923f061054db</a> 
+
+                        </BodyText>
+                    </TextWrapper>
+                    </Container>
+                </Container>
+                
             </Content>
-            <Footer />
-        </>
-    );
+        </div>
+        <Footer />
+    </>
+            );
 
 }
-export default PreMint;
+            export default PreMint;
 
-const Between = styled.div`
-  flex: 0;
-  margin-left:200px;
-  @media screen and (max-width: 1320px) {
-    margin-left:100px;
+            const Between = styled.div`
+            flex: 0;
+            margin-left:200px;
+            @media screen and (max-width: 1320px) {
+                margin - left:100px;
   }
-  @media screen and (max-width: 1220px) {
-    order: 1;
-  }
-
-`;
-
-const Content = styled.section`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  #about- {
-    padding-top: 180px;
-    padding-bottom: 180px;
-  }
-  #roadmap- {
-    padding-top: 180px;
-    padding-bottom: 180px;
+            @media screen and (max-width: 1220px) {
+                order: 1;
   }
 
-  #utility- {
-    margin-top: 180px;
+            `;
+
+            const Content = styled.section`
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            #about- {
+                padding - top: 180px;
+            padding-bottom: 180px;
+  }
+            #roadmap- {
+                padding - top: 180px;
+            padding-bottom: 180px;
   }
 
-  #teams- {
-    padding-bottom: 60px;
-    padding-top: 50px;
-    z-index: 10;
-    background-color: #131313;
-  }
-  #teams-wrapper {
-    margin-top: 50px;
-    gap: 30px;
-  }
-`;
-
-const ImageWrapper = styled.div`
-  max-width: 100%;
-  height: auto;
-  text-align: center;
-  @media screen and (max-width: 1220px) {
-    order: 1;
-  }
-`;
-
-const TextWrapper = styled.div`
-border-radius:10px;
-  width: 620px;
-  @media screen and (max-width: 1220px) {
-    margin-top:20px;
-    height:auto;
-    order: 2;
-  }
-  @media screen and (max-width: 850px) {
-    width: calc(100% - 10px);
-    order: 2;
-  }
-`;
-
-const PreMintHeader = styled.div`
-  display:flex;
-  flex-direction:row;
-  justify-content:space-evenly;
-  flex-wrap:wrap;
-  line-height:5px;
-  @media screen and (max-width: 500px) {
-    flex-direction:column;
-    flex-wrap:wrap;
-    justify-content:center;
-    align-items:center;
+            #utility- {
+                margin - top: 180px;
   }
 
-`;
-
-const PreMintHeader2 = styled.div`
-  display:flex;
-  flex-direction:row;
-  justify-content:space-evenly;
-  flex-wrap:wrap;
-  line-height:5px;
-  @media screen and (max-width: 850px) {
-    height:400px;
-    flex-direction:column;
-    flex-wrap:wrap;
-    justify-content:center;
-    align-items:center;
+            #teams- {
+                padding - bottom: 60px;
+            padding-top: 50px;
+            z-index: 10;
+            background-color: #131313;
   }
-  @media screen and (max-width: 500px) {
-    height:800px;
+            #teams-wrapper {
+                margin - top: 50px;
+            gap: 30px;
+  }
+            `;
+
+            const ImageWrapper = styled.div`
+            max-width: 100%;
+            height: auto;
+            text-align: center;
+            @media screen and (max-width: 1220px) {
+                order: 1;
+  }
+            `;
+
+            const TextWrapper = styled.div`
+            border-radius:10px;
+            width: auto;
+            @media screen and (max-width: 1220px) {
+                margin - top:20px;
+            height:auto;
+            order: 2;
+  }
+            @media screen and (max-width: 850px) {
+                width: calc(100% - 10px);
+            order: 2;
+  }
+            `;
+
+            const PreMintHeader = styled.div`
+            display:flex;
+            flex-direction:row;
+            justify-content:space-evenly;
+            flex-wrap:wrap;
+            line-height:5px;
+            @media screen and (max-width: 500px) {
+                flex - direction:column;
+            flex-wrap:wrap;
+            justify-content:center;
+            align-items:center;
   }
 
-`;
+            `;
+
+            const PreMintHeader2 = styled.div`
+            display:flex;
+            flex-direction:row;
+            justify-content:space-evenly;
+            flex-wrap:wrap;
+            line-height:5px;
+            @media screen and (max-width: 850px) {
+                height:400px;
+            flex-direction:column;
+            flex-wrap:wrap;
+            justify-content:center;
+            align-items:center;
+  }
+            @media screen and (max-width: 500px) {
+                height:800px;
+  }
+
+            `;
+            
