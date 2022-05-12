@@ -29,7 +29,7 @@ export default function Footer() {
                     </MenuWrapper>
                     <Between />
                     <MenuWrapper id="social-menu">
-                        <a href='/agreement' target='_blank' rel="noreferrer" style={{color:'white'}}>
+                        <a href='https://gateway.pinata.cloud/ipfs/QmeDUSoD2sX4SkpmGYUtR63ve21f9VA5TP8REdodtVU273' target='_blank' rel="noreferrer" style={{color:'white'}}>
                             Digital Ownership Agreement
                         </a>
                     </MenuWrapper>
