@@ -113,7 +113,7 @@ export default function Views() {
           >
             {Uppercase("Innovation & Investment")}
             <TextWrapper style={{ maxWidth: '800px', marginLeft: 'auto', marginRight: 'auto' }}>
-              <BodyText>   
+              <BodyText>
                 Here at The Divine Feminine we are committed to providing our community with real life utility and investment opportunities. We want to build a community that will leave a long lasting impact on the NFT and Crypto spaces. We're excited about the future prospects of our project and the various ways we'll bring lasting value to you and our community.  We look forward to making this journey with you, and we're always happy to receive feedback on how and what we could be doing better.
               </BodyText>
             </TextWrapper>
@@ -158,9 +158,7 @@ export default function Views() {
                     {Uppercase("NFT Marketplace")}
                   </Heading2>
                   <BodyText>
-                    Our Marketplace will allow users to buy and sell NFTs from
-                    our various collections. Eventually, NFT's will be able to
-                    be bought with our $FEMME token.
+                    Our marketplace has features catered to our community including tiered Celestials and low transaction fees which provides a better experience and leaves more money in the pockets of investors and creators.  Our marketplace also assures you are dealing with authentic NFTs from an original collection which is different from some marketplaces with up to 80% of listed NFTs being fraudulent copies or scams.
                   </BodyText>
                 </UtilityCard>
               </li>
@@ -170,9 +168,10 @@ export default function Views() {
                     {Uppercase("NFT Staking")}
                   </Heading2>
                   <BodyText>
-                    Celestial's who stake their NFTs will receive rewards in
-                    $FEMME. Celestial tiers boost the rewards received (See
-                    Celestial Tier Benefits).
+                    Celestials who stake their NFTs will receive rewards in $FEMME tokens.  Early staking will get the highest $FEMME reward rate.  Celestial tiers boost the rewards received. {" "} 
+                    <a target="_blank"
+                      rel="noreferrer"
+                      style={{ color: "white" }} href='/#tiers'>See Celestial Tier Benefits.</a>
                   </BodyText>
                 </UtilityCard>
               </li>
@@ -503,8 +502,7 @@ export default function Views() {
               </Heading2>
               <BodyText className="wow fadeInUp" style={{ marginTop: "30px" }}>
                 <h3>
-                  The Top 40 Celestials Who Have Attained More Than 26 NFT's
-                  Will Rise to Platinum*
+                The Top 40 Celestials Obtaining More than 26 NFT's Will Rise to Platinum*
                   <br />
                 </h3>
                 <ul>
@@ -560,8 +558,7 @@ export default function Views() {
               <Heading2 className="wow fadeInUp">{Uppercase("Gold")}</Heading2>
               <BodyText className="wow fadeInUp" style={{ marginTop: "30px" }}>
                 <h3>
-                  The 80 Celestials below Platinum Who Have Attained A Minumum
-                  of 11 NFT's Rise to Gold*
+                The 80 Celestials below Platinum Obtaining a Minimum of 11 NFT's Rise to Gold*
                   <br />
                 </h3>
                 <li>30% off collection purchases</li>
@@ -613,8 +610,7 @@ export default function Views() {
               </Heading2>
               <BodyText className="wow fadeInUp" style={{ marginTop: "30px" }}>
                 <h3>
-                  The 240 Celestials below Gold Who Have Attained A Minumum of 5
-                  NFT's Rise to Bronze*
+                The 240 Celestials below Gold Obtaining a Minimum of 5 NFT's Rise to Bronze*
                   <br />
                 </h3>
                 <li>20% off collection purchases</li>
@@ -880,7 +876,7 @@ export default function Views() {
                 style={{ textAlign: "center" }}
                 className="wow fadeInUp"
               >
-                {Uppercase("Steve Ouzounian")}
+                {Uppercase("Steve Oz")}
               </Heading2>
               <BodyText className="team-description">
                 Co-Founder and Executive Director

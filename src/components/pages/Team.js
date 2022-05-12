@@ -148,7 +148,7 @@ function Team() {
             <TextWrapper style={{ maxWidth: "900px" }}>
               <Heading2 className="wow fadeInUp">
                 {Uppercase(
-                  "Steve Ouzounian - Co-Founder and Executive Director"
+                  "Steve Oz - Co-Founder and Executive Director"
                 )}
               </Heading2>
               <BodyText className="wow fadeInUp" style={{ marginTop: "30px" }}>
@@ -170,9 +170,7 @@ function Team() {
                 youth clubs. He enthusiastically looks forward to applying his
                 professional and personal experience into The Divine Feminine –
                 a blend of advocacy, community, inspiration, expression and
-                investment. He’ll also provide introductory level analysis and
-                education in the crypto space for those interested in learning
-                to invest.
+                investment. Steve will also provide crypto analysis and education for those interested in learning to invest.
               </BodyText>
             </TextWrapper>
             <Between />
