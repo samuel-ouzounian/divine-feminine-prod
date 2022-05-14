@@ -158,7 +158,7 @@ export default function Views() {
                     {Uppercase("NFT Marketplace")}
                   </Heading2>
                   <BodyText>
-                    Our marketplace has features catered to our community including tiered Celestials and low transaction fees which provides a better experience and leaves more money in the pockets of investors and creators.  Our marketplace also assures you are dealing with authentic NFTs from an original collection which is different from some marketplaces with up to 80% of listed NFTs being fraudulent copies or scams.
+                    Our marketplace has features catered to our community including tiered Celestials and low transaction fees which provides a better experience and leaves more money in the pockets of investors and creators.  Our marketplace also assures you are dealing with authentic NFTs from an original collection which is different from some marketplaces with up to 80% of listed NFTs being fraudulent copies or scams. A portion of proceeds from this marketplace will fund community payouts such as the NFT Staking Pool.
                   </BodyText>
                 </UtilityCard>
               </li>
@@ -168,8 +168,7 @@ export default function Views() {
                     {Uppercase("NFT Staking")}
                   </Heading2>
                   <BodyText>
-                    Celestials who stake their NFTs will receive rewards in $FEMME tokens.  Early staking will get the highest $FEMME reward rate.  Celestial tiers boost the rewards received. {" "}
-                    <a target="_blank"
+                  NFT Staking for Celestials to receive crypto rewards boosted for tiered Celestials. Early staking will get the highest reward rate.  This pool is initially funded by the mint sell-out and then incrementally by a percentage of Divine Labs utility revenues.  Rewards will vary based on NFTs staked and the performance of our project.  If 50% of NFTs are staked, we plan on rewarding 18% of purchase price.                    <a target="_blank"
                       rel="noreferrer"
                       style={{ color: "white" }} href='/#tiers'>See Celestial Tier Benefits.</a>
                   </BodyText>
@@ -178,18 +177,11 @@ export default function Views() {
               <li>
                 <UtilityCard className="wow bounceInLeft">
                   <Heading2 style={{ textAlign: "center" }}>
-                    {Uppercase("$FEMME Token")}
+                    {Uppercase("NFT Buyback")}
                   </Heading2>
                   <BodyText>
-                    After our Goddess of Light collection sells out, we plan to
-                    introduce our $FEMME token. $FEMME is a deflationary token
-                    with an initial supply of 100,000,000 and a total supply of
-                    300,624,135 released over 20 years. The $FEMME token may be
-                    used for Celestial benefits like airdrops, Galas,
-                    Merchandise, etc. Eventually we'd like to see our NFT
-                    marketplace use $FEMME for the purchase and sale of our NFT
-                    art to help spur the demand and use of the token to magnify
-                    the benefits for all our Celestials.
+                    Our NFT Buyback utility is focused on supporting the growth and
+                    stability of overall collection value.
                   </BodyText>
                 </UtilityCard>
               </li>
@@ -200,8 +192,7 @@ export default function Views() {
                   </Heading2>
                   <BodyText>
                     Our merchandise marketplace will allow users to buy Divine
-                    Feminine merchandise and print hard copies of NFTs with our
-                    $FEMME token. The goal of this marketplace is to enable our
+                    Feminine merchandise and print hard copies of NFTs. The goal of this marketplace is to enable our
                     community to enjoy The Divine Feminine art in various media.
                   </BodyText>
                 </UtilityCard>
@@ -241,11 +232,10 @@ export default function Views() {
             style={{ marginLeft: "auto", marginRight: "auto" }}
           >
             <Heading2 style={{ textAlign: "center" }}>
-              {Uppercase("NFT Buyback")}
+              {Uppercase("Divine Labs Technical Infrastructure")}
             </Heading2>
             <BodyText>
-              Our NFT Buyback utility is focused on supporting the growth and
-              stability of overall collection value.
+            The NFT infrastructure components used for The Divine Feminine will be made available on a subscription basis.  Like the rest of The Divine Feminine utilities, a portion of these fees would fund community payouts such as the NFT Staking Pool.   These components include the website (main, pre-mint reserve, mint, etc), tiered support, discord template, custom discord bots, smart contract, marketplaces, staking utility, and others.
             </BodyText>
           </UtilityCard>
         </Row>
@@ -509,8 +499,7 @@ export default function Views() {
                   <li>42% off collection purchases</li>
                   <li>8% boost in NFT Staking</li>
                   <li>
-                    Voting rights of Silver plus certain buyback pool and token
-                    operations parameters
+                    Voting rights of Silver plus certain buyback pool operational parameters
                   </li>
                   <li>
                     Platinum tier benefits for each Celestial Gala including
@@ -680,7 +669,7 @@ export default function Views() {
                   <br />
                   Create Celestial Community Discord
                   <br />
-                  Divine Labs: Define Tokenomics, Marketplace, and Mint Utility
+                  Divine Labs: Define Pre-Mint Reserve, Marketplace, and Mint Utility
                   <br />
                 </BodyText>
               </RoadmapContent>
@@ -721,15 +710,13 @@ export default function Views() {
                     <li>Charity(s) Designation</li>
                     <li>Celestial Gala Location</li>
                     <li>
-                      Certain Collection Buyback Pool and Token Airdrop
-                      parameters
+                      Certain Collection Buyback Pool Parameters
                     </li>
                   </ul>
                   Set Celestial Gala Date and Location
                   <br />
                   Launch The Divine Feminine Merchandise Marketplace
                   <br />
-                  Launch $FEMME Token DEX Offering
                   <br />
                   Launch NFT Staking Utility
                   <br />
