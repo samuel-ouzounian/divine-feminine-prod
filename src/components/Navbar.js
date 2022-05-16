@@ -8,26 +8,26 @@ import { Container } from './container';
 import { Between, Row } from './layout';
 import { LogoWrapperHeader } from './Logo';
 import ConnectWallet from './connectWallet';
-const { DiscordIco, TwitterIco, InstagramIco, Logo } = SharedImage;
+const {Logo } = SharedImage;
+
 
 function Navbar() {
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
+    const [showDropDown, setShowDropDown] = useState(false)
+
 
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
 
     const showButton = () => {
-        if (window.innerWidth <= 960) {
+        if (window.innerWidth <= 1500) {
             setButton(false);
+            setShowDropDown(false)
         } else {
             setButton(true);
+            setShowDropDown(true)
         }
-    };
-    const [value, setValue] = React.useState('fruit');
-
-    const handleChange = (event) => {
-        setValue(event.target.value);
     };
 
     useEffect(() => {
@@ -43,6 +43,18 @@ function Navbar() {
                     <Link to='/'>
                         <img className={click ? 'navbar-logo active' : 'navbar-logo'} src={Logo}></img>
                     </Link>
+                    {showDropDown ? (<></>) : (<HeaderMenuWrapper id="social-menu" style={{ marginLeft: 'auto', marginRight: 'auto' }}>
+                        <a href='https://discord.com/channels/946228581867073556/946228581867073559' target='_blank' rel="noreferrer">
+                        <i class="fab fa-discord" style={{ fontSize: '30px', color: 'white' }}></i>
+                        </a>
+                        <a href='https://twitter.com/NFT_DivineFemme' target='_blank' rel="noreferrer">
+                            <i class="fab fa-twitter" style={{ fontSize: '30px', color: 'white' }}></i>
+
+                        </a>
+                        <a href='' target='_blank' rel="noreferrer">
+                            <i class="fas fa-scroll" style={{ fontSize: '28px', color: 'white' }} alt='celestial-social'></i>
+                        </a>
+                    </HeaderMenuWrapper>)}
                     <div className='menu-icon' onClick={handleClick}>
                         <i className={click ? 'fas fa-bars' : 'fas fa-bars'} />
                     </div>
@@ -65,12 +77,11 @@ function Navbar() {
                                 </ul>
                             </div>
                         </li>
-                        <li className='nav-item'>
+                        {!showDropDown ? (<></>) : <li className='nav-item'>
                             <div className='nav-dropdown'>
                                 <Link
                                     to='/'
                                     className='nav-links'
-                                    onClick={closeMobileMenu}
                                 >
                                     Socials
                                 </Link>
@@ -79,8 +90,8 @@ function Navbar() {
                                     <li><a style={{ textDecoration: 'none', color: 'white', fontFamily: "Josefin Sans" }} href='https://discord.com/channels/946228581867073556/946228581867073559' target='_blank' rel="noreferrer">Discord</a></li>
                                 </ul>
                             </div>
-                        </li>
-                        <li className='nav-item'>
+                        </li>}
+                        {!showDropDown ? (<></>) : (<li className='nav-item'>
                             <div className='nav-dropdown'>
                                 <Link
                                     to='/'
@@ -94,7 +105,7 @@ function Navbar() {
                                     <li><a style={{ textDecoration: 'none', color: 'white', fontFamily: "Josefin Sans" }} href="https://gateway.pinata.cloud/ipfs/QmeDUSoD2sX4SkpmGYUtR63ve21f9VA5TP8REdodtVU273" target='_blank' rel="noreferrer">Ownership Agreement</a></li>
                                 </ul>
                             </div>
-                        </li>
+                        </li>)}
                         <li className='nav-item'>
                             <Link
                                 to='/MyDivineNFTs'

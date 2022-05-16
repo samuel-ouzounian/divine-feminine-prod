@@ -17,7 +17,7 @@ export const HeaderMenuWrapper = styled.ul`
 display:flex;
 flex-direction:row;
 list-style:none;
-gap:30px;
+gap:50px;
 padding:0px;
 margin-top:25px;
 margin-left:40px;

@@ -1,0 +1,11 @@
+.social-icons {
+    margin-left:100px;
+}
+
+@media screen and (max-width:1220px) {
+    .social-icons {
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+    
+}

@@ -41,7 +41,7 @@
     height: 80px;
     font-family: "Josefin Sans";
     position: relative;
-    
+
     border: none;
     color: white;
     -webkit-border-radius: 0px;
@@ -69,6 +69,7 @@
 .nav-dropdown:hover>ul>li {
     margin-top: 20px;
 }
+
 .nav-dropdown:hover>ul>li:hover {
     margin-top: 25px;
     border-bottom: 4px solid #fff;
@@ -116,13 +117,9 @@
     display: none;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1500px) {
     .navbar {
         height: 150px;
-    }
-
-    .nav-dropdown:hover>ul {
-        display: none;
     }
 
     .NavbarItems {
@@ -162,8 +159,9 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        align-items: center;
         width: 100%;
-        height: 600px;
+        height: 100vh;
         position: absolute;
         top: 0px;
         left: -130%;
@@ -178,11 +176,14 @@
         opacity: 1;
         transition: all 0.5s ease;
     }
+    .nav-dropdown:hover>ul {
+        display: none;
+        
+    }
 
     .nav-links {
-        margin-top: 20px;
-        width: 100%;
-        display: table;
+        width: 100vw;
+        
     }
 
     .nav-links:hover {
