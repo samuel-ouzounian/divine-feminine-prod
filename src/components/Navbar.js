@@ -128,7 +128,7 @@ function Navbar() {
                                 className='nav-links'
                                 onClick={closeMobileMenu}
                             >
-                                DAO
+                                The Divine DAO
                             </Link>
                         </li>
                     </div>
