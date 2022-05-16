@@ -376,7 +376,7 @@ function PreMint() {
 
             const TextWrapper = styled.div`
             border-radius:10px;
-            width: auto;
+            width: 600px;
             @media screen and (max-width: 1220px) {
                 margin - top:20px;
             height:auto;
