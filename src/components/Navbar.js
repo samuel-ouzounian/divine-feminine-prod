@@ -43,19 +43,6 @@ function Navbar() {
                     <Link to='/'>
                         <img className={click ? 'navbar-logo active' : 'navbar-logo'} src={Logo}></img>
                     </Link>
-                    <HeaderMenuWrapper id="social-menu">
-                        <a href='https://discord.gg/QY9k3mEt' target='_blank' rel="noreferrer">
-                            <img src={DiscordIco} alt="celestial-social" />
-                        </a>
-                        <a href='https://twitter.com/NFT_DivineFemme' target='_blank' rel="noreferrer">
-                            <img src={TwitterIco} alt="celestial-social" />
-
-                        </a>
-                        <a href='' target='_blank' rel="noreferrer">
-                            <img src={InstagramIco} alt="celestial-social" />
-
-                        </a>
-                    </HeaderMenuWrapper>
                     <div className='menu-icon' onClick={handleClick}>
                         <i className={click ? 'fas fa-bars' : 'fas fa-bars'} />
                     </div>
@@ -75,6 +62,36 @@ function Navbar() {
                                     <li><a style={{ textDecoration: 'none', color: 'white', fontFamily: "Josefin Sans" }} href="/#tiers">Celestial Tiers</a></li>
                                     <li><a style={{ textDecoration: 'none', color: 'white', fontFamily: "Josefin Sans" }} href="/#roadmap">Roadmap</a></li>
                                     <li><a style={{ textDecoration: 'none', color: 'white', fontFamily: "Josefin Sans" }} href="/#teams">Team</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li className='nav-item'>
+                            <div className='nav-dropdown'>
+                                <Link
+                                    to='/'
+                                    className='nav-links'
+                                    onClick={closeMobileMenu}
+                                >
+                                    Socials
+                                </Link>
+                                <ul>
+                                    <li><a style={{ textDecoration: 'none', color: 'white', fontFamily: "Josefin Sans" }} href='https://twitter.com/NFT_DivineFemme' target='_blank' rel="noreferrer">Twitter</a></li>
+                                    <li><a style={{ textDecoration: 'none', color: 'white', fontFamily: "Josefin Sans" }} href='https://discord.com/channels/946228581867073556/946228581867073559' target='_blank' rel="noreferrer">Discord</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li className='nav-item'>
+                            <div className='nav-dropdown'>
+                                <Link
+                                    to='/'
+                                    className='nav-links'
+                                    onClick={closeMobileMenu}
+                                >
+                                    DOCS
+                                </Link>
+                                <ul>
+                                    <li><a style={{ textDecoration: 'none', color: 'white', fontFamily: "Josefin Sans" }} href="https://medium.com/@thedivinefemininenft/what-is-the-divine-feminine-a-white-paper-d849a2163e78" target='_blank' rel="noreferrer">White Paper</a></li>
+                                    <li><a style={{ textDecoration: 'none', color: 'white', fontFamily: "Josefin Sans" }} href="https://gateway.pinata.cloud/ipfs/QmeDUSoD2sX4SkpmGYUtR63ve21f9VA5TP8REdodtVU273" target='_blank' rel="noreferrer">Ownership Agreement</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -112,15 +129,6 @@ function Navbar() {
                                 onClick={closeMobileMenu}
                             >
                                 DAO
-                            </Link>
-                        </li>
-                        <li className='nav-item'>
-                            <Link
-                                to='/Whitepaper'
-                                className='nav-links'
-                                onClick={closeMobileMenu}
-                            >
-                                Whitepaper
                             </Link>
                         </li>
                     </div>

@@ -15,7 +15,7 @@ export default function Footer() {
                     <LogoWrapper src={Logo} alt="" />
                     <Between />
                     <MenuWrapper id="social-menu" style={{marginTop:'20px'}}>
-                        <a href='https://discord.gg/QY9k3mEt' target='_blank' rel="noreferrer">
+                        <a href='https://discord.com/channels/946228581867073556/946228581867073559' target='_blank' rel="noreferrer">
                             <img src={DiscordIco} alt="celestial-social" />
                         </a>
                         <a href='https://twitter.com/NFT_DivineFemme' target='_blank' rel="noreferrer">
