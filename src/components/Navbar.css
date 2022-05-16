@@ -34,8 +34,7 @@
     list-style: none;
     text-align: center;
     width: 60vw;
-    justify-content: end;
-    margin-right: 2rem;
+    justify-content: center;
 }
 
 .nav-dropdown {

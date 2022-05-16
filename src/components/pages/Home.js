@@ -66,7 +66,7 @@ export default function Views() {
               </Heading1>
               <BodyText className="wow fadeInUp">
 
-                The artistic expression of our NFTs is to bring beautiful art that brings light and hope into this world.   To begin, we present the Goddess of Light collection comprising of 10,870 unique NFTs generated from hand drawn and painted elements by celebrated artist,{" "}
+                The artistic expression of our NFTs is to bring beautiful art that brings light and hope into this world. To begin, we present the Goddess of Light collection comprised of 10,870 unique NFTs generated from hand drawn and painted elements by celebrated artist,{" "}
                 <a
                   href="https://thaishelenastudio.com/about/"
                   target="_blank"
@@ -75,7 +75,7 @@ export default function Views() {
                 >
                   Thais Helena
                 </a>
-                , who has multiple galleries spread across 2 continents.  Each of us are created from the same base spark gifted by The Divine. And just like humanity, our collections are created from the same base. Each NFT in our collections represent a vast diversity with each bringing light, hope, faith and positive energy to share with the world.  And when you invest in an NFT from The Divine Feminine project, you will own the art-- unlike many other NFT projects out there.
+                , who has multiple galleries spread across 2 continents.  Each of us are created from the same base spark gifted by The Divine. And just like humanity, our collections are created from the same base. Each NFT in our collections represent a vast diversity with each bringing light, hope, faith and positive energy to share with the world.  And when you purchase an NFT from The Divine Feminine project, you own the art-- unlike many other NFT projects out there.
               </BodyText>
             </TextWrapper>
           </Row>
@@ -85,7 +85,7 @@ export default function Views() {
                 {Uppercase("Community & Advocacy")}
               </Heading1>
               <BodyText className="wow fadeInUp">
-                Our Decentralized Autonomous Organization (DAO) drives decisions across the art they'd like to see, the location for our Celestial Gala events, the charities and causes they'll advocate, and decisions effecting their NFT investment.  We believe the collective strength of our DAO will drive better outcomes than a centralized project management alone.  Celestial Galas allows in person events to discuss and decide issues relevant to our community in a fun and casual environment.  Actionable financial trading education and analysis across both Cryptocurrency and Wall Street financial markets is available directly from our discord.  Trillions of dollars are flowing into the Web3 market, and our community will directly help in democratizing this opportunity.
+                Our Decentralized Autonomous Organization (DAO) drives decisions across the art they'd like to see, the location for our Celestial Gala events, the charities and causes they'll advocate, and decisions affecting their NFT investment.  We believe the collective strength of our DAO will drive better outcomes than a centralized project management alone.  Celestial Galas allows in person events to discuss and decide issues relevant to our community in a fun and casual environment.  Actionable financial trading education and analysis across both Cryptocurrency and Wall Street markets is available directly from our discord.  Trillions of dollars are flowing into the Web3 market, and our community will directly help in democratizing this opportunity.
               </BodyText>
             </TextWrapper>
             <Between />
@@ -129,7 +129,7 @@ export default function Views() {
                   <BodyText>
                     We envision conducting Celestial Galas in various locations
                     determined by our DAO and beginning once the Goddess of
-                    Light collection sells out. We'd like to coincide these
+                    Light collection sells out. We plan to coincide these
                     events with the introduction of a new collection. Celestials
                     on our VIP lists (Bronze, Gold, and Platinum) will gain free
                     access in addition to a stipend. (See tier benefit list)
@@ -143,8 +143,8 @@ export default function Views() {
                   </Heading2>
                   <BodyText>
                     All our Celestials will participate in the direction and
-                    governance of our project via the DAO. These will primarily
-                    comprise of suggestions, feedback, directional votes, and
+                    governance of our project via the DAO. Guidance
+                    comprises of suggestions, feedback, directional caucuses, and
                     binding votes. Eventually we'd like to see the DAO governed
                     by Celestials voted into positions by the DAO to work
                     alongside our project team for the betterment of the entire
@@ -158,7 +158,7 @@ export default function Views() {
                     {Uppercase("NFT Marketplace")}
                   </Heading2>
                   <BodyText>
-                    Our marketplace has features catered to our community including tiered Celestials and low transaction fees which provides a better experience and leaves more money in the pockets of investors and creators.  Our marketplace also assures you are dealing with authentic NFTs from an original collection which is different from some marketplaces with up to 80% of listed NFTs being fraudulent copies or scams. A portion of proceeds from this marketplace will fund community payouts such as the NFT Staking Pool.
+                    Our marketplace has features catered to our community including tiered Celestials and low transaction fees which provides a better experience and leaves more money in the pockets of collectors and creators.  Our marketplace also assures you are dealing with authentic NFTs from an original collection which is different from some marketplaces with up to 80% of listed NFTs being fraudulent copies or scams. A portion of proceeds from this marketplace will fund community payouts such as the NFT Staking Pool.
                   </BodyText>
                 </UtilityCard>
               </li>
@@ -192,7 +192,7 @@ export default function Views() {
                   </Heading2>
                   <BodyText>
                     Our merchandise marketplace will allow users to buy Divine
-                    Feminine merchandise and print hard copies of NFTs. The goal of this marketplace is to enable our
+                    Feminine merchandise and print museum-quality archival canvas NFT prints. The goal of this marketplace is to enable our
                     community to enjoy The Divine Feminine art in various media.
                   </BodyText>
                 </UtilityCard>
@@ -204,7 +204,7 @@ export default function Views() {
                   </Heading2>
                   <BodyText>
                     Our Pre-Mint Reserve is an innovation within the NFT
-                    community. This utility allows our community to reserve a
+                    community. This utility allows our community to reserve an
                     NFT prior to public mint via a pre-purchase. Once the mint
                     has started, the NFT is picked up at your convenience rather
                     than setting your alarm clock and hoping you don't
