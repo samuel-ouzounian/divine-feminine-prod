@@ -17,30 +17,27 @@ export const HeaderMenuWrapper = styled.ul`
 display:flex;
 flex-direction:row;
 list-style:none;
-gap:50px;
-padding:0px;
-margin-top:25px;
-margin-left:40px;
-@media screen and (max-width:800px){
-    gap: 15px;
-    position:absolute;
-    top: 0;
-    left: 0;
-    transform: translate(610%, 15%);
-    margin-top:10px;
-    flex-direction: column;
-
+gap:3vw;
+position:absolute;
+top: 10px;
+left: 10vw;
+@media screen and (max-width:750px){
+    left:12vw;
     }
 }
-@media screen and (max-width: 600px) {
-    transform: translate(360%, 15%);
+@media screen and (max-width:600px){
+    left:14vw;
+    }
 }
-@media screen and (max-width: 450px) {
-    transform: translate(290%, 15%);
+@media screen and (max-width:500px){
+    left:16vw;
+    }
+
 }
-@media screen and (max-width: 390px) {
-    flex-direction:row;
-    transform: translate(100%, 50%);
+@media screen and (max-width:450px){
+    top:0px;
+    }
+
 }
 `
 export const HeaderMenuWrapper2 = styled.ul`

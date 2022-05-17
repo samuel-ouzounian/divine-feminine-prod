@@ -24,7 +24,7 @@ const HeroWrapper = styled.section`
     display:flex;
     flex-direction:column;
     color:white;
-    height:88vH;
+    height:90vH;
     background-image:url(./image/hero.jpg);
     background-size:cover;
     background-position:center;

@@ -1,15 +1,15 @@
 .pre-mint-button {
     margin-left: auto;
     margin-right: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
     color: white;
     background: #450000;
     border: #450000;
     border-radius: 10px;
-    font-size: 3vH;
+    font-size: 2.5vH;
     font-family: 'Cinzel', serif;
     cursor: pointer;
 
@@ -19,7 +19,7 @@
     font-size: 12vh;
 }
 
-@media screen and (max-width:1024px) {
+/*@media screen and (max-width:1024px) {
     .pre-mint-button {
         padding-top: 8px;
         padding-bottom: 8px;
@@ -27,37 +27,13 @@
         padding-right: 50px;
     }
 
-}
+}*/
 
-@media screen and (max-width:720px){
+@media screen and (max-width:750px){
     .pre-mint-button {
-        padding-top: 5px;
-        padding-bottom: 5px;
-        padding-left: 40px;
-        padding-right: 40px;
-        font-size: 5vw;
+        font-size: 0.5em;
     }
     .header {
-        font-size: 15vw;
+        font-size: 1em;
     }
-}
-
-@media screen and (max-width:480px){
-    .pre-mint-button {
-        padding-top: 3px;
-        padding-bottom: 3px;
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
-    
-}
-@media screen and (max-width:420px){
-    .pre-mint-button {
-        padding-top: 3px;
-        padding-bottom: 3px;
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
 }

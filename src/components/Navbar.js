@@ -21,7 +21,7 @@ function Navbar() {
     const closeMobileMenu = () => setClick(false);
 
     const showButton = () => {
-        if (window.innerWidth <= 1500) {
+        if (window.innerWidth <= 1300) {
             setButton(false);
             setShowDropDown(false)
         } else {
@@ -45,18 +45,18 @@ function Navbar() {
                     </Link>
                     {showDropDown ? (<></>) : (<HeaderMenuWrapper id="social-menu" style={{ marginLeft: 'auto', marginRight: 'auto' }}>
                         <a href='https://discord.gg/3eRZjpdSMm' target='_blank' rel="noreferrer">
-                        <i class="fab fa-discord" style={{ fontSize: '30px', color: 'white' }}></i>
+                        <i class="fab fa-discord" style={{ fontSize: 'calc(1.8vw + 10px)', color: 'white' }}></i>
                         </a>
                         <a href='https://twitter.com/NFT_DivineFemme' target='_blank' rel="noreferrer">
-                            <i class="fab fa-twitter" style={{ fontSize: '30px', color: 'white' }}></i>
+                            <i class="fab fa-twitter" style={{ fontSize: 'calc(1.8vw + 10px)', color: 'white' }}></i>
 
                         </a>
                         <a href='https://medium.com/@thedivinefemininenft/what-is-the-divine-feminine-a-white-paper-d849a2163e78' target='_blank' rel="noreferrer">
-                            <i class="fas fa-scroll" style={{ fontSize: '28px', color: 'white' }} alt='celestial-social'></i>
+                            <i class="fas fa-scroll" style={{ fontSize: 'calc(1.8vw + 10px)', color: 'white' }} alt='celestial-social'></i>
                         </a>
                     </HeaderMenuWrapper>)}
                     <div className='menu-icon' onClick={handleClick}>
-                        <i className={click ? 'fas fa-bars' : 'fas fa-bars'} />
+                        <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
                     </div>
                     <div className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>
