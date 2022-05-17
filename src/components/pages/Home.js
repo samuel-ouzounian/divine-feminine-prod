@@ -27,6 +27,15 @@ const {
   Celestial4,
   Celestial5,
   Celestial6,
+  Celestial7,
+  Celestial8,
+  Celestial9,
+  Celestial10,
+  Celestial11,
+  Celestial12,
+  Celestial13,
+  Celestial14,
+  Celestial15,
   LinkedIN,
   bronzeCelestial,
   goldCelestial,
@@ -54,7 +63,7 @@ export default function Views() {
           <Row style={{ justifyContent: "center", marginTop: '50px' }}>
             <ImageWrapper className="wow fadeInLeft">
               <img
-                src={Celestial1}
+                src={Celestial15}
                 alt=""
                 style={{ borderRadius: "10px", width: "500px", height: "auto" }}
               />
@@ -280,7 +289,7 @@ export default function Views() {
               </div>
               <div>
                 <img
-                  src={Celestial3}
+                  src={Celestial6}
                   alt=""
                   style={{
                     borderRadius: "15px",
@@ -292,7 +301,7 @@ export default function Views() {
               </div>
               <div>
                 <img
-                  src={Celestial4}
+                  src={Celestial7}
                   alt=""
                   style={{
                     borderRadius: "15px",
@@ -304,7 +313,7 @@ export default function Views() {
               </div>
               <div>
                 <img
-                  src={Celestial5}
+                  src={Celestial8}
                   alt=""
                   style={{
                     borderRadius: "15px",
@@ -316,7 +325,7 @@ export default function Views() {
               </div>{" "}
               <div>
                 <img
-                  src={Celestial3}
+                  src={Celestial9}
                   alt=""
                   style={{
                     borderRadius: "15px",
@@ -328,7 +337,7 @@ export default function Views() {
               </div>
               <div>
                 <img
-                  src={Celestial4}
+                  src={Celestial10}
                   alt=""
                   style={{
                     borderRadius: "15px",
@@ -340,7 +349,7 @@ export default function Views() {
               </div>
               <div>
                 <img
-                  src={Celestial5}
+                  src={Celestial11}
                   alt=""
                   style={{
                     borderRadius: "15px",
@@ -353,10 +362,10 @@ export default function Views() {
             </Slider>
           </CarouselWrapper>
           <CarouselWrapper>
-            <Slider {...settings2}>
+          <Slider {...settings2}>
               <div>
                 <img
-                  src={Celestial3}
+                  src={Celestial11}
                   alt=""
                   style={{
                     borderRadius: "15px",
@@ -368,7 +377,7 @@ export default function Views() {
               </div>
               <div>
                 <img
-                  src={Celestial4}
+                  src={Celestial10}
                   alt=""
                   style={{
                     borderRadius: "15px",
@@ -380,7 +389,43 @@ export default function Views() {
               </div>
               <div>
                 <img
-                  src={Celestial5}
+                  src={Celestial9}
+                  alt=""
+                  style={{
+                    borderRadius: "15px",
+                    width: "315px",
+                    height: "auto",
+                  }}
+                  className="carousel-picture"
+                />
+              </div>
+              <div>
+                <img
+                  src={Celestial8}
+                  alt=""
+                  style={{
+                    borderRadius: "15px",
+                    width: "315px",
+                    height: "auto",
+                  }}
+                  className="carousel-picture"
+                />
+              </div>
+              <div>
+                <img
+                  src={Celestial7}
+                  alt=""
+                  style={{
+                    borderRadius: "15px",
+                    width: "315px",
+                    height: "auto",
+                  }}
+                  className="carousel-picture"
+                />
+              </div>
+              <div>
+                <img
+                  src={Celestial6}
                   alt=""
                   style={{
                     borderRadius: "15px",
@@ -392,7 +437,7 @@ export default function Views() {
               </div>{" "}
               <div>
                 <img
-                  src={Celestial3}
+                  src={Celestial5}
                   alt=""
                   style={{
                     borderRadius: "15px",
@@ -416,43 +461,7 @@ export default function Views() {
               </div>
               <div>
                 <img
-                  src={Celestial5}
-                  alt=""
-                  style={{
-                    borderRadius: "15px",
-                    width: "315px",
-                    height: "auto",
-                  }}
-                  className="carousel-picture"
-                />
-              </div>{" "}
-              <div>
-                <img
                   src={Celestial3}
-                  alt=""
-                  style={{
-                    borderRadius: "15px",
-                    width: "315px",
-                    height: "auto",
-                  }}
-                  className="carousel-picture"
-                />
-              </div>
-              <div>
-                <img
-                  src={Celestial4}
-                  alt=""
-                  style={{
-                    borderRadius: "15px",
-                    width: "315px",
-                    height: "auto",
-                  }}
-                  className="carousel-picture"
-                />
-              </div>
-              <div>
-                <img
-                  src={Celestial5}
                   alt=""
                   style={{
                     borderRadius: "15px",

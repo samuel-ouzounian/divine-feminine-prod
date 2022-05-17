@@ -16,14 +16,14 @@ export default function Footer() {
                     <LogoWrapper src={Logo} alt="" />
                     <Between />
                     <MenuWrapper id="social-menu" className='social-icons'>
-                        <a href='https://discord.com/channels/946228581867073556/946228581867073559' target='_blank' rel="noreferrer">
+                        <a href='https://discord.gg/3eRZjpdSMm' target='_blank' rel="noreferrer">
                             <i class="fab fa-discord" style={{ fontSize: '30px', color: 'white' }}></i>
                         </a>
                         <a href='https://twitter.com/NFT_DivineFemme' target='_blank' rel="noreferrer">
                             <i class="fab fa-twitter" style={{ fontSize: '30px', color: 'white' }}></i>
 
                         </a>
-                        <a href='' target='_blank' rel="noreferrer">
+                        <a href='https://medium.com/@thedivinefemininenft/what-is-the-divine-feminine-a-white-paper-d849a2163e78' target='_blank' rel="noreferrer">
                             <i class="fas fa-scroll" style={{ fontSize: '28px', color: 'white' }} alt='celestial-social'></i>
                         </a>
                     </MenuWrapper>
