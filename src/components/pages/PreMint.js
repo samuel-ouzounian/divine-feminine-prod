@@ -326,10 +326,10 @@ function PreMint() {
             flex: 0;
             margin-left:200px;
             @media screen and (max-width: 1320px) {
-                margin - left:100px;
+                margin-left:100px;
   }
-            @media screen and (max-width: 1220px) {
-                order: 1;
+            @media screen and (max-width: 1250px) {
+                margin-left:50px;
   }
 
             `;

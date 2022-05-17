@@ -101,7 +101,7 @@
     transition: 250ms;
 }
 
-@media screen and (max-width:1220px) {
+@media screen and (max-width:1230px) {
     .pre-mint-logo{
         display: none;
     }
