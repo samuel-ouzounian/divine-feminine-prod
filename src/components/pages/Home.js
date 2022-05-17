@@ -716,10 +716,10 @@ export default function Views() {
                   Initiate DAO and Vote on Initial Items, including at least:
                   <br />
                   <ul>
-                    <li>Charity(s) Designation</li>
+                    <li>Charity Designation</li>
                     <li>Celestial Gala Location</li>
                     <li>
-                      Certain Collection Buyback Pool Parameters
+                      Collection Buyback Pool Parameters
                     </li>
                   </ul>
                   Set Celestial Gala Date and Location
