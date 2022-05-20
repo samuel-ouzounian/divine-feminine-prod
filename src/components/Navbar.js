@@ -108,6 +108,15 @@ function Navbar() {
                         </li>)}
                         <li className='nav-item'>
                             <Link
+                                to='/PreMint'
+                                className='nav-links'
+                                onClick={closeMobileMenu}
+                            >
+                                Pre-Mint
+                            </Link>
+                        </li>
+                        <li className='nav-item'>
+                            <Link
                                 to='/MyDivineNFTs'
                                 className='nav-links'
                                 onClick={closeMobileMenu}

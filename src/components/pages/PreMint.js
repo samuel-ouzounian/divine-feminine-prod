@@ -34,7 +34,6 @@ function PreMint() {
     const [cost, setCost] = useState(0);
     const [priceStatic, setPriceStatic] = useState([]);
     const [isTransacting, setIsTransacting] = useState(false);
-
     async function reserve(quantity) {
         let _cost = cost.toString();
         const goddessReserveInstance = await utils.goddessMint(
