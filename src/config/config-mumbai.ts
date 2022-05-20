@@ -19,17 +19,17 @@ export const configVars = {
     },
     blockExplorerUrl: "https://polygonscan.com/",
   },
-  goddess: {
-    address: "0xb49032cAe3379acCa86Eda9E09148301Df1Bf2de", 
-    address_mainnet: "0xb49032cAe3379acCa86Eda9E09148301Df1Bf2de", 
+  preMint: {
+    address: "0xCDaebee46c93AE0f91a57444eA48C1022d59E188", 
+    address_mainnet: "0xCDaebee46c93AE0f91a57444eA48C1022d59E188", 
   },
   discordLink: {
     address: "0x8F14cFecc6B51100F1D482FADE23442DEc414Dec", 
     address_mainnet: "0x8F14cFecc6B51100F1D482FADE23442DEc414Dec", 
   },
   wETH: {
-    address: "0x44C3e835611202974e4c0da886F024C747817864", 
-    address_mainnet: "0x44C3e835611202974e4c0da886F024C747817864", 
+    address: "0x757c86b41E5048B99311Ea55f37A5f116b3D42eA", 
+    address_mainnet: "0x757c86b41E5048B99311Ea55f37A5f116b3D42eA", 
   },
 };
 

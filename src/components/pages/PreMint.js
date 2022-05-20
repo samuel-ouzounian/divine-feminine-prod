@@ -34,21 +34,39 @@ function PreMint() {
     const [cost, setCost] = useState(0);
     const [priceStatic, setPriceStatic] = useState([]);
     const [isTransacting, setIsTransacting] = useState(false);
+
     async function reserve(quantity) {
-        let _cost = cost.toString();
-        const goddessReserveInstance = await utils.goddessMint(
+        const goddessReserveInstance = await utils.preMint(
+            state.wallet.browserWeb3Provider
+        );
+        const wETH = await utils.wETHContract(
             state.wallet.browserWeb3Provider
         );
         try {
-            const tx = await goddessReserveInstance["preMint"](quantity.toString(), { 'value': Web3.utils.toWei(_cost) });
-            setIsTransacting(true);
-            await tx.wait();
-            setIsTransacting(false);
+            var approveStatus = await wETH['allowance'](state.wallet.address, config.configVars.preMint.address)
+            approveStatus = approveStatus / 10 ** 18;
+            if (approveStatus != cost) {
+                let _cost = cost - approveStatus;
+                _cost = _cost * 10 ** 18;
+                _cost = _cost.toString();
+                const approve = await wETH['approve'](config.configVars.preMint.address, _cost)
+                setIsTransacting(true);
+                await approve.wait();                  
+                const tx = await goddessReserveInstance["preMint"](quantity.toString());
+                await tx.wait();
+                setIsTransacting(false);
+            } else {
+                const tx = await goddessReserveInstance["preMint"](quantity.toString());
+                setIsTransacting(true);
+                await tx.wait();
+                setIsTransacting(false);
+
+            }
             window.location.reload();
 
         } catch (e) {
             setIsTransacting(false);
-            window.alert(e.data.message)
+            window.alert(e)
         }
     }
 
@@ -56,7 +74,7 @@ function PreMint() {
         let lengths = []
         let price = []
         if (state.wallet.connected) {
-            const goddessReserveInstance = await utils.goddessMint(
+            const goddessReserveInstance = await utils.preMint(
                 state.wallet.browserWeb3Provider
             );
             try {
@@ -139,7 +157,7 @@ function PreMint() {
     }
 
     async function getCost(value) {
-        const goddessReserveInstance = await utils.goddessMint(
+        const goddessReserveInstance = await utils.preMint(
             state.wallet.browserWeb3Provider
         );
         try {
@@ -285,43 +303,43 @@ function PreMint() {
     }
     return (
         <>
-        <div style={{ minHeight: '87vH' }}>
-            <Content>
-                <Container
-                    style={{
-                        borderRadius: "20px",
-                        marginTop: "50px",
-                        width: 'auto',
-                        display:'flex',
-                        flexDirection:'column',
-                        justifyContent:'center',
-                        alignItems:'center'
-                    }}
-                >
-                    <Heading1 className="wow fadeInUp">{Uppercase("Connect Wallet to Access The Pre-Mint Reserve")}</Heading1>
-                    <Container style={{backgroundColor:'rgba(0,0,0,.15)', textAlign:'center', width:'auto', marginTop:'50px'}}>
-                    <TextWrapper>
-                        <BodyText>
-                            <h3 style={{color:'white'}}>How to Install Metamask:</h3>
-                            Download Metamask Wallet: <a href="https://metamask.io/download/" target='_blank' rel="noreferrer" style={{color:'white'}} >https://metamask.io/download/</a> <br />
-                            Video for installing Metamask on Chrome: <a href="https://www.youtube.com/watch?v=OJqaZRpRqXM" target='_blank' rel="noreferrer" style={{color:'white'}} >https://www.youtube.com/watch?v=OJqaZRpRqXM </a><br />
-                            Using Metamask to pay with Polygon/Matic: <a href="https://gravityfinance.medium.com/using-metamask-with-polygon-923f061054db" target='_blank' rel="noreferrer" style={{color:'white'}} >https://gravityfinance.medium.com/using-metamask-with-polygon-923f061054db</a> 
+            <div style={{ minHeight: '87vH' }}>
+                <Content>
+                    <Container
+                        style={{
+                            borderRadius: "20px",
+                            marginTop: "50px",
+                            width: 'auto',
+                            display: 'flex',
+                            flexDirection: 'column',
+                            justifyContent: 'center',
+                            alignItems: 'center'
+                        }}
+                    >
+                        <Heading1 className="wow fadeInUp">{Uppercase("Connect Wallet to Access The Pre-Mint Reserve")}</Heading1>
+                        <Container style={{ backgroundColor: 'rgba(0,0,0,.15)', textAlign: 'center', width: 'auto', marginTop: '50px' }}>
+                            <TextWrapper>
+                                <BodyText>
+                                    <h3 style={{ color: 'white' }}>How to Install Metamask:</h3>
+                                    Download Metamask Wallet: <a href="https://metamask.io/download/" target='_blank' rel="noreferrer" style={{ color: 'white' }} >https://metamask.io/download/</a> <br />
+                                    Video for installing Metamask on Chrome: <a href="https://www.youtube.com/watch?v=OJqaZRpRqXM" target='_blank' rel="noreferrer" style={{ color: 'white' }} >https://www.youtube.com/watch?v=OJqaZRpRqXM </a><br />
+                                    Using Metamask to pay with Polygon/Matic: <a href="https://gravityfinance.medium.com/using-metamask-with-polygon-923f061054db" target='_blank' rel="noreferrer" style={{ color: 'white' }} >https://gravityfinance.medium.com/using-metamask-with-polygon-923f061054db</a>
 
-                        </BodyText>
-                    </TextWrapper>
+                                </BodyText>
+                            </TextWrapper>
+                        </Container>
                     </Container>
-                </Container>
-                
-            </Content>
-        </div>
-        <Footer />
-    </>
-            );
+
+                </Content>
+            </div>
+            <Footer />
+        </>
+    );
 
 }
-            export default PreMint;
+export default PreMint;
 
-            const Between = styled.div`
+const Between = styled.div`
             flex: 0;
             margin-left:200px;
             @media screen and (max-width: 1320px) {
@@ -333,7 +351,7 @@ function PreMint() {
 
             `;
 
-            const Content = styled.section`
+const Content = styled.section`
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
@@ -364,7 +382,7 @@ function PreMint() {
   }
             `;
 
-            const ImageWrapper = styled.div`
+const ImageWrapper = styled.div`
             max-width: 100%;
             height: auto;
             text-align: center;
@@ -373,7 +391,7 @@ function PreMint() {
   }
             `;
 
-            const TextWrapper = styled.div`
+const TextWrapper = styled.div`
             border-radius:10px;
             width: 600px;
             @media screen and (max-width: 1220px) {
@@ -387,7 +405,7 @@ function PreMint() {
   }
             `;
 
-            const PreMintHeader = styled.div`
+const PreMintHeader = styled.div`
             display:flex;
             flex-direction:row;
             justify-content:space-evenly;
@@ -402,7 +420,7 @@ function PreMint() {
 
             `;
 
-            const PreMintHeader2 = styled.div`
+const PreMintHeader2 = styled.div`
             display:flex;
             flex-direction:row;
             justify-content:space-evenly;
@@ -420,4 +438,4 @@ function PreMint() {
   }
 
             `;
-            
+

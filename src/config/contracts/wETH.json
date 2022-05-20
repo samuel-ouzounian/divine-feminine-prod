@@ -1,5 +1,5 @@
 {
-  "contractName": "wETH",
+  "contractName": "PreMint",
   "abi": [
     {
       "inputs": [],

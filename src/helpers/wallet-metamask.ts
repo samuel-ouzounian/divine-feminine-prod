@@ -4,6 +4,8 @@
 // Works with MetaMask in browser or in in-app browser
 
 import { ethers } from "ethers"; // npm install ethers
+import {Biconomy} from "@biconomy/mexa";
+
 
 import { IWallet, defaultWallet } from "../store/interfaces";
 import * as utils from "./utils";
@@ -62,6 +64,8 @@ export const connect = async (): Promise<IWallet> => {
     window.ethereum.on("chainChanged", utils.reloadApp);
     window.ethereum.on("accountsChanged", utils.reloadApp);
     window.ethereum.on("disconnect", utils.reloadApp);
+    //const biconomy = new Biconomy(new ethers.providers.Web3Provider(window.ethereum),{apiKey: 'L4XpfkpyI.465d3ef2-ace0-4c51-870b-3c6266f32368', debug: true});
+
 
     return {
       ...defaultWallet,
