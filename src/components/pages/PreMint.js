@@ -218,10 +218,10 @@ function PreMint() {
                         }}
                     >
                         <PreMintHeader2 className="wow fadeInUp">
-                            <div><h1 style={{ fontSize: '30px', color: 'white', fontFamily: 'Cinzel' }}>White List</h1><br /><h1 style={{ textAlign: 'center', color: 'white', fontFamily: "Josefin Sans", fontSize: '28px' }}>{tierLengths[0]} / 350</h1><br /><h1 style={{ textAlign: 'center', color: 'white', fontFamily: "Josefin Sans", fontSize: '24px' }}>{priceStatic[0]} {config.configVars.rpcNetwork.nativeCurrency.name}</h1></div>
-                            <div><h1 style={{ fontSize: '30px', color: 'white', fontFamily: 'Cinzel' }}>Bronze Tier</h1><br /><h1 style={{ textAlign: 'center', color: 'white', fontFamily: "Josefin Sans", fontSize: '28px' }}>{tierLengths[1]} / 240</h1><br /><h1 style={{ textAlign: 'center', color: 'white', fontFamily: "Josefin Sans", fontSize: '24px' }}>{priceStatic[1]} {config.configVars.rpcNetwork.nativeCurrency.name}</h1></div>
-                            <div><h1 style={{ fontSize: '30px', color: 'white', fontFamily: 'Cinzel' }}>Gold Tier</h1><br /><h1 style={{ textAlign: 'center', color: 'white', fontFamily: "Josefin Sans", fontSize: '28px' }}>{tierLengths[2]} / 80</h1><br /><h1 style={{ textAlign: 'center', color: 'white', fontFamily: "Josefin Sans", fontSize: '24px' }}>{priceStatic[2]} {config.configVars.rpcNetwork.nativeCurrency.name}</h1></div>
-                            <div><h1 style={{ fontSize: '30px', color: 'white', fontFamily: 'Cinzel' }}>Platinum Tier</h1><br /><h1 style={{ textAlign: 'center', color: 'white', fontFamily: "Josefin Sans", fontSize: '28px' }}>{tierLengths[3]} / 40</h1><br /><h1 style={{ textAlign: 'center', color: 'white', fontFamily: "Josefin Sans", fontSize: '24px' }}>{priceStatic[3]} {config.configVars.rpcNetwork.nativeCurrency.name}</h1></div>
+                            <div><h1 style={{ fontSize: '30px', color: 'white', fontFamily: 'Cinzel' }}>White List</h1><br /><h1 style={{ textAlign: 'center', color: 'white', fontFamily: "Josefin Sans", fontSize: '28px' }}>{tierLengths[0]} / 350</h1><br /><h1 style={{ textAlign: 'center', color: 'white', fontFamily: "Josefin Sans", fontSize: '24px' }}>{priceStatic[0]} wETH</h1></div>
+                            <div><h1 style={{ fontSize: '30px', color: 'white', fontFamily: 'Cinzel' }}>Bronze Tier</h1><br /><h1 style={{ textAlign: 'center', color: 'white', fontFamily: "Josefin Sans", fontSize: '28px' }}>{tierLengths[1]} / 240</h1><br /><h1 style={{ textAlign: 'center', color: 'white', fontFamily: "Josefin Sans", fontSize: '24px' }}>{priceStatic[1]} wETH</h1></div>
+                            <div><h1 style={{ fontSize: '30px', color: 'white', fontFamily: 'Cinzel' }}>Gold Tier</h1><br /><h1 style={{ textAlign: 'center', color: 'white', fontFamily: "Josefin Sans", fontSize: '28px' }}>{tierLengths[2]} / 80</h1><br /><h1 style={{ textAlign: 'center', color: 'white', fontFamily: "Josefin Sans", fontSize: '24px' }}>{priceStatic[2]} wETH</h1></div>
+                            <div><h1 style={{ fontSize: '30px', color: 'white', fontFamily: 'Cinzel' }}>Platinum Tier</h1><br /><h1 style={{ textAlign: 'center', color: 'white', fontFamily: "Josefin Sans", fontSize: '28px' }}>{tierLengths[3]} / 40</h1><br /><h1 style={{ textAlign: 'center', color: 'white', fontFamily: "Josefin Sans", fontSize: '24px' }}>{priceStatic[3]} wETH</h1></div>
                         </PreMintHeader2>
                     </Container>
                     <Container
@@ -252,7 +252,7 @@ function PreMint() {
 
                                         </div>
                                     </div>
-                                    <h2 style={{ color: 'white', fontFamily: 'Cinzel', textAlign: 'center' }}>Total Cost: {cost} {config.configVars.rpcNetwork.nativeCurrency.name}</h2>
+                                    <h2 style={{ color: 'white', fontFamily: 'Cinzel', textAlign: 'center' }}>Total Cost: {cost} wETH</h2>
                                     <div className="wow fadeInUp" style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
                                         <button className='mint-btn' onClick={(e) => reserve(mintAmount)}>RESERVE</button>
                                     </div>
