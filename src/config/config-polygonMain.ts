@@ -20,8 +20,8 @@ declare global {
       blockExplorerUrl: "https://polygonscan.com/",
     },
     preMint: {
-      address: "0x0e8f883124c1c234d64Ec566adC5966f1832d207", 
-      address_mainnet: "0x0e8f883124c1c234d64Ec566adC5966f1832d207", 
+      address: "0x5C8d4026944a9bF8753C4c774a46F591fA8E8821", 
+      address_mainnet: "0x5C8d4026944a9bF8753C4c774a46F591fA8E8821", 
     },
     discordLink: {
       address: "0x15Cb66345a03B5b2Fa1ACA478cDA78BbBFbFc89E", 
