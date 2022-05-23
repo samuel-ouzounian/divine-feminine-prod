@@ -244,7 +244,7 @@ export default function Views() {
               {Uppercase("Divine Labs Technical Infrastructure")}
             </Heading2>
             <BodyText>
-            The NFT infrastructure components used for The Divine Feminine will be made available on a subscription basis.  Like the rest of The Divine Feminine utilities, a portion of these fees would fund community payouts such as the NFT Staking Pool.   These components include the website (main, pre-mint reserve, mint, etc), tiered support, discord template, custom discord bots, smart contract, marketplaces, staking utility, and others.
+            The NFT infrastructure components used for The Divine Feminine will be made available on a subscription basis.  Like the rest of The Divine Feminine utilities, a portion of these fees would fund community payouts such as the NFT Staking Pool.   These components include the website (home, pre-mint reserve, mint, etc), tiered support, discord template, custom discord bots, smart contract, marketplaces, staking utility, and others.
             </BodyText>
           </UtilityCard>
         </Row>
