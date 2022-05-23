@@ -8,7 +8,7 @@ import { Container } from './container';
 import { Between, Row } from './layout';
 import { LogoWrapperHeader } from './Logo';
 import ConnectWallet from './connectWallet';
-const {Logo } = SharedImage;
+const { Logo } = SharedImage;
 
 
 function Navbar() {
@@ -45,15 +45,19 @@ function Navbar() {
                     </Link>
                     {showDropDown ? (<></>) : (<HeaderMenuWrapper id="social-menu" style={{ marginLeft: 'auto', marginRight: 'auto' }}>
                         <a href='https://discord.gg/3eRZjpdSMm' target='_blank' rel="noreferrer">
-                        <i class="fab fa-discord" style={{ fontSize: 'calc(1.8vw + 10px)', color: 'white' }}></i>
+                            <i class="fab fa-discord" style={{ fontSize: 'calc(1.8vw + 10px)', color: 'white' }}></i>
                         </a>
                         <a href='https://twitter.com/NFT_DivineFemme' target='_blank' rel="noreferrer">
                             <i class="fab fa-twitter" style={{ fontSize: 'calc(1.8vw + 10px)', color: 'white' }}></i>
 
                         </a>
+                        <a href='https://www.instagram.com/divine_femininenft/' target='_blank' rel="noreferrer">
+                            <i class="fab fa-instagram" style={{ fontSize: 'calc(1.8vw + 10px)', color: 'white' }} alt='celestial-social'></i>
+                        </a>
                         <a href='https://medium.com/@thedivinefemininenft/what-is-the-divine-feminine-a-white-paper-d849a2163e78' target='_blank' rel="noreferrer">
                             <i class="fas fa-scroll" style={{ fontSize: 'calc(1.8vw + 10px)', color: 'white' }} alt='celestial-social'></i>
                         </a>
+
                     </HeaderMenuWrapper>)}
                     <div className='menu-icon' onClick={handleClick}>
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -88,6 +92,7 @@ function Navbar() {
                                 <ul>
                                     <li><a style={{ textDecoration: 'none', color: 'white', fontFamily: "Josefin Sans" }} href='https://twitter.com/NFT_DivineFemme' target='_blank' rel="noreferrer">Twitter</a></li>
                                     <li><a style={{ textDecoration: 'none', color: 'white', fontFamily: "Josefin Sans" }} href='https://discord.gg/3eRZjpdSMm' target='_blank' rel="noreferrer">Discord</a></li>
+                                    <li><a style={{ textDecoration: 'none', color: 'white', fontFamily: "Josefin Sans" }} href='https://www.instagram.com/divine_femininenft/' target='_blank' rel="noreferrer">Instagram</a></li>
                                 </ul>
                             </div>
                         </li>}
