@@ -89,7 +89,7 @@ function DAO() {
                             <form className="submitForm" onSubmit={linkDiscord}>
 
                                 <input className="inputBox" type='text' value={getDiscordID()} onChange={(e) => console.log(discordID)}></input>
-                                <button type='submit' className="inputButton" style={{ color: 'white', backgroundColor: '#450000', border: '#450000', padding: '10px 40px 10px 40px', borderRadius: '10px', cursor: 'pointer' }}><h2 style={{ fontFamily: 'Cinzel' }}>CONNECT</h2></button>
+                                <button type='submit' className="inputButton" style={{ color: 'white', backgroundColor: '#450000', border: '#450000', padding: '10px 40px 10px 40px', borderRadius: '10px', cursor: 'pointer' }}><h2 style={{ fontFamily: 'Cinzel' }}>CONNECT WALLET</h2></button>
                             </form>
                         </div>
                     </Content>
