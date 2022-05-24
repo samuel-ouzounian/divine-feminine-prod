@@ -28,9 +28,6 @@ function DAO() {
         const queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);
         const path = urlParams.get('id')
-
-
-        
         return path
     }
     async function linkDiscord(e) {
@@ -38,8 +35,9 @@ function DAO() {
         const discordLinkInstance = await utils.Discord(
             state.wallet.browserWeb3Provider
         );
+        console.log(discordID)
         try {
-            const tx = await discordLinkInstance.linkDiscord(discordID);
+            const tx = await discordLinkInstance.linkDiscord(getDiscordID());
             setIsTransacting(true);
             await tx.wait();
             setIsTransacting(false);
@@ -90,7 +88,7 @@ function DAO() {
                         <div className='submitDiv'>
                             <form className="submitForm" onSubmit={linkDiscord}>
 
-                                <input className="inputBox" type='text' value={getDiscordID()} onChange={(e) => setDiscordID(e.target.value)}></input>
+                                <input className="inputBox" type='text' value={getDiscordID()} onChange={(e) => console.log(discordID)}></input>
                                 <button type='submit' className="inputButton" style={{ color: 'white', backgroundColor: '#450000', border: '#450000', padding: '10px 40px 10px 40px', borderRadius: '10px', cursor: 'pointer' }}><h2 style={{ fontFamily: 'Cinzel' }}>CONNECT</h2></button>
                             </form>
                         </div>
