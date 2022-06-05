@@ -23,9 +23,6 @@ export default function Footer() {
                             <i class="fab fa-twitter" style={{ fontSize: 'calc(1.8vw + 10px)', color: 'white' }}></i>
 
                         </a>
-                        <a href='https://www.instagram.com/divine_femininenft/' target='_blank' rel="noreferrer">
-                            <i class="fab fa-instagram" style={{ fontSize: 'calc(1.8vw + 10px)', color: 'white' }} alt='celestial-social'></i>
-                        </a>
                         <a href='https://medium.com/@thedivinefemininenft/what-is-the-divine-feminine-a-white-paper-d849a2163e78' target='_blank' rel="noreferrer">
                             <i class="fas fa-scroll" style={{ fontSize: 'calc(1.8vw + 10px)', color: 'white' }} alt='celestial-social'></i>
                         </a>

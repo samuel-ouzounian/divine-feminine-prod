@@ -1,0 +1,121 @@
+.container {
+    min-height: 87vh;
+
+
+}
+
+.header {
+    color: white;
+    text-align: center;
+    font-family: "Cinzel", serif;
+
+}
+
+.connect-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 30vw;
+    height: 450px;
+    background-color: #0c0b0be0;
+        border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.account-guild-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+
+}
+
+.info-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.warning-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.inputButton {
+    background-color: #450000;
+    width: 25vw;
+    height: 50px;
+    border-color: transparent;
+    border-radius: 10px;
+    color: white;
+    font-family: "Cinzel", serif;
+    font-size: 1.8vw;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.inputButton:hover{
+    transition: 300ms;
+    width: 26vw;
+    height: 60px;
+}
+
+.warning-section-header{
+    color:white;
+    font-family: 'Josefin Sans';
+    font-weight: bold;
+    font-size: 17px;
+    margin-left: 20px;
+}
+
+.warning-section-list{
+    color:white;
+    font-family: 'Josefin Sans';
+    font-weight: bold;
+    font-size: 17px;
+    margin-left: 20px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .connect-wrapper {
+        width: 100%;
+    }
+    .warning-section{
+        align-items: center;
+    }
+    .warning-section-header{
+        margin-left: 0px;
+        margin: 10px;
+    }
+    .warning-section-list{
+        margin-left: 0px;
+        margin: 10px;
+    }
+    .inputButton{
+        width: 40vw;
+        font-size: 3vw;
+    }
+
+    @media screen and (max-width: 800px) {
+        .inputButton{
+            width: 80vw;
+            font-size: 5.5vw;
+        }
+    }
+
+
+
+}

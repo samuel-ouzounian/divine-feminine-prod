@@ -51,9 +51,6 @@ function Navbar() {
                             <i class="fab fa-twitter" style={{ fontSize: 'calc(1.8vw + 10px)', color: 'white' }}></i>
 
                         </a>
-                        <a href='https://www.instagram.com/divine_femininenft/' target='_blank' rel="noreferrer">
-                            <i class="fab fa-instagram" style={{ fontSize: 'calc(1.8vw + 10px)', color: 'white' }} alt='celestial-social'></i>
-                        </a>
                         <a href='https://medium.com/@thedivinefemininenft/what-is-the-divine-feminine-a-white-paper-d849a2163e78' target='_blank' rel="noreferrer">
                             <i class="fas fa-scroll" style={{ fontSize: 'calc(1.8vw + 10px)', color: 'white' }} alt='celestial-social'></i>
                         </a>
@@ -92,7 +89,6 @@ function Navbar() {
                                 <ul>
                                     <li><a style={{ textDecoration: 'none', color: 'white', fontFamily: "Josefin Sans" }} href='https://twitter.com/NFT_DivineFemme' target='_blank' rel="noreferrer">Twitter</a></li>
                                     <li><a style={{ textDecoration: 'none', color: 'white', fontFamily: "Josefin Sans" }} href='https://discord.gg/3eRZjpdSMm' target='_blank' rel="noreferrer">Discord</a></li>
-                                    <li><a style={{ textDecoration: 'none', color: 'white', fontFamily: "Josefin Sans" }} href='https://www.instagram.com/divine_femininenft/' target='_blank' rel="noreferrer">Instagram</a></li>
                                 </ul>
                             </div>
                         </li>}
@@ -111,20 +107,15 @@ function Navbar() {
                                 </ul>
                             </div>
                         </li>)}
-                        {!showDropDown ? (<></>) : (<li className='nav-item'>
-                            <div className='nav-dropdown'>
-                                <Link
-                                    to='/'
-                                    className='nav-links'
-                                    onClick={closeMobileMenu}
-                                >
-                                    Leasing
-                                </Link>
-                                <ul>
-                                    <li><a style={{ textDecoration: 'none', color: 'white', fontFamily: "Josefin Sans" }} href="" target='_blank' rel="noreferrer">Web3 Link Discord Bot</a></li>
-                                </ul>
-                            </div>
-                        </li>)}
+                        <li className='nav-item'>
+                            <Link
+                                to='/DivineLabs'
+                                className='nav-links'
+                                onClick={closeMobileMenu}
+                            >
+                                Divine Labs
+                            </Link>
+                        </li>
                         <li className='nav-item'>
                             <Link
                                 to='/PreMint'

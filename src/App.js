@@ -10,6 +10,8 @@ import Team from './components/pages/Team';
 import PreMint from './components/pages/PreMint';
 import Navbar from './components/Navbar';
 import DAO from './components/pages/DAO';
+import DivineLabs from './components/pages/DivineLabs';
+import DiscordLink from './components/pages/DiscordLink';
 
 function App() {
   useEffect(() => {
@@ -24,6 +26,8 @@ function App() {
         <Route path="/team" element={<Team />} />
         <Route path="/PreMint" element={<PreMint />} />
         <Route path="/DAO" element={<DAO />} />
+        <Route path="/DivineLabs" element={<DivineLabs />} />
+        <Route path="/DivineLabs/DiscordLink" element={<DiscordLink />} />
       </Routes>
     </div>
   );

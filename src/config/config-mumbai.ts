@@ -31,5 +31,9 @@ export const configVars = {
     address: "0x757c86b41E5048B99311Ea55f37A5f116b3D42eA", 
     address_mainnet: "0x757c86b41E5048B99311Ea55f37A5f116b3D42eA", 
   },
+  discordLinkCommercial: {
+    address: "0x7594E21b4A489bAdA38CC0140CEC3F1a4089ab3a", 
+    address_mainnet: "0x7594E21b4A489bAdA38CC0140CEC3F1a4089ab3a", 
+  }
 };
 

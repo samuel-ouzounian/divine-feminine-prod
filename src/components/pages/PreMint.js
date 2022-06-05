@@ -9,7 +9,6 @@ import "./Home.css";
 import { useState, useEffect } from 'react'
 import Progressbar from '../Progress_bar';
 import './PreMint.css'
-import Web3 from 'web3';
 import { Store } from '../../store/store-reducer';
 import * as utils from "../../helpers/utils";
 import Backdrop from '@mui/material/Backdrop';

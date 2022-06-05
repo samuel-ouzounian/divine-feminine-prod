@@ -5,6 +5,7 @@ import * as config from "../config/config";
 import * as discordJson from "../config/contracts/discordLink.json";
 import * as wETH from '../config/contracts/wETH.json'
 import * as preMintJson from '../config/contracts/preMint.json'
+import * as discordLinkCommercialJSON from '../config/contracts/discordLinkCommercial.json'
 
 export const delay = (ms: number) => new Promise((res) => setTimeout(res, ms));
 
@@ -63,6 +64,23 @@ export const Discord = async (
   // Create ethers.Contract object using the smart contract's ABI
   const readContractInstance = new ethers.Contract(
     config.configVars.discordLink.address,
+    contractAbi,
+    ethersProvider
+  );
+  // Add a signer to make the ethers.Contract object able
+  // to craft transactions
+  const fromSigner = ethersProvider.getSigner();
+  return readContractInstance.connect(fromSigner);
+};
+
+export const discordLinkCommercial = async (
+  browserWeb3Provider: any
+): Promise<ethers.Contract> => {
+  const ethersProvider = browserWeb3Provider;
+  const contractAbi = discordLinkCommercialJSON.abi;
+  // Create ethers.Contract object using the smart contract's ABI
+  const readContractInstance = new ethers.Contract(
+    config.configVars.discordLinkCommercial.address,
     contractAbi,
     ethersProvider
   );

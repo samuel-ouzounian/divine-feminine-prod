@@ -7,11 +7,11 @@ declare global {
 export const configVars = {
   mode: "regular",
   rpcNetwork: {
-    rpcUrl: "https://rpc-mainnet.matic.network",
-    chainId: 137,
-    chainIdHex: "0x89",
-    chainName: "Polygon Mainnet",
-    chainType: "mainnet",
+    rpcUrl: "https://matic-mumbai.chainstacklabs.com/",
+    chainId: 80001,
+    chainIdHex: "0x13881",
+    chainName: "Mumbai Testnet",
+    chainType: "testnet",
     nativeCurrency: {
       name: "MATIC",
       symbol: "MATIC",
@@ -20,16 +20,20 @@ export const configVars = {
     blockExplorerUrl: "https://polygonscan.com/",
   },
   preMint: {
-    address: "0x5C8d4026944a9bF8753C4c774a46F591fA8E8821", 
-    address_mainnet: "0x5C8d4026944a9bF8753C4c774a46F591fA8E8821", 
+    address: "0x0CA0b3f8B2Fe3dC6B8BA77955793C0aB7e9BDD89", 
+    address_mainnet: "0x0CA0b3f8B2Fe3dC6B8BA77955793C0aB7e9BDD89", 
   },
   discordLink: {
-    address: "0x15Cb66345a03B5b2Fa1ACA478cDA78BbBFbFc89E", 
-    address_mainnet: "0x15Cb66345a03B5b2Fa1ACA478cDA78BbBFbFc89E", 
+    address: "0xeE06902Ad0a6f961ea12F97Be8bDB67836620243", 
+    address_mainnet: "0xeE06902Ad0a6f961ea12F97Be8bDB67836620243", 
   },
   wETH: {
-    address: "0x7ceb23fd6bc0add59e62ac25578270cff1b9f619", 
-    address_mainnet: "0x7ceb23fd6bc0add59e62ac25578270cff1b9f619", 
+    address: "0x757c86b41E5048B99311Ea55f37A5f116b3D42eA", 
+    address_mainnet: "0x757c86b41E5048B99311Ea55f37A5f116b3D42eA", 
   },
+  discordLinkCommercial: {
+    address: "0x7594E21b4A489bAdA38CC0140CEC3F1a4089ab3a", 
+    address_mainnet: "0x7594E21b4A489bAdA38CC0140CEC3F1a4089ab3a", 
+  }
 };
 

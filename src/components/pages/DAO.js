@@ -67,7 +67,7 @@ function DAO() {
                                 open={isTransacting}
                                 onClick={!isTransacting}
                             >
-                                <h1 style={{ fontSize: '40px', marginRight: '20px' }}>Processing...</h1><CircularProgress color="inherit" />
+                                <h1 style={{ fontSize: '40px', marginRight: '20px', fontFamily:'Josefin Sans' }}>Processing...</h1><CircularProgress color="inherit" />
                             </Backdrop>) : <></>}
                         </Container>
                         <Container

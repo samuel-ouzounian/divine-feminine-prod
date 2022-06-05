@@ -31,12 +31,14 @@ import platinumCelestial from '../assets/image/Platinum.png'
 import bronzeCelestial2 from '../assets/image/Bronze2.png'
 import goldCelestial2 from '../assets/image/Gold2.png'
 import platinumCelestial2 from '../assets/image/Platinum2.png'
+import discordBig from '../assets/image/discordBig.png'
 
 export const SharedImage = {
     Logo:Logo,
     DiscordIco:DiscordIco,
     TwitterIco:TwitterIco,
-    InstagramIco:InstagramIco
+    InstagramIco:InstagramIco,
+    discordBig:discordBig
 }
 
 export const NftImage = {

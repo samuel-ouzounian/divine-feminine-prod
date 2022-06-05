@@ -1,0 +1,87 @@
+.container {
+    min-height: 87vh;
+
+
+}
+
+.header {
+    color: white;
+    text-align: center;
+    font-family: "Cinzel", serif;
+
+}
+
+.app-card-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 82vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.app-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    height: 20vw;
+    width: 20vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-bottom: 3vw;
+    border-radius: 10px;
+    background-color: #0c0b0be0;
+
+}
+
+.app-card-link {
+    text-decoration: none;
+}
+
+.app-card:hover {
+    height: 20.5vw;
+    width: 20.5vw;
+    transition: 300ms;
+    background-color: black;
+    
+}
+
+.discordImg {
+    width: 13vw;
+    height: auto;
+
+}
+
+.footer-wrapper{
+    width: 1000px;
+    background-color: black;
+
+}
+
+.footer {
+    text-align: center;
+    color: white;
+    font-family: "Cinzel", serif;
+    font-size: 2vw;
+    margin-bottom: 20px;
+
+}
+
+@media screen and (max-width: 800px) {
+    .header {
+        font-size: 10vw;
+    }
+    .discordImg{
+        width: 14.5vw;
+    }
+    .footer{
+        font-size: 2.2vw;
+    }
+
+
+}
