@@ -1,50 +1,38 @@
-.submitForm {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.inputBox {
-    width: 100%;
+.inputButtonDAO {
+    background-color: #450000;
+    width: 25vw;
     height: 75px;
+    border-color: transparent;
     border-radius: 10px;
-    font-size: 55px;
-    text-align: center;
-    color: black;
-    margin-bottom: 30px;
-
-
-}
-
-.submitDiv {
-    margin-top: 50px;
-    padding: 20px 30px 20px 30px;
-    border-radius: 10px;
-    background-color: white;
-    width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-
+    color: white;
+    font-family: "Cinzel", serif;
+    font-size: 1.8vw;
+    font-weight: bold;
+    cursor: pointer;
 
 }
 
-@media screen and (max-width: 650px) {
-    .submitDiv {
-        width: auto;
-    }
-    .submitForm{
-        width: 100%;
-    }
-    .inputBox{
-        height: 50px;
-        font-size: 30px;
-    }
-
+.inputButtonDAO:hover{
+    transition: 300ms;
+    width: 26vw;
+    height: 90px;
 }
 
-@media screen and (max-width: 400px) {
-    .inputBox {}
 
-    .submitButton {}
+@media screen and (max-width: 1000px) {
+
+    .inputButtonDAO{
+        width: 40vw;
+        font-size: 3vw;
+    }
+
+    @media screen and (max-width: 800px) {
+        .inputButtonDAO{
+            width: 80vw;
+            font-size: 5.5vw;
+        }
+    }
+
+
+
 }

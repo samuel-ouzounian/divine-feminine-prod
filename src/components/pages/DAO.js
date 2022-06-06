@@ -22,14 +22,16 @@ function DAO() {
     const { state } = React.useContext(Store);
     const [isTransacting, setIsTransacting] = useState(false);
     const [discordID, setDiscordID] = useState('');
+    let id = ''
 
 
     function getDiscordID() {
         const queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);
-        const path = urlParams.get('id')
-        return path
+        id = urlParams.get('id')
     }
+
+    getDiscordID()
     async function linkDiscord(e) {
         e.preventDefault();
         const discordLinkInstance = await utils.Discord(
@@ -37,7 +39,7 @@ function DAO() {
         );
         console.log(discordID)
         try {
-            const tx = await discordLinkInstance.linkDiscord(getDiscordID());
+            const tx = await discordLinkInstance.linkDiscord(id);
             setIsTransacting(true);
             await tx.wait();
             setIsTransacting(false);
@@ -52,7 +54,7 @@ function DAO() {
 
         return (
             <>
-                <div style={{ minHeight: '87vH' }}>
+                <div style={{ minHeight: '90vH' }}>
                     <Content>
                         <Container
                             style={{
@@ -67,7 +69,7 @@ function DAO() {
                                 open={isTransacting}
                                 onClick={!isTransacting}
                             >
-                                <h1 style={{ fontSize: '40px', marginRight: '20px', fontFamily:'Josefin Sans' }}>Processing...</h1><CircularProgress color="inherit" />
+                                <h1 style={{ fontSize: '40px', marginRight: '20px', fontFamily: 'Josefin Sans' }}>Processing...</h1><CircularProgress color="inherit" />
                             </Backdrop>) : <></>}
                         </Container>
                         <Container
@@ -80,17 +82,17 @@ function DAO() {
                             <Row>
                                 <TextWrapper>
                                     <BodyText className="wow fadeInUp">
-                                        Enter your 18 digit Discord ID (Ex: 029381527365287364) below to connect your Discord to the Divine Feminine Web3 Ecosystem
+                                        Click LINK WALLET below to connect your Discord to the Divine Feminine Web3 Ecosystem
                                     </BodyText>
                                 </TextWrapper>
                             </Row>
                         </Container>
-                        <div className='submitDiv'>
-                            <form className="submitForm" onSubmit={linkDiscord}>
-
-                                <input className="inputBox" type='text' value={getDiscordID()} onChange={(e) => console.log(discordID)}></input>
-                                <button type='submit' className="inputButton" style={{ color: 'white', backgroundColor: '#450000', border: '#450000', padding: '10px 40px 10px 40px', borderRadius: '10px', cursor: 'pointer' }}><h2 style={{ fontFamily: 'Cinzel' }}>CONNECT WALLET</h2></button>
-                            </form>
+                        <div style={{marginTop:'50px'}}>
+                            <div>
+                                <form onSubmit={linkDiscord}>
+                                    <button type='submit' className="inputButtonDAO">LINK WALLET</button>
+                                </form>
+                            </div>
                         </div>
                     </Content>
                 </div>
@@ -101,37 +103,37 @@ function DAO() {
     return (
 
         <>
-        <div style={{ minHeight: '87vH' }}>
-            <Content>
-                <Container
-                    style={{
-                        borderRadius: "20px",
-                        margin: "20px",
-                        width: 'auto',
-                        display:'flex',
-                        flexDirection:'column',
-                        justifyContent:'center',
-                        alignItems:'center'
-                    }}
-                >
-                    <Heading1 className="wow fadeInUp">{Uppercase("Connect Wallet to Access The Divine DAO")}</Heading1>
-                    <Container style={{backgroundColor:'rgba(0,0,0,.15)', textAlign:'center', width:'auto', marginTop:'50px'}}>
-                    <TextWrapper>
-                        <BodyText>
-                            <h3 style={{color:'white'}}>How to Install Metamask:</h3>
-                            Download Metamask Wallet: <a href="https://metamask.io/download/" target='_blank' rel="noreferrer" style={{color:'white'}} >https://metamask.io/download/</a> <br />
-                            Video for installing Metamask on Chrome: <a href="https://www.youtube.com/watch?v=OJqaZRpRqXM" target='_blank' rel="noreferrer" style={{color:'white'}} >https://www.youtube.com/watch?v=OJqaZRpRqXM </a><br />
-                            Using Metamask to pay with Polygon/Matic: <a href="https://gravityfinance.medium.com/using-metamask-with-polygon-923f061054db" target='_blank' rel="noreferrer" style={{color:'white'}} >https://gravityfinance.medium.com/using-metamask-with-polygon-923f061054db</a> 
+            <div style={{ minHeight: '87vH' }}>
+                <Content>
+                    <Container
+                        style={{
+                            borderRadius: "20px",
+                            margin: "20px",
+                            width: 'auto',
+                            display: 'flex',
+                            flexDirection: 'column',
+                            justifyContent: 'center',
+                            alignItems: 'center'
+                        }}
+                    >
+                        <Heading1 className="wow fadeInUp">{Uppercase("Connect Wallet to Access The Divine DAO")}</Heading1>
+                        <Container style={{ backgroundColor: 'rgba(0,0,0,.15)', textAlign: 'center', width: 'auto', marginTop: '50px' }}>
+                            <TextWrapper>
+                                <BodyText>
+                                    <h3 style={{ color: 'white' }}>How to Install Metamask:</h3>
+                                    Download Metamask Wallet: <a href="https://metamask.io/download/" target='_blank' rel="noreferrer" style={{ color: 'white' }} >https://metamask.io/download/</a> <br />
+                                    Video for installing Metamask on Chrome: <a href="https://www.youtube.com/watch?v=OJqaZRpRqXM" target='_blank' rel="noreferrer" style={{ color: 'white' }} >https://www.youtube.com/watch?v=OJqaZRpRqXM </a><br />
+                                    Using Metamask to pay with Polygon/Matic: <a href="https://gravityfinance.medium.com/using-metamask-with-polygon-923f061054db" target='_blank' rel="noreferrer" style={{ color: 'white' }} >https://gravityfinance.medium.com/using-metamask-with-polygon-923f061054db</a>
 
-                        </BodyText>
-                    </TextWrapper>
+                                </BodyText>
+                            </TextWrapper>
+                        </Container>
                     </Container>
-                </Container>
-                
-            </Content>
-        </div>
-        <Footer />
-    </>
+
+                </Content>
+            </div>
+            <Footer />
+        </>
 
     )
 }

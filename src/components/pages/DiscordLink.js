@@ -67,11 +67,11 @@ function DiscordLink() {
 
     }
 
-    if (getDiscordID().length < 4) {
+    if (getDiscordID()[0] == null) {
         return (
 
             <>
-                <div style={{ minHeight: '87vH' }}>
+                <div style={{ minHeight: '90vH' }}>
                     <Content>
                         <Container
                             style={{
