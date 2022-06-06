@@ -89,9 +89,8 @@ function DiscordLink() {
                                 <TextWrapper>
                                     <BodyText>
                                         <h3 style={{ color: 'white' }}>Invalid Discord Link URL! Get Started By Checking Out Our DOCS:</h3>
-                                        Download Metamask Wallet: <a href="https://metamask.io/download/" target='_blank' rel="noreferrer" style={{ color: 'white' }} >https://metamask.io/download/</a> <br />
-                                        Video for installing Metamask on Chrome: <a href="https://www.youtube.com/watch?v=OJqaZRpRqXM" target='_blank' rel="noreferrer" style={{ color: 'white' }} >https://www.youtube.com/watch?v=OJqaZRpRqXM </a><br />
-                                        Using Metamask to pay with Polygon/Matic: <a href="https://gravityfinance.medium.com/using-metamask-with-polygon-923f061054db" target='_blank' rel="noreferrer" style={{ color: 'white' }} >https://gravityfinance.medium.com/using-metamask-with-polygon-923f061054db</a>
+                                        Official DOCS: <a href="https://docs.thedivinefemininenft.art/divine-labs/divine-discord-bot" target='_blank' rel="noreferrer" style={{ color: 'white' }} >https://docs.thedivinefemininenft.art/divine-labs/divine-discord-bot</a> <br />
+                                        
 
                                     </BodyText>
                                 </TextWrapper>
