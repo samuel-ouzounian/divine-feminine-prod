@@ -52,7 +52,7 @@ export default function Views() {
             style={{
               borderRadius: "20px",
               margin: "20px",
-              backgroundColor: "rgba(0,0,0,.15)",
+              backgroundColor: "#0c0b0be0",
               width: 'auto'
             }}
           >
@@ -476,7 +476,7 @@ export default function Views() {
         </Row>
         <Container
           style={{
-            backgroundColor: "rgba(0,0,0,.15)",
+            backgroundColor: "#0c0b0be0",
             borderRadius: "20px",
             margin: "20px",
             marginTop: '80px'
@@ -489,7 +489,7 @@ export default function Views() {
         </Container>
         <Container
           style={{
-            backgroundColor: "rgba(0,0,0,.15)",
+            backgroundColor: "#0c0b0be0",
             borderRadius: "20px",
             margin: "20px",
           }}
@@ -545,7 +545,7 @@ export default function Views() {
         </Container>
         <Container
           style={{
-            backgroundColor: "rgba(0,0,0,.15)",
+            backgroundColor: "#0c0b0be0",
             display: "flex",
             borderRadius: "20px",
             margin: "20px",
@@ -595,7 +595,7 @@ export default function Views() {
         </Container>
         <Container
           style={{
-            backgroundColor: "rgba(0,0,0,.15)",
+            backgroundColor: "#0c0b0be0",
             display: "flex",
             borderRadius: "20px",
             margin: "20px",
@@ -649,7 +649,7 @@ export default function Views() {
         </Container>
         <Container
           style={{
-            backgroundColor: "rgba(0,0,0,.15)",
+            backgroundColor: "#0c0b0be0",
             borderRadius: "20px",
             margin: "20px",
           }}
@@ -947,7 +947,7 @@ const CarouselWrapper = styled.div`
 
 const Card = styled.div`
   overflow-wrap: normal;
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: #0c0b0be0;
   max-width: 660px;
   padding: 20px;
   border-radius: 10px;
@@ -960,7 +960,7 @@ const UtilityCard = styled.div`
   overflow-wrap: normal;
   display: flex;
   flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: #0c0b0be0;
   max-width: 660px;
   padding: 20px;
   height: 350px;

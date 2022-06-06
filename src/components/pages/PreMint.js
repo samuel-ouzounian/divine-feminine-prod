@@ -211,7 +211,7 @@ function PreMint() {
                     </Container>
                     <Container
                         style={{
-                            backgroundColor: "rgba(0,0,0,.15)",
+                            backgroundColor: "#0c0b0be0",
                             borderRadius: "20px",
                             marginTop: "60px",
                         }}
@@ -229,7 +229,7 @@ function PreMint() {
                         }}
                     >
                         <Row>
-                            <TextWrapper style={{ backgroundColor: "rgba(0,0,0,.15)" }}>
+                            <TextWrapper style={{ backgroundColor: "#0c0b0be0" }}>
                                 <PreMintHeader className="wow fadeInUp" style={{ marginTop: '25px' }}>
                                     <div><h1 style={{ fontSize: '28px', color: 'white', fontFamily: 'Cinzel' }}>Current Tier:</h1><br /><h1 style={{ textAlign: 'center', color: 'white', fontFamily: "Josefin Sans", fontSize: '28px' }}>{walletTier}</h1></div>
                                     <div><h1 style={{ fontSize: '28px', color: 'white', fontFamily: 'Cinzel' }}>Total Reserved:</h1><br /><h1 style={{ textAlign: 'center', color: 'white', fontFamily: "Josefin Sans", fontSize: '28px' }}>{walletBallance}</h1></div>
@@ -316,7 +316,7 @@ function PreMint() {
                         }}
                     >
                         <Heading1 className="wow fadeInUp">{Uppercase("Connect Wallet to Access The Pre-Mint Reserve")}</Heading1>
-                        <Container style={{ backgroundColor: 'rgba(0,0,0,.15)', textAlign: 'center', width: 'auto', marginTop: '50px' }}>
+                        <Container style={{ backgroundColor: '#0c0b0be0', textAlign: 'center', width: 'auto', marginTop: '50px' }}>
                             <TextWrapper>
                                 <BodyText>
                                     <h3 style={{ color: 'white' }}>How to Install Metamask:</h3>
@@ -373,7 +373,7 @@ const Content = styled.section`
                 padding - bottom: 60px;
             padding-top: 50px;
             z-index: 10;
-            background-color: #131313;
+            background-color: #0c0b0be0;
   }
             #teams-wrapper {
                 margin - top: 50px;

@@ -10,7 +10,7 @@ export const RoadmapTimeline = styled.div`
     content: "";
     position: absolute;
     width: 6px;
-    background-color: #25252d;
+    background-color: #0c0b0be0;
     top: 0;
     bottom: 0;
     border-radius: 50px;
@@ -55,7 +55,7 @@ export const RoadmapTimelineLeft = styled.div`
 `;
 
 export const RoadmapContent = styled.div`
-  background-color: rgba(0,0,0,0.15);
+  background-color: #0c0b0be0;
   position: relative;
   padding: 30px;
   border-radius: 20px;

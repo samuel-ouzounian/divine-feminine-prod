@@ -15,7 +15,7 @@
 
 .modal>.content {
     border-radius: 10px;
-    background-color: #161617;
+    background-color: #0c0b0be0;
     color: white;
     line-height: 0px;
     display: flex;
@@ -37,7 +37,7 @@
 }
 .card:hover{
     transition: all 0.3s ease-out;
-    background: rgba(0,0,0,.15);
+    background: #0c0b0be0;
     transition: 250ms;
 
 }

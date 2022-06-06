@@ -14,7 +14,7 @@ function Team() {
       <Content>
         <Container
           style={{
-            backgroundColor: "rgba(0,0,0,.15)",
+            backgroundColor: "#0c0b0be0",
             borderRadius: "20px",
             margin: "20px",
             width: "800px",
@@ -24,7 +24,7 @@ function Team() {
         </Container>
         <Container
           style={{
-            backgroundColor: "rgba(0,0,0,.15)",
+            backgroundColor: "#0c0b0be0",
             borderRadius: "20px",
             margin: "20px",
           }}
@@ -69,7 +69,7 @@ function Team() {
         </Container>
         <Container
           style={{
-            backgroundColor: "rgba(0,0,0,.15)",
+            backgroundColor: "#0c0b0be0",
             display: "flex",
             borderRadius: "20px",
             margin: "20px",
@@ -108,7 +108,7 @@ function Team() {
         </Container>
         <Container
           style={{
-            backgroundColor: "rgba(0,0,0,.15)",
+            backgroundColor: "#0c0b0be0",
             display: "flex",
             borderRadius: "20px",
             margin: "20px",
@@ -163,7 +163,7 @@ function Team() {
         </Container>
         <Container
           style={{
-            backgroundColor: "rgba(0,0,0,.15)",
+            backgroundColor: "#0c0b0be0",
             display: "flex",
             borderRadius: "20px",
             margin: "20px",
@@ -240,7 +240,7 @@ const Content = styled.section`
     padding-top: 180px;
     margin-bottom: 180px;
     z-index: 10;
-    background-color: #131313;
+    background-color: #0c0b0be0;
   }
   #teams-wrapper {
     margin-top: 50px;

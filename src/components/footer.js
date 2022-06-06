@@ -43,7 +43,7 @@ export default function Footer() {
 const FooterWrapper = styled.footer`
 width:100%;
     color:white;
-    background-color:rgba(0,0,0,.15);
+    background-color:#0c0b0be0;
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;

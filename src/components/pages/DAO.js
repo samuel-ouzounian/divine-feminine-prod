@@ -74,7 +74,7 @@ function DAO() {
                         </Container>
                         <Container
                             style={{
-                                backgroundColor: "rgba(0,0,0,.15)",
+                                backgroundColor: "#0c0b0be0",
                                 borderRadius: "20px",
                                 width: 'auto',
                             }}
@@ -117,7 +117,7 @@ function DAO() {
                         }}
                     >
                         <Heading1 className="wow fadeInUp">{Uppercase("Connect Wallet to Access The Divine DAO")}</Heading1>
-                        <Container style={{ backgroundColor: 'rgba(0,0,0,.15)', textAlign: 'center', width: 'auto', marginTop: '50px' }}>
+                        <Container style={{ backgroundColor: '#0c0b0be0', textAlign: 'center', width: 'auto', marginTop: '50px' }}>
                             <TextWrapper>
                                 <BodyText>
                                     <h3 style={{ color: 'white' }}>How to Install Metamask:</h3>
