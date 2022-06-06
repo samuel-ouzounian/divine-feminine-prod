@@ -89,9 +89,7 @@ function DiscordLink() {
                                 <TextWrapper>
                                     <BodyText>
                                         <h3 style={{ color: 'white' }}>Invalid Discord Link URL! Get Started By Checking Out Our DOCS:</h3>
-                                        Official DOCS: <a href="https://docs.thedivinefemininenft.art/divine-labs/divine-discord-bot" target='_blank' rel="noreferrer" style={{ color: 'white' }} >https://docs.thedivinefemininenft.art/divine-labs/divine-discord-bot</a> <br />
-                                        
-
+                                        <a href="https://docs.thedivinefemininenft.art/divine-labs/divine-discord-bot" target='_blank' rel="noreferrer" style={{ color: 'white' }} >https://docs.thedivinefemininenft.art/divine-labs/divine-discord-bot</a> <br />
                                     </BodyText>
                                 </TextWrapper>
                             </Container>
