@@ -133,7 +133,7 @@ function DiscordLink() {
                                 <TextWrapper>
                                     <BodyText>
                                         <h3 style={{ color: 'white' }}>Get Started By Checking Out Our DOCS:</h3>
-                                        <a href="https://app.gitbook.com/s/LPKOKan0qqcjWZwnujtL/divine-labs/divine-discord-link" target='_blank' rel="noreferrer" style={{ color: 'white' }} >https://docs.thedivinefemininenft.art/divine-labs/divine-discord-bot</a> <br />
+                                        <a href="https://app.gitbook.com/s/LPKOKan0qqcjWZwnujtL/divine-labs/divine-link" target='_blank' rel="noreferrer" style={{ color: 'white' }} >https://docs.thedivinefemininenft.art/divine-labs/divine-link</a> <br />
                                     </BodyText>
                                 </TextWrapper>
                             </Container>

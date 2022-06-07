@@ -24,7 +24,7 @@ function DivineLabs() {
         <>
             <div className="container">
                 <h1 className="header">Divine Labs</h1>
-                <a className="app-card-link" href='https://docs.thedivinefemininenft.art/divine-labs/divine-discord-bot' target='_blank' rel="noreferrer">
+                <a className="app-card-link" href='https://docs.thedivinefemininenft.art/divine-labs/divine-link' target='_blank' rel="noreferrer">
                     <div className="app-card-wrapper">
                         <div className="app-card">
                             <div className="image">
