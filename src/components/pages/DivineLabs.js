@@ -32,7 +32,7 @@ function DivineLabs() {
 
                             </div>
                             <div className="footer-wrapper">
-                                <h1 className="footer">Discord Link</h1>
+                                <h1 className="footer">Divine Link</h1>
                             </div>
 
                         </div>
