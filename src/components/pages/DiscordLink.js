@@ -89,7 +89,7 @@ function DiscordLink() {
                                 alignItems: 'center'
                             }}
                         >
-                            <Heading1 className="wow fadeInUp">{Uppercase("Connect Wallet to Access The Divine Discord Link")}</Heading1>
+                            <Heading1 className="wow fadeInUp">{Uppercase("Connect Wallet to Access The Divine Link")}</Heading1>
                             <Container style={{ backgroundColor: '#0c0b0be0', textAlign: 'center', width: 'auto', marginTop: '50px' }}>
                                 <TextWrapper>
                                     <BodyText>
@@ -128,7 +128,7 @@ function DiscordLink() {
                                 alignItems: 'center'
                             }}
                         >
-                            <Heading1 className="wow fadeInUp">{Uppercase("Divine Discord Link")}</Heading1>
+                            <Heading1 className="wow fadeInUp">{Uppercase("Divine Link")}</Heading1>
                             <Container style={{ backgroundColor: '#0c0b0be0', textAlign: 'center', width: 'auto', marginTop: '50px' }}>
                                 <TextWrapper>
                                     <BodyText>
@@ -156,7 +156,7 @@ function DiscordLink() {
 
             <>
                 <div className="container">
-                    <h1 className="header">Divine Discord Link</h1>
+                    <h1 className="header">Divine Link</h1>
                     {isTransacting ? (<Backdrop
                         sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
                         open={isTransacting}
@@ -215,11 +215,11 @@ function DiscordLink() {
                             alignItems: 'center'
                         }}
                     >
-                        <Heading1 className="wow fadeInUp">{Uppercase("Divine Discord Link")}</Heading1>
+                        <Heading1 className="wow fadeInUp">{Uppercase("Divine Link")}</Heading1>
                         <Container style={{ backgroundColor: '#0c0b0be0', textAlign: 'center', width: 'auto', marginTop: '50px' }}>
                             <TextWrapper>
                                 <BodyText>
-                                    <h3 style={{ color: 'white' }}>Invalid Discord Link URL! Get Started By Checking Out Our DOCS:</h3>
+                                    <h3 style={{ color: 'white' }}>Get Started By Checking Out Our DOCS:</h3>
                                     <a href="https://docs.thedivinefemininenft.art/divine-labs/divine-discord-bot" target='_blank' rel="noreferrer" style={{ color: 'white' }} >https://docs.thedivinefemininenft.art/divine-labs/divine-discord-bot</a> <br />
                                 </BodyText>
                             </TextWrapper>

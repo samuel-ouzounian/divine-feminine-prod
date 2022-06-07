@@ -32,7 +32,7 @@ export const configVars = {
     address_mainnet: "0x7ceb23fd6bc0add59e62ac25578270cff1b9f619",
   },
   discordLinkCommercial: {
-    address: "0x853E9Ec5b13812B08Cdece053B7A0708c70d2d65",
-    address_mainnet: "0x853E9Ec5b13812B08Cdece053B7A0708c70d2d65",
+    address: "0x94a48DA3690ce93FbdECED82B0A59A27E947c7cD",
+    address_mainnet: "0x94a48DA3690ce93FbdECED82B0A59A27E947c7cD",
   },
 };

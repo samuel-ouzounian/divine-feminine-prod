@@ -272,6 +272,25 @@
       "type": "function"
     },
     {
+      "inputs": [
+        {
+          "internalType": "string[]",
+          "name": "_addresses",
+          "type": "string[]"
+        }
+      ],
+      "name": "massGuildChecker",
+      "outputs": [
+        {
+          "internalType": "string[]",
+          "name": "",
+          "type": "string[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
       "inputs": [],
       "name": "owner",
       "outputs": [
