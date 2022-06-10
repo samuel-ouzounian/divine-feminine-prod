@@ -102,21 +102,11 @@ function Navbar() {
                                     DOCS
                                 </Link>
                                 <ul>
+                                    <li><a style={{ textDecoration: 'none', color: 'white', fontFamily: "Josefin Sans" }} href="https://docs.thedivinefemininenft.art/" target='_blank' rel="noreferrer">White Paper</a></li>
                                     <li><a style={{ textDecoration: 'none', color: 'white', fontFamily: "Josefin Sans" }} href="https://medium.com/@thedivinefemininenft/what-is-the-divine-feminine-a-white-paper-d849a2163e78" target='_blank' rel="noreferrer">Medium Article</a></li>
-                                    <li><a style={{ textDecoration: 'none', color: 'white', fontFamily: "Josefin Sans" }} href="https://gateway.pinata.cloud/ipfs/QmeDUSoD2sX4SkpmGYUtR63ve21f9VA5TP8REdodtVU273" target='_blank' rel="noreferrer">Ownership Agreement</a></li>
                                 </ul>
                             </div>
                         </li>)}
-                        <li className='nav-item'>
-                            <a href='https://docs.thedivinefemininenft.art/'
-                                target='_blank' 
-                                rel="noreferrer"
-                                className='nav-links'
-                                onClick={closeMobileMenu}
-                            >
-                                White Paper
-                            </a>
-                        </li>
                         <li className='nav-item'>
                             <Link
                                 to='/DivineLabs'
