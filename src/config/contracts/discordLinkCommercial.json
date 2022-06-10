@@ -145,6 +145,19 @@
       "type": "event"
     },
     {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "_guildID",
+          "type": "string"
+        }
+      ],
+      "name": "removeProject",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
       "inputs": [],
       "name": "renounceOwnership",
       "outputs": [],
