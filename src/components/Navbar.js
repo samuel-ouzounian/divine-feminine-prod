@@ -108,13 +108,14 @@ function Navbar() {
                             </div>
                         </li>)}
                         <li className='nav-item'>
-                            <Link
-                                to='https://docs.thedivinefemininenft.art/'
+                            <a href='https://docs.thedivinefemininenft.art/'
+                                target='_blank' 
+                                rel="noreferrer"
                                 className='nav-links'
                                 onClick={closeMobileMenu}
                             >
                                 White Paper
-                            </Link>
+                            </a>
                         </li>
                         <li className='nav-item'>
                             <Link
