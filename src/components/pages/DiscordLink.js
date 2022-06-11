@@ -56,10 +56,9 @@ function DiscordLink() {
         if (whiteList) {
             cost = ''
         }
-        let gas = await discordLinkInstance.estimateGas.linkDiscord();
         try {
 
-            const tx = await discordLinkInstance.linkDiscord(discordID, guildID, { value: cost, gasPrice: gas });
+            const tx = await discordLinkInstance.linkDiscord(discordID, guildID, { value: cost});
             setIsTransacting(true);
             await tx.wait();
             setIsTransacting(false);
