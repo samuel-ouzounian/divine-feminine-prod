@@ -26,6 +26,10 @@ function DiscordLink() {
     let username = ''
     let guildName = ''
     const [isTransacting, setIsTransacting] = useState(false);
+    const [finished, setFinished] = useState(false);
+    const sleep = (milliseconds) => {
+        return new Promise(resolve => setTimeout(resolve, milliseconds))
+      }
 
     function getDiscordID() {
         let path = []
@@ -62,6 +66,9 @@ function DiscordLink() {
             setIsTransacting(true);
             await tx.wait();
             setIsTransacting(false);
+            setFinished(true);
+            await sleep(3000)
+            setFinished(false)
 
         } catch (e) {
             setIsTransacting(false);
@@ -165,6 +172,13 @@ function DiscordLink() {
                         onClick={!isTransacting}
                     >
                         <h1 style={{ fontSize: '40px', marginRight: '20px', fontFamily: 'Josefin Sans' }}>Linking...</h1><CircularProgress color="inherit" />
+                    </Backdrop>) : <></>}
+                    {finished ? (<Backdrop
+                        sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
+                        open={isTransacting}
+                        onClick={!isTransacting}
+                    >
+                        <h1 style={{ fontSize: '40px', marginRight: '20px', fontFamily: 'Josefin Sans' }}>Wallet Linked!</h1>
                     </Backdrop>) : <></>}
                     <div className="connect-wrapper">
                         <div className="info-column">
