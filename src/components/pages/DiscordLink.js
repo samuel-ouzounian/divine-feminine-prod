@@ -29,7 +29,7 @@ function DiscordLink() {
     const [finished, setFinished] = useState(false);
     const sleep = (milliseconds) => {
         return new Promise(resolve => setTimeout(resolve, milliseconds))
-      }
+    }
 
     function getDiscordID() {
         let path = []
@@ -62,12 +62,12 @@ function DiscordLink() {
         }
         try {
 
-            const tx = await discordLinkInstance.linkDiscord(discordID, guildID, { value: cost});
+            const tx = await discordLinkInstance.linkDiscord(discordID, guildID, { value: cost });
             setIsTransacting(true);
             await tx.wait();
             setIsTransacting(false);
             setFinished(true);
-            await sleep(3000)
+            await sleep(10000)
             setFinished(false)
 
         } catch (e) {
@@ -89,7 +89,7 @@ function DiscordLink() {
                         <Container
                             style={{
                                 borderRadius: "20px",
-                                marginTop:'100px',
+                                marginTop: '100px',
                                 width: 'auto',
                                 display: 'flex',
                                 flexDirection: 'column',
@@ -100,14 +100,14 @@ function DiscordLink() {
                             <Heading1 className="wow fadeInUp">{Uppercase("Connect Wallet to Access The Divine Link")}</Heading1>
                             <Container style={{ backgroundColor: '#0c0b0be0', textAlign: 'center', width: 'auto', marginTop: '50px' }}>
                                 <TextWrapper>
-                                <BodyText>
-                                    <h3 style={{ color: 'white' }}>How to Install Metamask:</h3>
-                                    Download Metamask Wallet: <a href="https://metamask.io/download/" target='_blank' rel="noreferrer" style={{ color: 'white' }} >https://metamask.io/download/</a> <br />
-                                    Video for installing Metamask on Chrome: <a href="https://www.youtube.com/watch?v=OJqaZRpRqXM" target='_blank' rel="noreferrer" style={{ color: 'white' }} >https://www.youtube.com/watch?v=OJqaZRpRqXM </a><br />
-                                    Adding Polygon Mainnet to Metamask: <a href="https://docs.polygon.technology/docs/develop/metamask/config-polygon-on-metamask/" target='_blank' rel="noreferrer" style={{ color: 'white' }} >https://docs.polygon.technology/docs/develop/metamask/config-polygon-on-metamask/</a><br />
-                                    Using Metamask to pay with Polygon/Matic: <a href="https://gravityfinance.medium.com/using-metamask-with-polygon-923f061054db" target='_blank' rel="noreferrer" style={{ color: 'white' }} >https://gravityfinance.medium.com/using-metamask-with-polygon-923f061054db</a>
+                                    <BodyText>
+                                        <h3 style={{ color: 'white' }}>How to Install Metamask:</h3>
+                                        Download Metamask Wallet: <a href="https://metamask.io/download/" target='_blank' rel="noreferrer" style={{ color: 'white' }} >https://metamask.io/download/</a> <br />
+                                        Video for installing Metamask on Chrome: <a href="https://www.youtube.com/watch?v=OJqaZRpRqXM" target='_blank' rel="noreferrer" style={{ color: 'white' }} >https://www.youtube.com/watch?v=OJqaZRpRqXM </a><br />
+                                        Adding Polygon Mainnet to Metamask: <a href="https://docs.polygon.technology/docs/develop/metamask/config-polygon-on-metamask/" target='_blank' rel="noreferrer" style={{ color: 'white' }} >https://docs.polygon.technology/docs/develop/metamask/config-polygon-on-metamask/</a><br />
+                                        Using Metamask to pay with Polygon/Matic: <a href="https://gravityfinance.medium.com/using-metamask-with-polygon-923f061054db" target='_blank' rel="noreferrer" style={{ color: 'white' }} >https://gravityfinance.medium.com/using-metamask-with-polygon-923f061054db</a>
 
-                                </BodyText>
+                                    </BodyText>
                                 </TextWrapper>
                             </Container>
                         </Container>
@@ -167,18 +167,18 @@ function DiscordLink() {
                 <div className="container">
                     <h1 className="header">Divine Link</h1>
                     {isTransacting ? (<Backdrop
-                        sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
+                        sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1,backgroundColor:'black' }}
                         open={isTransacting}
                         onClick={!isTransacting}
                     >
                         <h1 style={{ fontSize: '40px', marginRight: '20px', fontFamily: 'Josefin Sans' }}>Linking...</h1><CircularProgress color="inherit" />
                     </Backdrop>) : <></>}
                     {finished ? (<Backdrop
-                        sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
-                        open={isTransacting}
-                        onClick={!isTransacting}
+                        sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1, backgroundColor:'black' }}
+                        open={finished}
+                        onClick={!finished}
                     >
-                        <h1 style={{ fontSize: '40px', marginRight: '20px', fontFamily: 'Josefin Sans' }}>Wallet Linked!</h1>
+                        <h1 style={{ fontSize: '40px', textAlign:'center', fontFamily: 'Josefin Sans' }}>Wallet Linked! <br /> <h3 style={{ fontSize: '25px', textAlign:'center', fontFamily: 'Josefin Sans' }}>Your Role Will Be Assigned Shortly</h3></h1>
                     </Backdrop>) : <></>}
                     <div className="connect-wrapper">
                         <div className="info-column">
