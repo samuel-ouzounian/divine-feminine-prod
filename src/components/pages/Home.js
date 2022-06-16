@@ -838,7 +838,7 @@ export default function Views() {
               </BodyText>
               <MenuWrapper id="social-menu" style={{ marginLeft: "115px" }}>
                 <a
-                  href="https://twitter.com/_probatorem"
+                  href="https://twitter.com/0xProbatorem"
                   target="_blank"
                   rel="noreferrer"
                 >
