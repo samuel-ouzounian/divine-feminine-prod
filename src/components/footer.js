@@ -29,9 +29,18 @@ export default function Footer() {
                     </MenuWrapper>
                     <Between />
                     <MenuWrapper id="social-menu">
-                        <a href='https://gateway.pinata.cloud/ipfs/QmeDUSoD2sX4SkpmGYUtR63ve21f9VA5TP8REdodtVU273' target='_blank' rel="noreferrer" style={{ color: 'white' }}>
-                            Digital Ownership Agreement
-                        </a>
+                        <a href='https://gateway.pinata.cloud/ipfs/QmQWPPhGJZZ7souKGiEXyGkwZ51RZLHg7wUohU9soxhsh1/Internal_%20Legal%20Digital%20Ownership%20Agreement%20May%202022%20v2.pdf' target='_blank' rel="noreferrer" style={{ color: 'white' }}>
+                            Digital Owernship Agreement
+                        </a><br />
+                        <a href='https://gateway.pinata.cloud/ipfs/Qmc99JojFeLECRoNHS9oCTmQfXqq5JgWFEjjApUAknem3e?filename=Internal_%2520Legal%2520Digital%2520Service%2520Agreement.pdf' target='_blank' rel="noreferrer" style={{ color: 'white' }}>
+                            Digital Service Agreement
+                        </a><br />
+                        <a href='https://gateway.pinata.cloud/ipfs/QmR86gh1EvxVpdzMBCQQyKSTib2wmCZbjtLCR5R8TF3rg2?filename=Internal_%2520Legal%2520Privacy%2520Agreement%2520June%25202022%2520v0.5.pdf' target='_blank' rel="noreferrer" style={{ color: 'white' }}>
+                            Privacy Agreement
+                        </a><br />
+                        <a href='https://gateway.pinata.cloud/ipfs/QmbVCq4RMSWxqpqbVGd33pmU4UQLjnQpStKFxn4mzza9i6?filename=Internal_%2520Terms%2520of%2520Use%2520June%25202022%2520v0.5.pdf' target='_blank' rel="noreferrer" style={{ color: 'white' }}>
+                            Website Terms of Use
+                        </a><br />
                     </MenuWrapper>
                 </Row>
             </Container>
