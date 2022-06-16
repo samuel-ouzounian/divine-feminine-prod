@@ -1,5 +1,11 @@
 .social-icons {
-    margin-left:100px;
+    margin-left: 100px;
+}
+
+.legalSection {
+    display: flex;
+    flex-direction: column;
+    gap:10px
 }
 
 @media screen and (max-width:1220px) {
@@ -7,5 +13,12 @@
         margin-top: 20px;
         margin-left: 0px;
     }
-    
+
+    .legalSection {
+        justify-content: center;
+        align-items: center;
+        gap:3px
+
+    }
+
 }
