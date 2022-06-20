@@ -20,8 +20,8 @@ export const configVars = {
     blockExplorerUrl: "https://polygonscan.com/",
   },
   preMint: {
-    address: "0xbCF11c601cCa2e97D26C4277A4b0d250492faAaa",
-    address_mainnet: "0xbCF11c601cCa2e97D26C4277A4b0d250492faAaa",
+    address: "0xa15B594177Dd5C957e9FBd35a1e15b2039B8C187",
+    address_mainnet: "0xa15B594177Dd5C957e9FBd35a1e15b2039B8C187",
   },
   discordLink: {
     address: "0x15Cb66345a03B5b2Fa1ACA478cDA78BbBFbFc89E",
