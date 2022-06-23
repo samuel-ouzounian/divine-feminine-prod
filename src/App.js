@@ -12,10 +12,15 @@ import Navbar from './components/Navbar';
 import DAO from './components/pages/DAO';
 import DivineLabs from './components/pages/DivineLabs';
 import DiscordLink from './components/pages/DiscordLink';
+import ReactGA from 'react-ga';
+const TRACKING_ID = "G-LTP01C48TR";
+ReactGA.initialize(TRACKING_ID);
 
 function App() {
   useEffect(() => {
     new WOW.WOW().init();
+    ReactGA.pageview(window.location.pathname + window.location.search);
+
 
   }, []);
   return (
