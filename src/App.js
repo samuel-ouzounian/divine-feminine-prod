@@ -13,7 +13,7 @@ import DAO from './components/pages/DAO';
 import DivineLabs from './components/pages/DivineLabs';
 import DiscordLink from './components/pages/DiscordLink';
 import ReactGA from 'react-ga';
-const TRACKING_ID = "G-LTP01C48TR";
+const TRACKING_ID = "UA-232869928-1";
 ReactGA.initialize(TRACKING_ID);
 
 function App() {
