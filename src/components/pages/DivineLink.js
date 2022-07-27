@@ -57,11 +57,10 @@ function DivineLink() {
         const data = JSON.stringify({
             sigHash: signature,
             token: rsaToken,
-            chainID: '80001', //Remove after caleb notifies
             walletID: state.wallet.address,
         });
         try {
-            let response = await axios.post('https://ec2-54-183-141-88.us-west-1.compute.amazonaws.com:8443', data)
+            let response = await axios.post('https://divinelink.thedivinefemininenft.art:8443', data)
             console.log(response.status)
             if (response.data == 'Success!') {
                 setIsTransacting(false)
