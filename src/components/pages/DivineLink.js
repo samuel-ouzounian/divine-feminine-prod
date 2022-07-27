@@ -61,7 +61,7 @@ function DivineLink() {
             walletID: state.wallet.address,
         });
         try {
-            let response = await axios.post('http://ec2-54-183-141-88.us-west-1.compute.amazonaws.com:8080', data)
+            let response = await axios.post('https://ec2-54-183-141-88.us-west-1.compute.amazonaws.com:8443', data)
             console.log(response.status)
             if (response.data == 'Success!') {
                 setIsTransacting(false)
