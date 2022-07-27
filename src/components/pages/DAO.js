@@ -21,25 +21,26 @@ const {
 function DAO() {
     const { state } = React.useContext(Store);
     const [isTransacting, setIsTransacting] = useState(false);
-    const [discordID, setDiscordID] = useState('');
+    const [discordID, setDiscordID] = useState(null)
     let id = ''
 
 
     function getDiscordID() {
+        let id = ''
         const queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);
         id = urlParams.get('id')
+        setDiscordID(id)
+        console.log(discordID)
     }
 
-    getDiscordID()
     async function linkDiscord(e) {
         e.preventDefault();
         const discordLinkInstance = await utils.Discord(
             state.wallet.browserWeb3Provider
         );
-        console.log(discordID)
         try {
-            const tx = await discordLinkInstance.linkDiscord(id);
+            const tx = await discordLinkInstance.linkDiscord(discordID);
             setIsTransacting(true);
             await tx.wait();
             setIsTransacting(false);
@@ -50,7 +51,49 @@ function DAO() {
         }
     }
 
-    if (state.wallet.connected) {
+    useEffect(() => {
+        getDiscordID()
+
+    }, [])
+
+
+    if(discordID == null){
+        return (
+
+            <>
+                <div style={{ minHeight: '90vH' }}>
+                    <Content>
+                        <Container
+                            style={{
+                                borderRadius: "20px",
+                                margin: "20px",
+                                width: 'auto',
+                                display: 'flex',
+                                flexDirection: 'column',
+                                justifyContent: 'center',
+                                alignItems: 'center'
+                            }}
+                        >
+                            <Heading1 className="wow fadeInUp">{Uppercase("Divine Link")}</Heading1>
+                            <Container style={{ backgroundColor: '#0c0b0be0', textAlign: 'center', width: 'auto', marginTop: '50px', borderRadius:'10px' }}>
+                                <TextWrapper>
+                                    <BodyText>
+                                        <h3 style={{ color: 'white' }}>Get started by visiting the Verify Celestial channel in our <a href="https://discord.gg/3eRZjpdSMm" target='_blank' rel="noreferrer" style={{ color: 'white' }} >Discord</a></h3>
+                                    </BodyText>
+                                </TextWrapper>
+                            </Container>
+                        </Container>
+
+                    </Content>
+                </div>
+                <Footer />
+            </>
+
+        )
+    }
+
+
+    if (state.wallet.connected && discordID != null) {
 
         return (
             <>
@@ -87,7 +130,7 @@ function DAO() {
                                 </TextWrapper>
                             </Row>
                         </Container>
-                        <div style={{marginTop:'50px'}}>
+                        <div style={{ marginTop: '50px' }}>
                             <div>
                                 <form onSubmit={linkDiscord}>
                                     <button type='submit' className="inputButtonDAO">LINK WALLET</button>
@@ -103,7 +146,7 @@ function DAO() {
     return (
 
         <>
-            <div style={{ minHeight: '87vH' }}>
+            <div style={{ minHeight: '90vH' }}>
                 <Content>
                     <Container
                         style={{
@@ -119,7 +162,7 @@ function DAO() {
                         <Heading1 className="wow fadeInUp">{Uppercase("Connect Wallet to Access The Divine DAO")}</Heading1>
                         <Container style={{ backgroundColor: '#0c0b0be0', textAlign: 'center', width: 'auto', marginTop: '50px' }}>
                             <TextWrapper>
-                            <BodyText>
+                                <BodyText>
                                     <h3 style={{ color: 'white' }}>How to Install Metamask:</h3>
                                     Download Metamask Wallet: <a href="https://metamask.io/download/" target='_blank' rel="noreferrer" style={{ color: 'white' }} >https://metamask.io/download/</a> <br />
                                     Video for installing Metamask on Chrome: <a href="https://www.youtube.com/watch?v=OJqaZRpRqXM" target='_blank' rel="noreferrer" style={{ color: 'white' }} >https://www.youtube.com/watch?v=OJqaZRpRqXM </a><br />

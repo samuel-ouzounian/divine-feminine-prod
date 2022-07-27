@@ -14,10 +14,10 @@ import { IWallet, defaultWallet } from "../store/interfaces";
 export const connect = async (): Promise<IWallet> => {
   try {
     const connector = new DeFiWeb3Connector({
-      supportedChainIds: [config.configVars.rpcNetwork.chainId],
+      supportedChainIds: [config.configVars.rpcNetworkCronos.chainId],
       rpc: {
-        [config.configVars.rpcNetwork.chainId]:
-          config.configVars.rpcNetwork.rpcUrl,
+        [config.configVars.rpcNetworkCronos.chainId]:
+          config.configVars.rpcNetworkCronos.rpcUrl,
       },
       pollingInterval: 15000,
     });
@@ -25,11 +25,17 @@ export const connect = async (): Promise<IWallet> => {
     const provider = await connector.getProvider();
     const web3Provider = new ethers.providers.Web3Provider(provider);
     if (
+      !(
+        parseInt(provider.chainId) ===
+        config.configVars.rpcNetworkCronos.chainId
+      ) &&
       !(parseInt(provider.chainId) === config.configVars.rpcNetwork.chainId)
     ) {
       window.alert(
         "Switch your Wallet to blockchain network " +
-          config.configVars.rpcNetwork.chainName
+          config.configVars.rpcNetwork.chainName +
+          "or " +
+          config.configVars.rpcNetworkCronos.chainName
       );
       return defaultWallet;
     }
@@ -44,7 +50,7 @@ export const connect = async (): Promise<IWallet> => {
       address: (await web3Provider.listAccounts())[0],
       browserWeb3Provider: web3Provider,
       serverWeb3Provider: new ethers.providers.JsonRpcProvider(
-        config.configVars.rpcNetwork.rpcUrl
+        config.configVars.rpcNetworkCronos.rpcUrl
       ),
       wcProvider: provider,
       wcConnector: connector,
@@ -52,7 +58,7 @@ export const connect = async (): Promise<IWallet> => {
       chainId: provider.chainId,
     };
   } catch (e) {
-    window.alert('Install Crypto.com DeFi Wallet');
+    window.alert("Install Crypto.com DeFi Wallet");
     return defaultWallet;
   }
 };

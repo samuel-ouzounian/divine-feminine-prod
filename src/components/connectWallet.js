@@ -2,6 +2,7 @@ import React from 'react';
 import { Store } from "../store/store-reducer";
 import * as walletMetamask from "../helpers/wallet-metamask";
 import * as walletConnect from '../helpers/wallet-connect';
+import * as walletDefiwallet from "../helpers/wallet-defiwallet";
 import { useEffect, useState } from 'react';
 import { defaultWallet } from "../store/interfaces";
 import * as config from "../config/config";
@@ -20,7 +21,8 @@ const connector = new WalletConnect({
 });
 const {
     metamask,
-    walletConnectImage
+    walletConnectImage,
+    crypto,
 } = NftImage;
 
 
@@ -54,11 +56,18 @@ function ConnectWallet() {
             newWallet = await walletConnect.connect();
             if (newWallet.connected) {
                 updateWalletAction(dispatch, newWallet);
-                localStorage.setItem("walletConnect", true)
                 setConnected(true)
                 return
             }
 
+        }
+        if (sessionStorage.getItem("defiwallet") === 'test') {
+            newWallet = await walletDefiwallet.connect();
+            if (newWallet.connected) {
+                updateWalletAction(dispatch, newWallet);
+                setConnected(true)
+                return
+            }
         }
         if (window.ethereum) {
             const accounts = await window.ethereum.request({
@@ -66,7 +75,7 @@ function ConnectWallet() {
             });
 
             if (accounts.length > 0) {
-                ConnectWallet('Metamask')
+                ConnectWallet('metamask-injected')
             }
             setConnected(true)
         }
@@ -77,11 +86,9 @@ function ConnectWallet() {
     async function ConnectWallet(option) {
         let newWallet = '';
         switch (option) {
-            // Wallet injected within browser (MetaMask)
-            case "metamask-injected":
-                newWallet = await walletMetamask.connect();
+            case "defiwallet":
+                newWallet = await walletDefiwallet.connect();
                 break;
-            // Crypto.com DeFi Wallet mobile app (via Wallet Connect)
             case "wallet-connect":
                 newWallet = await walletConnect.connect();
                 break;
@@ -92,6 +99,9 @@ function ConnectWallet() {
             updateWalletAction(dispatch, newWallet);
             if (option === 'wallet-connect') {
                 sessionStorage.setItem("walletConnect", 'test')
+            }
+            if (option === 'defiwallet') {
+                sessionStorage.setItem("defiwallet", 'test')
             }
         }
 
@@ -108,7 +118,14 @@ function ConnectWallet() {
             default:
         }
         updateWalletAction(dispatch, { ...defaultWallet });
+        sessionStorage.clear();
     }
+
+    const disconnectDefi = async () => {
+        await state.wallet.wcConnector.deactivate();
+        sessionStorage.clear();
+    }
+
     const disconnectWalletConnect = async () => {
         switch (state.wallet.walletProviderName) {
             default:
@@ -137,6 +154,16 @@ function ConnectWallet() {
 
     }
 
+    if (state.wallet.connected && state.wallet.walletProviderName === 'defiwallet') {
+
+        var address = state.wallet.address.substring(0, 6) + '...' + state.wallet.address.substring(state.wallet.address.length - 4)
+        address = address.toUpperCase()
+        return (
+            <button className='connect-wallet-button' onClick={(options) => disconnectDefi()}>{address}</button>
+        );
+
+    }
+
 
     return (
         <>
@@ -150,13 +177,15 @@ function ConnectWallet() {
                         <div className="content">
                             <div className='card' onClick={(option) => ConnectWallet('metamask-injected')}>
                                 <img style={{ borderRadius: "10px", width: "75px", height: "auto" }} src={metamask}></img>
-                                <h1 style={{ fontFamily: 'Cinzel' }}>Metamask</h1>
-                                <h3 style={{ fontFamily: "Josefin Sans" }}>Connect With Metamask In Your Browser</h3>
+                                <h1 style={{ fontFamily: 'Josefin Sans', marginTop:'30px' }}>Metamask</h1>
                             </div>
                             <div className='card' onClick={(option) => ConnectWallet('wallet-connect')}>
                                 <img style={{ borderRadius: "10px", width: "75px", height: "auto" }} src={walletConnectImage}></img>
-                                <h1 style={{ fontFamily: 'Cinzel', marginTop: '30px' }}>Wallet Connect</h1>
-                                <h3 style={{ fontFamily: "Josefin Sans" }}>Scan With Wallet Connect</h3>
+                                <h1 style={{ fontFamily: 'Josefin Sans', marginTop: '30px' }}>Wallet Connect</h1>
+                            </div>
+                            <div className='card' onClick={(option) => ConnectWallet('defiwallet')}>
+                                <img style={{ borderRadius: "10px", width: "75px", height: "auto", marginBottom:'10px' }} src={crypto}></img>
+                                <h1 style={{ fontFamily: 'Josefin Sans', marginTop: '30px' }}>DeFi Wallet</h1>
                             </div>
                         </div>
                     </div>

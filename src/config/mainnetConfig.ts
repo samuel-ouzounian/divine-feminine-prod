@@ -7,17 +7,30 @@ declare global {
 export const configVars = {
   mode: "regular",
   rpcNetwork: {
-    rpcUrl: "https://matic-mumbai.chainstacklabs.com/",
-    chainId: 80001,
-    chainIdHex: "0x13881",
-    chainName: "Mumbai Testnet",
-    chainType: "testnet",
+    rpcUrl: "https://rpc-mainnet.matic.network/",
+    chainId: 137,
+    chainIdHex: "0x89",
+    chainName: "Polygon Mainnet",
+    chainType: "mainnet",
     nativeCurrency: {
       name: "MATIC",
       symbol: "MATIC",
       decimals: 18,
     },
     blockExplorerUrl: "https://polygonscan.com/",
+  },
+  rpcNetworkCronos: {
+    rpcUrl: "https://evm-t3.cronos.org/",
+    chainId: 25,
+    chainIdHex: "0x19",
+    chainName: "Cronos Mainnet",
+    chainType: "mainnet",
+    nativeCurrency: {
+      name: "CRO",
+      symbol: "CRO",
+      decimals: 18,
+    },
+    blockExplorerUrl: "https://cronoscan.com/",
   },
   preMint: {
     address: "0x0CA0b3f8B2Fe3dC6B8BA77955793C0aB7e9BDD89", 
@@ -31,9 +44,5 @@ export const configVars = {
     address: "0x757c86b41E5048B99311Ea55f37A5f116b3D42eA", 
     address_mainnet: "0x757c86b41E5048B99311Ea55f37A5f116b3D42eA", 
   },
-  discordLinkCommercial: {
-    address: "0x1A028113Cf356099fbAb9b65d10D6C0E62076A9a", 
-    address_mainnet: "0x1A028113Cf356099fbAb9b65d10D6C0E62076A9a", 
-  }
 };
 

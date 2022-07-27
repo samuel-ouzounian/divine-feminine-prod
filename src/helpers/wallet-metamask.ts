@@ -47,10 +47,10 @@ export const connect = async (): Promise<IWallet> => {
       alert('Install Metamask')
     }
     let chainId = await window.ethereum.request({ method: "eth_chainId" });
-    if (!(chainId === config.configVars.rpcNetwork.chainIdHex)) {
+    if (!(chainId === config.configVars.rpcNetwork.chainIdHex) && !(chainId === config.configVars.rpcNetworkCronos.chainIdHex)) {
       window.alert(
         "Switch your Wallet to blockchain network " +
-          config.configVars.rpcNetwork.chainName
+        config.configVars.rpcNetwork.chainName + ' or ' + config.configVars.rpcNetworkCronos.chainName
       );
       throw new Error('Wrong Chain')
     }

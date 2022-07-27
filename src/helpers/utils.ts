@@ -72,20 +72,3 @@ export const Discord = async (
   const fromSigner = ethersProvider.getSigner();
   return readContractInstance.connect(fromSigner);
 };
-
-export const discordLinkCommercial = async (
-  browserWeb3Provider: any
-): Promise<ethers.Contract> => {
-  const ethersProvider = browserWeb3Provider;
-  const contractAbi = discordLinkCommercialJSON.abi;
-  // Create ethers.Contract object using the smart contract's ABI
-  const readContractInstance = new ethers.Contract(
-    config.configVars.discordLinkCommercial.address,
-    contractAbi,
-    ethersProvider
-  );
-  // Add a signer to make the ethers.Contract object able
-  // to craft transactions
-  const fromSigner = ethersProvider.getSigner();
-  return readContractInstance.connect(fromSigner);
-};

@@ -24,6 +24,8 @@ import Celestial14 from '../assets/image/14.png'
 import Celestial15 from '../assets/image/15.png'
 import LinkedIN from '../assets/image/linkedIn.png'
 import metamask from '../assets/image/metamask-fox.svg'
+import crypto from '../assets/image/cdc.png'
+
 import walletConnectImage from '../assets/image/WalletConnect.svg'
 import bronzeCelestial from '../assets/image/Bronze.png'
 import goldCelestial from '../assets/image/Gold.png'
@@ -49,6 +51,7 @@ export const NftImage = {
     goldCelestial2:goldCelestial2,
     platinumCelestial2:platinumCelestial2,
     metamask:metamask,
+    crypto:crypto,
     walletConnectImage:walletConnectImage,
     LinkedIN:LinkedIN,
     Celestial1:Celestial1,

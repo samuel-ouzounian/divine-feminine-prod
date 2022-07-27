@@ -11,9 +11,9 @@ import PreMint from './components/pages/PreMint';
 import Navbar from './components/Navbar';
 import DAO from './components/pages/DAO';
 import DivineLabs from './components/pages/DivineLabs';
-import DiscordLink from './components/pages/DiscordLink';
+import DivineLink from './components/pages/DivineLink';
 import ReactGA from 'react-ga';
-const TRACKING_ID = "G-LTP01C48TR";
+const TRACKING_ID = "UA-232869928-1";
 ReactGA.initialize(TRACKING_ID);
 
 function App() {
@@ -25,14 +25,13 @@ function App() {
   }, []);
   return (
     <div>
-      <Navbar/>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Views />} />
         <Route path="/team" element={<Team />} />
-        <Route path="/PreMint" element={<PreMint />} />
         <Route path="/DAO" element={<DAO />} />
         <Route path="/DivineLabs" element={<DivineLabs />} />
-        <Route path="/DivineLabs/DiscordLink" element={<DiscordLink />} />
+        <Route path="/DivineLabs/DivineLink" element={<DivineLink />} />
       </Routes>
     </div>
   );

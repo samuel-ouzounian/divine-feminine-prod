@@ -31,10 +31,10 @@ export const connect = async (): Promise<IWallet> => {
     await provider.enable();
     console.log(provider);
     const ethersProvider = new ethers.providers.Web3Provider(provider);
-    if (!(provider.chainId === config.configVars.rpcNetwork.chainId)) {
+    if (!(provider.chainId === config.configVars.rpcNetwork.chainId) && !(provider.chainId === config.configVars.rpcNetworkCronos.chainId)) {
       window.alert(
         "Switch your Wallet to blockchain network " +
-          config.configVars.rpcNetwork.chainName
+          config.configVars.rpcNetwork.chainName + ' or ' + config.configVars.rpcNetworkCronos.chainName
       );
       //throw new Error('Wrong Chain')
     }
@@ -50,7 +50,6 @@ export const connect = async (): Promise<IWallet> => {
       //walletConnect.connect(connector);
 
       // Get provided accounts and chainId
-      console.log("DEEEEEZNUTS");
   });
 
     return {

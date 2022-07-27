@@ -42,6 +42,8 @@ const {
   platinumCelestial,
 } = NftImage;
 
+
+
 export default function Views() {
   return (
     <>

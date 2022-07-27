@@ -10,21 +10,24 @@ import { useState, useEffect } from 'react'
 import { Store } from '../../store/store-reducer';
 import * as utils from "../../helpers/utils";
 import * as config from "../../config/config";
-import './DiscordLink.css'
-import { SharedImage } from "../../constants/image-constant";
-const {
-    discordBig
-} = SharedImage;
+import './DivineLink.css'
+import { BrowserRouter } from "react-router-dom";
+const axios = require('axios').default;
 
 
-function DiscordLink() {
+
+
+
+
+
+function DivineLink() {
     const { state } = React.useContext(Store);
     let address = state.wallet.address.substring(0, 6) + '...' + state.wallet.address.substring(state.wallet.address.length - 4)
     address = address.toUpperCase()
-    let discordID = ''
-    let guildID = ''
     let username = ''
     let guildName = ''
+    let rsaToken = ''
+
     const [isTransacting, setIsTransacting] = useState(false);
     const [finished, setFinished] = useState(false);
     const sleep = (milliseconds) => {
@@ -35,50 +38,52 @@ function DiscordLink() {
         let path = []
         const queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);
-        discordID = urlParams.get('discordID')
-        guildID = urlParams.get('guildID')
+        rsaToken = urlParams.get('info')
         username = urlParams.get('username')
         guildName = urlParams.get('guildName')
-        path.push(discordID)
-        path.push(guildID)
         path.push(username)
         path.push(guildName)
         return path
+
 
     }
     getDiscordID()
 
     async function linkDiscord(e) {
-
         e.preventDefault()
-        const discordLinkInstance = await utils.discordLinkCommercial(
-            state.wallet.browserWeb3Provider
-        );
-
-        const whiteList = await discordLinkInstance.whiteList(guildID)
-        let cost = await discordLinkInstance.cost();
-        if (whiteList) {
-            cost = ''
-        }
+        const wallet = state.wallet.browserWeb3Provider.getSigner();
+        setIsTransacting(true)
+        let signature = await wallet.signMessage(rsaToken);
+        const data = JSON.stringify({
+            sigHash: signature,
+            token: rsaToken,
+            chainID: '80001', //Remove after caleb notifies
+            walletID: state.wallet.address,
+        });
         try {
-
-            const tx = await discordLinkInstance.linkDiscord(discordID, guildID, { value: cost });
-            setIsTransacting(true);
-            await tx.wait();
-            setIsTransacting(false);
-            setFinished(true);
-            await sleep(10000)
-            setFinished(false)
-
+            let response = await axios.post('http://ec2-54-183-141-88.us-west-1.compute.amazonaws.com:8080', data)
+            console.log(response.status)
+            if (response.data == 'Success!') {
+                setIsTransacting(false)
+                setFinished(true)
+                await sleep(3000)
+                setFinished(false)
+            } else {
+                window.alert(response.data)
+                setIsTransacting(false)
+            }
         } catch (e) {
-            setIsTransacting(false);
-            window.alert(e.data.message)
-        }
+            window.alert('Internal Error')
+            setIsTransacting(false)
 
+
+        }
 
 
 
     }
+
+
 
     if (!state.wallet.connected) {
         return (
@@ -120,7 +125,7 @@ function DiscordLink() {
         )
     }
 
-    if (getDiscordID()[0] == null) {
+    if (getDiscordID()[0] == 100) {
         return (
 
             <>
@@ -167,18 +172,18 @@ function DiscordLink() {
                 <div className="container">
                     <h1 className="header">Divine Link</h1>
                     {isTransacting ? (<Backdrop
-                        sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1,backgroundColor:'black' }}
+                        sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1, backgroundColor: 'black' }}
                         open={isTransacting}
                         onClick={!isTransacting}
                     >
                         <h1 style={{ fontSize: '40px', marginRight: '20px', fontFamily: 'Josefin Sans' }}>Linking...</h1><CircularProgress color="inherit" />
                     </Backdrop>) : <></>}
                     {finished ? (<Backdrop
-                        sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1, backgroundColor:'black' }}
+                        sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1, backgroundColor: 'black' }}
                         open={finished}
                         onClick={!finished}
                     >
-                        <h1 style={{ fontSize: '40px', textAlign:'center', fontFamily: 'Josefin Sans' }}>Wallet Linked! <br /> <h3 style={{ fontSize: '25px', textAlign:'center', fontFamily: 'Josefin Sans' }}>Your Role Will Be Assigned Shortly</h3></h1>
+                        <h1 style={{ fontSize: '40px', textAlign: 'center', fontFamily: 'Josefin Sans' }}>Wallet Linked! <br /> <h3 style={{ fontSize: '25px', textAlign: 'center', fontFamily: 'Josefin Sans' }}>Your Role Will Be Assigned Shortly</h3></h1>
                     </Backdrop>) : <></>}
                     <div className="connect-wrapper">
                         <div className="info-column">
@@ -215,6 +220,8 @@ function DiscordLink() {
 
         )
     }
+
+
     return (
 
         <>
@@ -277,4 +284,4 @@ const TextWrapper = styled.div`
   }
 `;
 
-export default DiscordLink
+export default DivineLink;

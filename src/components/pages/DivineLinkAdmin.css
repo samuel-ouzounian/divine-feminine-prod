@@ -1,0 +1,11 @@
+.server-link-options{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.link-server-header {
+    text-align: center;
+    color: white;
+}
+

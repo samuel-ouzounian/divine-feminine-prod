@@ -7,11 +7,11 @@ declare global {
 export const configVars = {
   mode: "regular",
   rpcNetwork: {
-    rpcUrl: "https://rpc-mainnet.matic.network/",
-    chainId: 137,
-    chainIdHex: "0x89",
-    chainName: "Polygon Mainnet",
-    chainType: "mainnet",
+    rpcUrl: "https://matic-mumbai.chainstacklabs.com/",
+    chainId: 80001,
+    chainIdHex: "0x13881",
+    chainName: "Mumbai Testnet",
+    chainType: "testnet",
     nativeCurrency: {
       name: "MATIC",
       symbol: "MATIC",
@@ -21,16 +21,16 @@ export const configVars = {
   },
   rpcNetworkCronos: {
     rpcUrl: "https://evm-t3.cronos.org/",
-    chainId: 25,
-    chainIdHex: "0x19",
-    chainName: "Cronos Mainnet",
-    chainType: "mainnet",
+    chainId: 338,
+    chainIdHex: "0x152",
+    chainName: "Cronos Testnet",
+    chainType: "testnet",
     nativeCurrency: {
-      name: "CRO",
-      symbol: "CRO",
+      name: "TCRO",
+      symbol: "TCRO",
       decimals: 18,
     },
-    blockExplorerUrl: "https://cronoscan.com/",
+    blockExplorerUrl: "https://polygonscan.com/",
   },
   preMint: {
     address: "0x0CA0b3f8B2Fe3dC6B8BA77955793C0aB7e9BDD89", 
