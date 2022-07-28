@@ -60,7 +60,7 @@ function DivineLink() {
             walletID: state.wallet.address,
         });
         try {
-            let response = await axios.post('https://divinelink.thedivinefemininenft.art:8443', data)
+            let response = await axios.post('https://divinelink.thedivinefemininenft.art', data)
             console.log(response.status)
             if (response.data == 'Success!') {
                 setIsTransacting(false)
